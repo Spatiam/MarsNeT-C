@@ -1,0 +1,81 @@
+## begin ionadmin
+1 2 ''
+s
+
+m horizon +0
+
+a contact +1 +3600 1 1 100000
+a contact +1 +3600 1 2 100000
+a contact +1 +3600 2 1 100000
+a contact +1 +3600 2 2 100000
+
+a contact +1 +3600 12 12 100000
+a contact +1 +3600 12 2 100000
+a contact +1 +3600 2 12 100000
+
+a contact +1 +3600 3 2 100000
+a contact +1 +3600 2 3 100000
+a contact +1 +3600 3 3 100000
+
+a range +1 +3600 1 1 1
+a range +1 +3600 1 2 1
+a range +1 +3600 2 1 1
+a range +1 +3600 2 2 1
+
+a range +1 +3600 12 12 1
+a range +1 +3600 12 2 1
+a range +1 +3600 2 12 1
+
+a range +1 +3600 2 3 1
+a range +1 +3600 3 2 1
+a range +1 +3600 3 3 1
+
+m production 1000000
+m consumption 1000000
+## end ionadmin
+  
+## begin ionsecadmin
+1
+## end ionsecadmin
+  
+## begin ltpadmin
+1 32
+
+a span 2 32 32 1400 10000 1 'udplso 172.32.230.229:4556' 300
+# a span 1 32 32 1400 10000 1 'udplso 34.194.150.177:4556' 300
+a span 1 32 32 1400 10000 1 'udplso 71.128.146.137:4556' 300
+a span 12 32 32 1400 10000 1 'udplso 34.194.150.177:1333' 300
+a span 3 32 32 1400 10000 1 'udplso 18.210.189.182:4556' 300
+
+s 'udplsi 172.32.230.229:4556'
+## end ltpadmin
+  
+## begin bpadmin
+1
+a scheme ipn 'ipnfw' 'ipnadminep'
+
+a endpoint ipn:2.0 x
+a endpoint ipn:2.1 x
+a endpoint ipn:2.2 x
+a endpoint ipn:2.64 x
+a endpoint ipn:2.65 x
+
+a protocol ltp 1400 100
+
+a induct ltp 2 ltpcli
+
+a outduct ltp 2 ltpclo
+a outduct ltp 1 ltpclo
+a outduct ltp 3 ltpclo
+a outduct ltp 12 ltpclo
+
+s
+## end bpadmin
+  
+## begin ipnadmin
+a plan 2 ltp/2
+a plan 1 ltp/1
+a plan 3 ltp/3
+a plan 12 ltp/12
+
+## end ipnadmin

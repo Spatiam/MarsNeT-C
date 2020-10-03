@@ -1,0 +1,7 @@
+1
+e 1
+w 0
+a entity 1 bp ipn:1.0 7 0 0
+m discard
+m segsize 65000
+s 'bputa'

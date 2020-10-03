@@ -1,0 +1,80 @@
+[2020/09/24-13:16:54] [i] rfxclock is running.
+[2020/09/24-13:16:54] [i] No congestion collapse predicted.
+[2020/09/24-13:16:54] [i] ionwarn finished.
+[2020/09/24-13:16:55] [i] This node deploys bundle protocol version 6.
+[2020/09/24-13:16:55] [?] Can't find ION security database.
+[2020/09/24-13:16:55] [?] Warning: running without bundle security.
+[2020/09/24-13:16:55] [?] Can't find ION security database.
+[2020/09/24-13:16:55] [i] ipnadminep is running.
+[2020/09/24-13:16:55] [?] Can't find ION security database.
+[2020/09/24-13:16:55] [i] tcpcli is running [172.33.72.212:4556].
+[2020/09/24-13:16:55] [?] Can't find ION security database.
+[2020/09/24-13:16:55] [i] tcpclo is deprecated.  tcpcl outducts are now drained by tcpcli threads.
+[2020/09/24-13:16:55] [?] Can't find ION security database.
+[2020/09/24-13:16:55] [i] bptransit is running.
+[2020/09/24-13:16:55] [?] Can't find ION security database.
+[2020/09/24-13:16:55] [i] bpclock is running.
+[2020/09/24-13:16:55] [?] Can't find ION security database.
+[2020/09/24-13:16:55] [i] ipnfw is running.
+[2020/09/24-13:16:56] [i] No congestion collapse predicted.
+[2020/09/24-13:16:56] [i] ionwarn finished.
+[2020/09/24-13:16:56] [?] Can't find ION security database.
+[2020/09/24-13:16:56] [?] Unknown duct: tcp/172.33.72.212:4556
+[2020/09/24-13:16:56] [?]   Attaching duct to plan: ipn:3.0
+[2020/09/24-13:16:56] [?] Can't find ION security database.
+[2020/09/24-13:16:56] [i] bpclm is running: ipn:2.0
+[2020/09/24-13:16:56] [?] Can't find ION security database.
+[2020/09/24-13:16:56] [i] bpclm is running: ipn:3.0
+[2020/09/24-13:16:56] [i] Connected to TCP socket: 107.22.251.253:4556
+[2020/09/24-13:16:56] [x] src from 1970/01/01-00:00:00 to 2020/09/24-13:16:56: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/09/24-13:16:56] [x] fwd from 1970/01/01-00:00:00 to 2020/09/24-13:16:56: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/09/24-13:16:56] [x] xmt from 1970/01/01-00:00:00 to 2020/09/24-13:16:56: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/09/24-13:16:56] [x] rcv from 1970/01/01-00:00:00 to 2020/09/24-13:16:56: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/09/24-13:16:56] [x] dlv from 1970/01/01-00:00:00 to 2020/09/24-13:16:56: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/09/24-13:16:56] [x] ctr from 1970/01/01-00:00:00 to 2020/09/24-13:16:56: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/09/24-13:16:56] [x] rfw from 1970/01/01-00:00:00 to 2020/09/24-13:16:56: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/09/24-13:16:56] [x] exp from 1970/01/01-00:00:00 to 2020/09/24-13:16:56: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/09/24-13:16:57] [i] tcpcli admin thread has started: ipn:2.0
+[2020/09/24-13:16:57] [i] tcpcli sender thread has started: ipn:2.0
+[2020/09/24-13:16:57] [i] No congestion collapse predicted.
+[2020/09/24-13:16:57] [i] ionwarn finished.
+[2020/09/24-13:17:08] [i] tcpcli admin thread has started: ipn:2.0
+[2020/09/24-13:17:08] [i] tcpcli sender thread has started: ipn:2.0
+[2020/09/24-13:18:02] [?] Can't find ION security database.
+[2020/09/24-13:18:55] [i] Stopping bpsource.
+[2020/09/24-13:20:07] [?] Can't find ION security database.
+[2020/09/24-13:20:37] [i] Stopping bpsource.
+[2020/09/24-13:20:51] [?] Can't find ION security database.
+[2020/09/24-13:21:58] [?] Can't find ION security database.
+[2020/09/24-13:31:35] [i] Stopping bpsource.
+[2020/09/24-13:31:41] [?] Can't find ION security database.
+[2020/09/24-13:31:42] [?] Can't find ION security database.
+[2020/09/24-14:08:48] [i] Stopping bpsource.
+[2020/09/24-14:08:59] [i] tcpcli admin thread has ended: ipn:2.0
+[2020/09/24-14:08:59] [i] Outduct has been stopped: #:7
+[2020/09/24-14:08:59] [i] tcpcli session output stopped: #:7
+[2020/09/24-14:08:59] [i] tcpcli sender thread has ended: ipn:2.0
+[2020/09/24-14:08:59] [i] tcpcli receiver thread has ended: ipn:2.0
+[2020/09/24-14:09:00] [i] tcpcli admin thread has ended: ipn:2.0
+[2020/09/24-14:09:00] [i] Outduct has been stopped: 107.22.251.253:4556
+[2020/09/24-14:09:00] [i] tcpcli session output stopped: 107.22.251.253:4556
+[2020/09/24-14:09:00] [i] tcpcli sender thread has ended: ipn:2.0
+[2020/09/24-14:09:01] [?] Can't find ION security database.
+[2020/09/24-14:09:01] [i] ipnfw forwarder has ended.
+[2020/09/24-14:09:01] [i] Endpoint has been stopped.
+[2020/09/24-14:09:01] [i] Administrative endpoint terminated.
+[2020/09/24-14:09:01] [i] ipnadminep has ended.
+[2020/09/24-14:09:01] [i] Plan has been stopped: ipn:2.0
+[2020/09/24-14:09:01] [i] bpclm has ended: ipn:2.0
+[2020/09/24-14:09:01] [i] tcpcli server thread has ended.
+[2020/09/24-14:09:01] [i] bptransit has ended.
+[2020/09/24-14:09:01] [i] bpclock has ended.
+[2020/09/24-14:09:02] [i] Can't connect to TCP socket (refused): 107.22.251.253:4556
+[2020/09/24-14:09:02] [i] tcpcli unable to reconnect: ipn:2.0
+[2020/09/24-14:09:02] [i] bpclm has ended: ipn:3.0
+[2020/09/24-14:09:03] [i] tcpcli receiver thread has ended: ipn:2.0
+[2020/09/24-14:09:04] [i] tcpcli clock thread has ended.
+[2020/09/24-14:09:04] [i] tcpcli has ended.
+[2020/09/24-14:09:05] at line 745 of cfdp/library/libcfdpP.c, Can't find CFDP database.
+[2020/09/24-14:09:06] at line 1244 of ltp/library/libltpP.c, Can't find LTP database.
+[2020/09/24-14:09:07] [i] rfxclock has ended.

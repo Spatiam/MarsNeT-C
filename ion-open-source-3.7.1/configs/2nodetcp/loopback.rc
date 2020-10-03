@@ -1,0 +1,104 @@
+## File created by /home/ec2-user/Spatiam/IonDTN-3.7.1-AWS-CIMS/ion-open-source-3.7.1/ionscript
+## Wed Sep 16 17:27:50 UTC 2020
+## Run the following command to start ION node:
+##	% ionstart -I "loopback.rc"
+
+## begin ionadmin 
+# ionrc configuration file for tcpcl dos loopback test.
+#	This uses tcp as the primary convergence layer.
+#	command: % ionadmin loopback.ionrc
+# 	This command should be run FIRST.
+#
+#	Ohio University, Oct 2008
+
+# Initialization command (command 1). 
+#	Set this node to be node 1 (as in ipn:1).
+#	Use default sdr configuration (empty configuration file name '').
+1 1 ''
+
+# start ion node
+s
+
+# Set contacts
+a contact +1 +3600 1 1 100000
+a contact +1 +3600 2 1 100000
+a contact +1 +3600 1 2 100000
+a contact +1 +3600 2 2 100000
+
+# Set ranges
+a range +1 +3600 1 1 1
+a range +1 +3600 2 1 1
+a range +1 +3600 2 2 1
+## end ionadmin 
+
+## begin bpadmin 
+# bprc configuration file for the tcpcl dos loopback test.
+#	Command: % bpadmin loopback.bprc
+#	This command should be run AFTER ionadmin and 
+#	BEFORE ipnadmin or dtnadmin.
+#
+#	Ohio University, Oct 2008
+
+# Initialization command (command 1).
+1
+
+# Add an EID scheme.
+#	The scheme's name is ipn.
+#	The scheme's number is 1.  Note that this number is defined for
+#	Compressed Bundle Header Encoding (CBHE) schemes ONLY.  All other
+#	schemes (dtn for example) should use number -1.
+#	This scheme's forwarding engine is handled by the program 'ipnfw.'
+#	This scheme's administration program (acting as the custodian
+#	daemon) is 'ipnadminep.'
+a scheme ipn 'ipnfw' 'ipnadminep'
+
+# Add endpoints.
+#	Establish endpoints ipn:1.1 and ipn:1.2 on the local node.
+#	The behavior for receiving a bundle when there is no application
+#	currently accepting bundles, is to queue them 'q', as opposed to
+#	immediately and silently discarding them (use 'x' instead of 'q' to
+#	discard).
+a endpoint ipn:1.0 q
+a endpoint ipn:1.1 q
+a endpoint ipn:1.2 q
+
+# Add a protocol. 
+#	Add the protocol named tcp.
+#	Estimate transmission capacity assuming 1400 bytes of each frame (in
+#	this case, udp on ethernet) for payload, and 100 bytes for overhead.
+a protocol tcp 1400 100
+
+# Add an induct. (listen)
+#	Add an induct to accept bundles using the tcp protocol.
+#	The induct itself is implemented by the 'tcpcli' command.
+a induct tcp 172.31.37.132:4556 tcpcli
+# a induct tcp 0.0.0.0:4556 tcpcli
+
+# Add an outduct. (send to yourself)
+#	Add an outduct to send bundles using the tcp protocol.
+#	The outduct itself is implemented by the 'tcpclo' command.
+# a outduct tcp 127.0.0.1:80 tcpclo
+a outduct tcp 172.31.37.132:4556 tcpclo
+
+a outduct tcp 172.31.32.101:4556 tcpclo
+## end bpadmin 
+
+## begin ipnadmin 
+# ipnrc configuration file for the tcpcl dos loopback test.
+#	Essentially, this is the IPN scheme's routing table.
+#	Command: % ipnadmin loopback.ipnrc
+#	This command should be run AFTER bpadmin (likely to be run last).
+#
+#	Ohio University, Oct 2008
+
+# Add an egress plan.
+#	Bundles to be transmitted to element number 1 (that is, yourself).
+#	This element is named 'node1.'
+#	The plan is to queue for transmission (x) on protocol 'tcp' using
+#	the outduct identified by IP address 127.0.0.1
+#	See your bprc file or bpadmin for outducts/protocols you can use.
+# a plan 1 tcp/127.0.0.1:4556
+a plan 1 tcp/172.31.37.132:4556
+
+a plan 2 tcp/172.31.32.101:4556
+## end ipnadmin 

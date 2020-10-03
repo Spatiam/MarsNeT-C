@@ -1,0 +1,634 @@
+[2020/09/16-15:13:32] [i] rfxclock is running.
+[2020/09/16-15:13:32] Stopping ionsecadmin.
+[2020/09/16-15:13:32] [i] This node deploys bundle protocol version 6.
+[2020/09/16-15:13:32] [i] Bundle security is enabled.
+[2020/09/16-15:13:32] [i] bpclm is running: ipn:1.0
+[2020/09/16-15:14:14] [i] Stopping bpsource.
+[2020/09/16-15:16:52] [i] This node deploys bundle protocol version 6.
+[2020/09/16-15:16:52] [i] Bundle security is enabled.
+[2020/09/16-15:16:52] [?] Duplicate scheme: ipn
+[2020/09/16-15:16:52] [?] Duplicate endpoint: ipn:1.1
+[2020/09/16-15:16:52] [?] Duplicate endpoint: ipn:1.2
+[2020/09/16-15:16:52] [?] Duplicate protocol: tcp
+[2020/09/16-15:16:52] [?] Duplicate induct: 0.0.0.0:4556
+[2020/09/16-15:16:52] [?] Duplicate outduct: 127.0.0.1:4556
+[2020/09/16-15:20:07] [i] Plan has been stopped: ipn:1.0
+[2020/09/16-15:20:07] [i] bpclm has ended: ipn:1.0
+[2020/09/16-15:20:07] at line 1963 of ici/library/platform_sm.c, Assertion failed. (i >= 0)
+[2020/09/16-15:20:07] [i] Current stack trace:
+[2020/09/16-15:20:07] [i] : /home/ec2-user/Spatiam/IonDTN-3.7.1-AWS-CIMS/ion-open-source-3.7.1/.libs/libici.so.0(printStackTrace+0x1d) [0x7f41337cfb6d]
+[2020/09/16-15:20:07] [i] : /home/ec2-user/Spatiam/IonDTN-3.7.1-AWS-CIMS/ion-open-source-3.7.1/.libs/libici.so.0(_iEnd+0x21) [0x7f41337d00c1]
+[2020/09/16-15:20:07] [i] : /home/ec2-user/Spatiam/IonDTN-3.7.1-AWS-CIMS/ion-open-source-3.7.1/.libs/libici.so.0(sm_SemEnd+0x97) [0x7f41337d2847]
+[2020/09/16-15:20:07] [i] : /home/ec2-user/Spatiam/IonDTN-3.7.1-AWS-CIMS/ion-open-source-3.7.1/.libs/libbp.so.0(bpStop+0x1a4) [0x7f4133a18834]
+[2020/09/16-15:20:07] [i] : /home/ec2-user/Spatiam/IonDTN-3.7.1-AWS-CIMS/ion-open-source-3.7.1/.libs/lt-bpadmin(main+0x52) [0x4020a2]
+[2020/09/16-15:20:07] [i] : /lib64/libc.so.6(__libc_start_main+0xea) [0x7f4132ed102a]
+[2020/09/16-15:20:07] [i] : /home/ec2-user/Spatiam/IonDTN-3.7.1-AWS-CIMS/ion-open-source-3.7.1/.libs/lt-bpadmin() [0x40226a]
+[2020/09/16-15:20:09] at line 745 of cfdp/library/libcfdpP.c, Can't find CFDP database.
+[2020/09/16-15:20:10] at line 1244 of ltp/library/libltpP.c, Can't find LTP database.
+[2020/09/16-15:20:11] [i] rfxclock has ended.
+[2020/09/16-15:25:29] [i] rfxclock is running.
+[2020/09/16-15:25:29] [i] This node deploys bundle protocol version 6.
+[2020/09/16-15:25:29] [?] Can't find ION security database.
+[2020/09/16-15:25:29] [?] Warning: running without bundle security.
+[2020/09/16-15:25:29] [?] Can't find ION security database.
+[2020/09/16-15:25:29] [?] Can't find ION security database.
+[2020/09/16-15:25:29] [i] bpclm is running: ipn:1.0
+[2020/09/16-15:25:46] [?] Can't find ION security database.
+[2020/09/16-15:25:46] [?] Can't find ION security database.
+[2020/09/16-15:25:46] [i] ipnfw is running.
+[2020/09/16-15:25:46] [?] Can't find ION security database.
+[2020/09/16-15:25:46] [i] ipnadminep is running.
+[2020/09/16-15:25:46] [?] Can't find ION security database.
+[2020/09/16-15:25:46] [i] bptransit is running.
+[2020/09/16-15:25:46] [?] Can't find ION security database.
+[2020/09/16-15:25:46] [i] bpclock is running.
+[2020/09/16-15:25:46] [?] Can't find ION security database.
+[2020/09/16-15:25:46] [i] tcpcli is running [0.0.0.0:4556].
+[2020/09/16-15:25:46] [?] Can't find ION security database.
+[2020/09/16-15:25:46] [i] tcpclo is deprecated.  tcpcl outducts are now drained by tcpcli threads.
+[2020/09/16-15:25:46] [i] Connected to TCP socket: 127.0.0.1:4556
+[2020/09/16-15:25:47] [i] tcpcli admin thread has started: ipn:1.0
+[2020/09/16-15:25:47] [i] tcpcli admin thread has started: ipn:1.0
+[2020/09/16-15:25:47] [i] tcpcli sender thread has started: ipn:1.0
+[2020/09/16-15:25:47] [i] tcpcli sender thread has started: ipn:1.0
+[2020/09/16-15:26:07] [?] Can't find ION security database.
+[2020/09/16-15:26:15] [?] Can't find ION security database.
+[2020/09/16-15:27:40] [i] Stopping bpsource.
+[2020/09/16-15:27:45] [?] Can't find ION security database.
+[2020/09/16-15:27:47] [?] Can't find ION security database.
+[2020/09/16-15:27:50] [i] Stopping bpsource.
+[2020/09/16-15:45:31] [?] Can't find ION security database.
+[2020/09/16-15:45:31] [i] ipnfw forwarder has ended.
+[2020/09/16-15:45:31] [i] Endpoint has been stopped.
+[2020/09/16-15:45:31] [i] Administrative endpoint terminated.
+[2020/09/16-15:45:31] [i] ipnadminep has ended.
+[2020/09/16-15:45:31] [i] Plan has been stopped: ipn:1.0
+[2020/09/16-15:45:31] [i] bpclm has ended: ipn:1.0
+[2020/09/16-15:45:31] [i] tcpcli server thread has ended.
+[2020/09/16-15:45:31] [i] bptransit has ended.
+[2020/09/16-15:45:31] [i] bpclock has ended.
+[2020/09/16-15:45:31] [i] tcpcli admin thread has ended: ipn:1.0
+[2020/09/16-15:45:31] [i] tcpcli admin thread has ended: ipn:1.0
+[2020/09/16-15:45:31] [i] Outduct has been stopped: #:7
+[2020/09/16-15:45:31] [i] tcpcli session output stopped: #:7
+[2020/09/16-15:45:31] [i] tcpcli sender thread has ended: ipn:1.0
+[2020/09/16-15:45:31] [i] Outduct has been stopped: 127.0.0.1:4556
+[2020/09/16-15:45:31] [i] tcpcli session output stopped: 127.0.0.1:4556
+[2020/09/16-15:45:31] [i] tcpcli sender thread has ended: ipn:1.0
+[2020/09/16-15:45:31] [i] tcpcli receiver thread has ended: ipn:1.0
+[2020/09/16-15:45:32] [i] tcpcli receiver thread has ended: ipn:1.0
+[2020/09/16-15:45:34] [i] tcpcli clock thread has ended.
+[2020/09/16-15:45:34] [i] tcpcli has ended.
+[2020/09/16-15:45:35] at line 745 of cfdp/library/libcfdpP.c, Can't find CFDP database.
+[2020/09/16-15:45:36] at line 1244 of ltp/library/libltpP.c, Can't find LTP database.
+[2020/09/16-15:45:37] [i] rfxclock has ended.
+[2020/09/16-15:58:16] [i] rfxclock is running.
+[2020/09/16-15:58:16] [i] This node deploys bundle protocol version 6.
+[2020/09/16-15:58:16] [?] Can't find ION security database.
+[2020/09/16-15:58:16] [?] Warning: running without bundle security.
+[2020/09/16-15:58:16] [?] Can't find ION security database.
+[2020/09/16-15:58:16] [?] Unknown duct: tcp/127.0.0.1:4556
+[2020/09/16-15:58:16] [?]   Attaching duct to plan: ipn:1.0
+[2020/09/16-15:58:16] [?] Can't find ION security database.
+[2020/09/16-15:58:16] [i] bpclm is running: ipn:1.0
+[2020/09/16-15:58:24] [?] Can't find ION security database.
+[2020/09/16-15:58:24] [?] Can't find ION security database.
+[2020/09/16-15:58:24] [i] bptransit is running.
+[2020/09/16-15:58:24] [?] Can't find ION security database.
+[2020/09/16-15:58:24] [i] ipnadminep is running.
+[2020/09/16-15:58:24] [?] Can't find ION security database.
+[2020/09/16-15:58:24] [i] tcpclo is deprecated.  tcpcl outducts are now drained by tcpcli threads.
+[2020/09/16-15:58:24] [?] Can't find ION security database.
+[2020/09/16-15:58:24] [i] tcpcli is running [0.0.0.0:4556].
+[2020/09/16-15:58:24] [?] Can't find ION security database.
+[2020/09/16-15:58:24] [i] ipnfw is running.
+[2020/09/16-15:58:24] [?] Can't find ION security database.
+[2020/09/16-15:58:24] [i] bpclock is running.
+[2020/09/16-15:58:45] [?] Can't find ION security database.
+[2020/09/16-15:58:47] [?] Can't find ION security database.
+[2020/09/16-15:59:40] [i] Stopping bpsource.
+[2020/09/16-16:00:03] [?] Can't find ION security database.
+[2020/09/16-16:00:03] [i] ipnfw forwarder has ended.
+[2020/09/16-16:00:03] [i] Endpoint has been stopped.
+[2020/09/16-16:00:03] [i] Administrative endpoint terminated.
+[2020/09/16-16:00:03] [i] ipnadminep has ended.
+[2020/09/16-16:00:03] [i] tcpcli server thread has ended.
+[2020/09/16-16:00:03] [i] bptransit has ended.
+[2020/09/16-16:00:03] [i] bpclock has ended.
+[2020/09/16-16:00:03] [i] bpclm has ended: ipn:1.0
+[2020/09/16-16:00:06] [i] tcpcli clock thread has ended.
+[2020/09/16-16:00:06] [i] tcpcli has ended.
+[2020/09/16-16:00:07] at line 745 of cfdp/library/libcfdpP.c, Can't find CFDP database.
+[2020/09/16-16:00:08] at line 1244 of ltp/library/libltpP.c, Can't find LTP database.
+[2020/09/16-16:00:09] [i] rfxclock has ended.
+[2020/09/16-16:01:27] [i] rfxclock is running.
+[2020/09/16-16:01:27] [i] This node deploys bundle protocol version 6.
+[2020/09/16-16:01:27] [?] Can't find ION security database.
+[2020/09/16-16:01:27] [?] Warning: running without bundle security.
+[2020/09/16-16:01:27] [?] Can't find ION security database.
+[2020/09/16-16:01:27] [?] Can't find ION security database.
+[2020/09/16-16:01:27] [i] bpclm is running: ipn:1.0
+[2020/09/16-16:01:37] [?] Can't find ION security database.
+[2020/09/16-16:01:37] [?] Can't find ION security database.
+[2020/09/16-16:01:37] [i] tcpcli is running [0.0.0.0:4556].
+[2020/09/16-16:01:37] [?] Can't find ION security database.
+[2020/09/16-16:01:37] [i] ipnfw is running.
+[2020/09/16-16:01:37] [?] Can't find ION security database.
+[2020/09/16-16:01:37] [i] bptransit is running.
+[2020/09/16-16:01:37] [i] Connected to TCP socket: 127.0.0.1:4556
+[2020/09/16-16:01:37] [?] Can't find ION security database.
+[2020/09/16-16:01:37] [i] tcpclo is deprecated.  tcpcl outducts are now drained by tcpcli threads.
+[2020/09/16-16:01:37] [?] Can't find ION security database.
+[2020/09/16-16:01:37] [i] ipnadminep is running.
+[2020/09/16-16:01:37] [?] Can't find ION security database.
+[2020/09/16-16:01:37] [i] bpclock is running.
+[2020/09/16-16:01:38] [i] tcpcli admin thread has started: ipn:1.0
+[2020/09/16-16:01:38] [i] tcpcli admin thread has started: ipn:1.0
+[2020/09/16-16:01:38] [i] tcpcli sender thread has started: ipn:1.0
+[2020/09/16-16:01:38] [i] tcpcli sender thread has started: ipn:1.0
+[2020/09/16-16:01:47] [?] Can't find ION security database.
+[2020/09/16-16:01:49] [?] Can't find ION security database.
+[2020/09/16-16:01:52] [i] Stopping bpsource.
+[2020/09/16-16:04:35] [i] This node deploys bundle protocol version 6.
+[2020/09/16-16:04:35] [?] Can't find ION security database.
+[2020/09/16-16:04:35] [?] Warning: running without bundle security.
+[2020/09/16-16:04:35] [?] Duplicate scheme: ipn
+[2020/09/16-16:04:35] [?] Duplicate endpoint: ipn:1.1
+[2020/09/16-16:04:35] [?] Duplicate endpoint: ipn:1.2
+[2020/09/16-16:04:35] [?] Duplicate protocol: tcp
+[2020/09/16-16:04:35] [?] Can't find ION security database.
+[2020/09/16-16:04:35] [?] Duplicate egress plan: ipn:1.0
+[2020/09/16-16:04:35] [?] Duct is already attached to a plan: 127.0.0.1:4556
+[2020/09/16-16:06:15] [i] This node deploys bundle protocol version 6.
+[2020/09/16-16:06:15] [?] Can't find ION security database.
+[2020/09/16-16:06:15] [?] Warning: running without bundle security.
+[2020/09/16-16:06:15] [?] Duplicate scheme: ipn
+[2020/09/16-16:06:15] [?] Duplicate endpoint: ipn:1.1
+[2020/09/16-16:06:15] [?] Duplicate endpoint: ipn:1.2
+[2020/09/16-16:06:15] [?] Duplicate protocol: tcp
+[2020/09/16-16:06:15] [?] Duplicate induct: 172.31.37.132:4556
+[2020/09/16-16:06:15] [?] Duplicate outduct: 172.31.37.132:4556
+[2020/09/16-16:06:15] [?] Can't find ION security database.
+[2020/09/16-16:06:15] [?] Duplicate egress plan: ipn:1.0
+[2020/09/16-16:06:15] [?] Duct is already attached to a plan: 127.0.0.1:4556
+[2020/09/16-16:06:23] [?] Can't find ION security database.
+[2020/09/16-16:06:23] [?] Can't find ION security database.
+[2020/09/16-16:06:23] [i] tcpclo is deprecated.  tcpcl outducts are now drained by tcpcli threads.
+[2020/09/16-16:06:24] [?] Can't find ION security database.
+[2020/09/16-16:06:24] [i] tcpclo is deprecated.  tcpcl outducts are now drained by tcpcli threads.
+[2020/09/16-16:06:24] [?] Can't find ION security database.
+[2020/09/16-16:06:24] [i] tcpcli is running [172.31.37.132:4556].
+[2020/09/16-16:06:24] [i] Connected to TCP socket: 127.0.0.1:4556
+[2020/09/16-16:06:24] [i] tcpcli got no valid contact header: #:8
+[2020/09/16-16:06:24] [i] tcpcli admin thread has started: ipn:1.0
+[2020/09/16-16:06:24] [i] tcpcli sender thread has started: ipn:1.0
+[2020/09/16-16:06:24] [i] tcpcli sender thread has ended: ipn:1.0
+[2020/09/16-16:06:24] [i] tcpcli receiver thread has ended: #:8
+[2020/09/16-16:06:25] [i] Connected to TCP socket: 127.0.0.1:4556
+[2020/09/16-16:06:26] [i] tcpcli admin thread has ended: ipn:1.0
+[2020/09/16-16:06:26] [i] tcpcli got no valid contact header: #:9
+[2020/09/16-16:06:26] [i] tcpcli admin thread has started: ipn:1.0
+[2020/09/16-16:06:26] [i] tcpcli admin thread has ended: ipn:1.0
+[2020/09/16-16:06:26] [i] Outduct has been stopped: 127.0.0.1:4556
+[2020/09/16-16:06:26] [i] tcpcli session output stopped: 127.0.0.1:4556
+[2020/09/16-16:06:26] [i] tcpcli sender thread has ended: ipn:1.0
+[2020/09/16-16:06:26] [i] tcpcli sender thread has started: ipn:1.0
+[2020/09/16-16:06:26] [i] tcpcli sender thread has ended: ipn:1.0
+[2020/09/16-16:06:26] [i] tcpcli receiver thread has ended: #:9
+[2020/09/16-16:06:27] [i] Connected to TCP socket: 127.0.0.1:4556
+[2020/09/16-16:06:29] [i] tcpcli got no valid contact header: #:8
+[2020/09/16-16:06:29] [i] tcpcli admin thread has started: ipn:1.0
+[2020/09/16-16:06:29] [i] tcpcli sender thread has started: ipn:1.0
+[2020/09/16-16:06:29] [i] tcpcli sender thread has ended: ipn:1.0
+[2020/09/16-16:06:29] [i] tcpcli receiver thread has ended: #:8
+[2020/09/16-16:06:30] [i] Connected to TCP socket: 127.0.0.1:4556
+[2020/09/16-16:06:31] [i] tcpcli admin thread has ended: ipn:1.0
+[2020/09/16-16:06:31] [i] tcpcli got no valid contact header: #:9
+[2020/09/16-16:06:31] [i] tcpcli admin thread has started: ipn:1.0
+[2020/09/16-16:06:31] [i] tcpcli admin thread has ended: ipn:1.0
+[2020/09/16-16:06:31] [i] tcpcli sender thread has started: ipn:1.0
+[2020/09/16-16:06:31] [i] tcpcli sender thread has ended: ipn:1.0
+[2020/09/16-16:06:31] [i] tcpcli receiver thread has ended: #:9
+[2020/09/16-16:06:32] [?] Can't find ION security database.
+[2020/09/16-16:06:32] [i] Connected to TCP socket: 127.0.0.1:4556
+[2020/09/16-16:06:33] [i] tcpcli got no valid contact header: #:8
+[2020/09/16-16:06:33] [i] tcpcli admin thread has started: ipn:1.0
+[2020/09/16-16:06:33] [i] tcpcli sender thread has started: ipn:1.0
+[2020/09/16-16:06:33] [i] tcpcli sender thread has ended: ipn:1.0
+[2020/09/16-16:06:33] [i] tcpcli receiver thread has ended: #:8
+[2020/09/16-16:06:34] [?] Can't find ION security database.
+[2020/09/16-16:06:34] [i] Connected to TCP socket: 127.0.0.1:4556
+[2020/09/16-16:06:35] [i] tcpcli admin thread has ended: ipn:1.0
+[2020/09/16-16:06:35] [i] tcpcli got no valid contact header: #:9
+[2020/09/16-16:06:35] [i] tcpcli admin thread has started: ipn:1.0
+[2020/09/16-16:06:35] [i] tcpcli admin thread has ended: ipn:1.0
+[2020/09/16-16:06:35] [i] tcpcli sender thread has started: ipn:1.0
+[2020/09/16-16:06:35] [i] tcpcli sender thread has ended: ipn:1.0
+[2020/09/16-16:06:36] [i] tcpcli receiver thread has ended: #:9
+[2020/09/16-16:06:37] [i] Connected to TCP socket: 127.0.0.1:4556
+[2020/09/16-16:06:38] [i] tcpcli got no valid contact header: #:8
+[2020/09/16-16:06:38] [i] tcpcli admin thread has started: ipn:1.0
+[2020/09/16-16:06:38] [i] tcpcli sender thread has started: ipn:1.0
+[2020/09/16-16:06:38] [i] tcpcli sender thread has ended: ipn:1.0
+[2020/09/16-16:06:38] [i] tcpcli receiver thread has ended: #:8
+[2020/09/16-16:06:39] [i] Connected to TCP socket: 127.0.0.1:4556
+[2020/09/16-16:06:39] [i] Stopping bpsource.
+[2020/09/16-16:06:40] [i] tcpcli admin thread has ended: ipn:1.0
+[2020/09/16-16:06:40] [i] tcpcli got no valid contact header: #:9
+[2020/09/16-16:06:40] [i] tcpcli admin thread has started: ipn:1.0
+[2020/09/16-16:06:40] [i] tcpcli admin thread has ended: ipn:1.0
+[2020/09/16-16:06:40] [i] tcpcli sender thread has started: ipn:1.0
+[2020/09/16-16:06:40] [i] tcpcli sender thread has ended: ipn:1.0
+[2020/09/16-16:06:40] [i] tcpcli receiver thread has ended: #:9
+[2020/09/16-16:06:41] [i] Connected to TCP socket: 127.0.0.1:4556
+[2020/09/16-16:06:42] [i] tcpcli got no valid contact header: #:8
+[2020/09/16-16:06:42] [i] tcpcli admin thread has started: ipn:1.0
+[2020/09/16-16:06:42] [i] tcpcli sender thread has started: ipn:1.0
+[2020/09/16-16:06:42] [i] tcpcli sender thread has ended: ipn:1.0
+[2020/09/16-16:06:43] [i] tcpcli receiver thread has ended: #:8
+[2020/09/16-16:06:43] [i] Connected to TCP socket: 127.0.0.1:4556
+[2020/09/16-16:06:45] [i] tcpcli admin thread has ended: ipn:1.0
+[2020/09/16-16:06:45] [i] tcpcli got no valid contact header: #:9
+[2020/09/16-16:06:45] [i] tcpcli admin thread has started: ipn:1.0
+[2020/09/16-16:06:45] [i] tcpcli admin thread has ended: ipn:1.0
+[2020/09/16-16:06:45] [i] tcpcli sender thread has started: ipn:1.0
+[2020/09/16-16:06:45] [i] tcpcli sender thread has ended: ipn:1.0
+[2020/09/16-16:06:45] [i] tcpcli receiver thread has ended: #:9
+[2020/09/16-16:06:46] [i] Connected to TCP socket: 127.0.0.1:4556
+[2020/09/16-16:06:47] [i] tcpcli got no valid contact header: #:8
+[2020/09/16-16:06:47] [i] tcpcli admin thread has started: ipn:1.0
+[2020/09/16-16:06:47] [i] tcpcli sender thread has started: ipn:1.0
+[2020/09/16-16:06:47] [i] tcpcli sender thread has ended: ipn:1.0
+[2020/09/16-16:06:47] [i] tcpcli receiver thread has ended: #:8
+[2020/09/16-16:06:48] [i] Connected to TCP socket: 127.0.0.1:4556
+[2020/09/16-16:06:49] [?] Can't find ION security database.
+[2020/09/16-16:06:49] [i] ipnfw forwarder has ended.
+[2020/09/16-16:06:49] [i] Endpoint has been stopped.
+[2020/09/16-16:06:49] [i] Administrative endpoint terminated.
+[2020/09/16-16:06:49] [i] ipnadminep has ended.
+[2020/09/16-16:06:49] [i] Plan has been stopped: ipn:1.0
+[2020/09/16-16:06:49] [i] bpclm has ended: ipn:1.0
+[2020/09/16-16:06:49] [i] tcpcli server thread has ended.
+[2020/09/16-16:06:49] [i] tcpcli server thread has ended.
+[2020/09/16-16:06:49] [i] bptransit has ended.
+[2020/09/16-16:06:49] [i] bpclock has ended.
+[2020/09/16-16:06:49] [i] tcpcli admin thread has ended: ipn:1.0
+[2020/09/16-16:06:49] [i] tcpcli admin thread has ended: ipn:1.0
+[2020/09/16-16:06:49] [i] Outduct has been stopped: #:7
+[2020/09/16-16:06:49] [i] tcpcli session output stopped: #:7
+[2020/09/16-16:06:49] [i] tcpcli sender thread has ended: ipn:1.0
+[2020/09/16-16:06:49] [i] tcpcli admin thread has started: ipn:1.0
+[2020/09/16-16:06:49] [i] tcpcli sender thread has started: ipn:1.0
+[2020/09/16-16:06:49] at line 1890 of bpv6/tcp/tcpcli.c, irecv() error on TCP socket: Connection reset by peer (127.0.0.1:4556)
+[2020/09/16-16:06:49] [i] tcpcli admin thread has ended: ipn:1.0
+[2020/09/16-16:09:15] [i] rfxclock has ended.
+[2020/09/16-16:10:20] [i] rfxclock is running.
+[2020/09/16-16:10:20] [i] This node deploys bundle protocol version 6.
+[2020/09/16-16:10:20] [?] Can't find ION security database.
+[2020/09/16-16:10:20] [?] Warning: running without bundle security.
+[2020/09/16-16:10:20] [?] Can't find ION security database.
+[2020/09/16-16:10:20] [?] Can't find ION security database.
+[2020/09/16-16:10:20] [i] bpclm is running: ipn:1.0
+[2020/09/16-16:10:30] [?] Can't find ION security database.
+[2020/09/16-16:10:30] [?] Can't find ION security database.
+[2020/09/16-16:10:30] [i] ipnfw is running.
+[2020/09/16-16:10:30] [?] Can't find ION security database.
+[2020/09/16-16:10:30] [i] tcpclo is deprecated.  tcpcl outducts are now drained by tcpcli threads.
+[2020/09/16-16:10:30] [?] Can't find ION security database.
+[2020/09/16-16:10:30] [i] bptransit is running.
+[2020/09/16-16:10:30] [?] Can't find ION security database.
+[2020/09/16-16:10:30] [i] tcpcli is running [0.0.0.0:4556].
+[2020/09/16-16:10:30] [?] Can't find ION security database.
+[2020/09/16-16:10:30] [i] bpclock is running.
+[2020/09/16-16:10:30] [?] Can't find ION security database.
+[2020/09/16-16:10:30] [i] ipnadminep is running.
+[2020/09/16-16:10:30] [i] Connected to TCP socket: 127.0.0.1:4556
+[2020/09/16-16:10:31] [i] tcpcli admin thread has started: ipn:1.0
+[2020/09/16-16:10:31] [i] tcpcli admin thread has started: ipn:1.0
+[2020/09/16-16:10:31] [i] tcpcli sender thread has started: ipn:1.0
+[2020/09/16-16:10:31] [i] tcpcli sender thread has started: ipn:1.0
+[2020/09/16-16:10:39] [?] Can't find ION security database.
+[2020/09/16-16:10:41] [?] Can't find ION security database.
+[2020/09/16-16:10:45] [i] Stopping bpsource.
+[2020/09/16-16:10:52] [?] Can't find ION security database.
+[2020/09/16-16:10:52] [i] ipnfw forwarder has ended.
+[2020/09/16-16:10:52] [i] Endpoint has been stopped.
+[2020/09/16-16:10:52] [i] Administrative endpoint terminated.
+[2020/09/16-16:10:52] [i] ipnadminep has ended.
+[2020/09/16-16:10:52] [i] Plan has been stopped: ipn:1.0
+[2020/09/16-16:10:52] [i] bpclm has ended: ipn:1.0
+[2020/09/16-16:10:52] [i] tcpcli server thread has ended.
+[2020/09/16-16:10:52] [i] bptransit has ended.
+[2020/09/16-16:10:52] [i] bpclock has ended.
+[2020/09/16-16:10:52] [i] tcpcli admin thread has ended: ipn:1.0
+[2020/09/16-16:10:52] [i] tcpcli admin thread has ended: ipn:1.0
+[2020/09/16-16:10:52] [i] Outduct has been stopped: #:7
+[2020/09/16-16:10:52] [i] tcpcli session output stopped: #:7
+[2020/09/16-16:10:52] [i] tcpcli sender thread has ended: ipn:1.0
+[2020/09/16-16:10:52] [i] Outduct has been stopped: 127.0.0.1:4556
+[2020/09/16-16:10:52] [i] tcpcli session output stopped: 127.0.0.1:4556
+[2020/09/16-16:10:52] [i] tcpcli sender thread has ended: ipn:1.0
+[2020/09/16-16:10:52] [i] tcpcli receiver thread has ended: ipn:1.0
+[2020/09/16-16:10:52] [i] tcpcli receiver thread has ended: ipn:1.0
+[2020/09/16-16:10:55] [i] tcpcli clock thread has ended.
+[2020/09/16-16:10:55] [i] tcpcli has ended.
+[2020/09/16-16:10:56] at line 745 of cfdp/library/libcfdpP.c, Can't find CFDP database.
+[2020/09/16-16:10:57] at line 1244 of ltp/library/libltpP.c, Can't find LTP database.
+[2020/09/16-16:10:58] [i] rfxclock has ended.
+[2020/09/16-16:16:42] [i] rfxclock is running.
+[2020/09/16-16:16:42] [i] This node deploys bundle protocol version 6.
+[2020/09/16-16:16:42] [?] Can't find ION security database.
+[2020/09/16-16:16:42] [?] Warning: running without bundle security.
+[2020/09/16-16:16:42] [?] Can't find ION security database.
+[2020/09/16-16:16:42] [?] Can't find ION security database.
+[2020/09/16-16:16:42] [i] bpclm is running: ipn:1.0
+[2020/09/16-16:16:53] [?] Can't find ION security database.
+[2020/09/16-16:16:53] [?] Can't find ION security database.
+[2020/09/16-16:16:53] [i] ipnfw is running.
+[2020/09/16-16:16:53] [?] Can't find ION security database.
+[2020/09/16-16:16:53] [i] tcpclo is deprecated.  tcpcl outducts are now drained by tcpcli threads.
+[2020/09/16-16:16:53] [?] Can't find ION security database.
+[2020/09/16-16:16:53] [i] ipnadminep is running.
+[2020/09/16-16:16:53] [?] Can't find ION security database.
+[2020/09/16-16:16:53] [i] bptransit is running.
+[2020/09/16-16:16:53] [?] Can't find ION security database.
+[2020/09/16-16:16:53] at line 2896 of bpv6/tcp/tcpcli.c, Can't initialize TCP server socket: Cannot assign requested address
+[2020/09/16-16:16:53] [?] Can't find ION security database.
+[2020/09/16-16:16:53] [i] bpclock is running.
+[2020/09/16-16:18:04] [?] Can't find ION security database.
+[2020/09/16-16:18:22] [?] Can't find ION security database.
+[2020/09/16-16:18:26] [i] Stopping bpsource.
+[2020/09/16-16:18:28] [?] Can't find ION security database.
+[2020/09/16-16:18:32] [i] Stopping bpsource.
+[2020/09/16-16:18:35] [?] Can't find ION security database.
+[2020/09/16-16:18:39] [?] Can't find ION security database.
+[2020/09/16-16:18:42] [i] Stopping bpsource.
+[2020/09/16-16:18:44] [?] Can't find ION security database.
+[2020/09/16-16:18:48] [i] Stopping bpsource.
+[2020/09/16-16:21:01] [?] Can't find ION security database.
+[2020/09/16-16:21:01] at line 112 of bpv6/library/libbp.c, Endpoint is already open. (29100)
+[2020/09/16-16:21:01] at line 89 of bpv6/test/bpsink.c, Can't open own endpoint. (ipn:1.0)
+[2020/09/16-16:22:45] [?] Can't find ION security database.
+[2020/09/16-16:22:45] [i] ipnfw forwarder has ended.
+[2020/09/16-16:22:45] [i] Endpoint has been stopped.
+[2020/09/16-16:22:45] [i] Administrative endpoint terminated.
+[2020/09/16-16:22:45] [i] ipnadminep has ended.
+[2020/09/16-16:22:45] [i] Plan has been stopped: ipn:1.0
+[2020/09/16-16:22:45] [i] bpclm has ended: ipn:1.0
+[2020/09/16-16:22:45] [i] bptransit has ended.
+[2020/09/16-16:22:45] [i] bpclock has ended.
+[2020/09/16-16:22:46] at line 745 of cfdp/library/libcfdpP.c, Can't find CFDP database.
+[2020/09/16-16:22:47] at line 1244 of ltp/library/libltpP.c, Can't find LTP database.
+[2020/09/16-16:22:48] [i] rfxclock has ended.
+[2020/09/16-16:23:49] [i] rfxclock is running.
+[2020/09/16-16:23:49] [i] This node deploys bundle protocol version 6.
+[2020/09/16-16:23:49] [?] Can't find ION security database.
+[2020/09/16-16:23:49] [?] Warning: running without bundle security.
+[2020/09/16-16:23:49] [?] Can't find ION security database.
+[2020/09/16-16:23:49] [?] Unknown duct: tcp/127.0.0.1:4556
+[2020/09/16-16:23:49] [?]   Attaching duct to plan: ipn:1.0
+[2020/09/16-16:23:49] [?] Can't find ION security database.
+[2020/09/16-16:23:49] [i] bpclm is running: ipn:1.0
+[2020/09/16-16:23:59] [?] Can't find ION security database.
+[2020/09/16-16:23:59] [?] Can't find ION security database.
+[2020/09/16-16:23:59] [i] tcpclo is deprecated.  tcpcl outducts are now drained by tcpcli threads.
+[2020/09/16-16:23:59] [?] Can't find ION security database.
+[2020/09/16-16:23:59] [i] bptransit is running.
+[2020/09/16-16:23:59] [?] Can't find ION security database.
+[2020/09/16-16:23:59] at line 2896 of bpv6/tcp/tcpcli.c, Can't initialize TCP server socket: Cannot assign requested address
+[2020/09/16-16:23:59] [?] Can't find ION security database.
+[2020/09/16-16:23:59] [i] ipnfw is running.
+[2020/09/16-16:23:59] [?] Can't find ION security database.
+[2020/09/16-16:23:59] [i] ipnadminep is running.
+[2020/09/16-16:23:59] [?] Can't find ION security database.
+[2020/09/16-16:23:59] [i] bpclock is running.
+[2020/09/16-16:24:08] [?] Can't find ION security database.
+[2020/09/16-16:24:08] at line 112 of bpv6/library/libbp.c, Endpoint is already open. (31328)
+[2020/09/16-16:24:08] at line 89 of bpv6/test/bpsink.c, Can't open own endpoint. (ipn:1.0)
+[2020/09/16-16:24:10] [?] Can't find ION security database.
+[2020/09/16-16:24:12] [?] Can't find ION security database.
+[2020/09/16-16:25:35] [?] Can't find ION security database.
+[2020/09/16-16:25:39] [i] Stopping bpsource.
+[2020/09/16-16:26:42] [?] Can't find ION security database.
+[2020/09/16-16:26:42] [i] ipnfw forwarder has ended.
+[2020/09/16-16:26:42] [i] Endpoint has been stopped.
+[2020/09/16-16:26:42] [i] Endpoint has been stopped.
+[2020/09/16-16:26:42] [i] Administrative endpoint terminated.
+[2020/09/16-16:26:42] [i] ipnadminep has ended.
+[2020/09/16-16:26:42] [i] bptransit has ended.
+[2020/09/16-16:26:42] [i] bpclock has ended.
+[2020/09/16-16:26:43] [i] bpclm has ended: ipn:1.0
+[2020/09/16-16:26:44] at line 745 of cfdp/library/libcfdpP.c, Can't find CFDP database.
+[2020/09/16-16:26:45] at line 1244 of ltp/library/libltpP.c, Can't find LTP database.
+[2020/09/16-16:26:46] [i] rfxclock has ended.
+[2020/09/16-16:27:24] [i] rfxclock is running.
+[2020/09/16-16:27:24] [i] This node deploys bundle protocol version 6.
+[2020/09/16-16:27:24] [?] Can't find ION security database.
+[2020/09/16-16:27:24] [?] Warning: running without bundle security.
+[2020/09/16-16:27:24] [?] Can't find ION security database.
+[2020/09/16-16:27:24] [?] Can't find ION security database.
+[2020/09/16-16:27:24] [i] bpclm is running: ipn:1.0
+[2020/09/16-16:27:33] [?] Can't find ION security database.
+[2020/09/16-16:27:33] [?] Can't find ION security database.
+[2020/09/16-16:27:33] [i] ipnadminep is running.
+[2020/09/16-16:27:33] [?] Can't find ION security database.
+[2020/09/16-16:27:33] [i] ipnfw is running.
+[2020/09/16-16:27:33] [?] Can't find ION security database.
+[2020/09/16-16:27:33] [i] tcpclo is deprecated.  tcpcl outducts are now drained by tcpcli threads.
+[2020/09/16-16:27:33] [?] Can't find ION security database.
+[2020/09/16-16:27:33] [i] bptransit is running.
+[2020/09/16-16:27:33] [?] Can't find ION security database.
+[2020/09/16-16:27:33] [i] bpclock is running.
+[2020/09/16-16:31:30] [?] Can't find ION security database.
+[2020/09/16-16:32:01] [?] Can't find ION security database.
+[2020/09/16-16:32:15] [i] Stopping bpsource.
+[2020/09/16-16:32:19] [?] Can't find ION security database.
+[2020/09/16-16:32:22] [?] Can't find ION security database.
+[2020/09/16-16:32:27] [i] Stopping bpsource.
+[2020/09/16-16:32:52] [?] Can't find ION security database.
+[2020/09/16-16:32:52] [i] ipnfw forwarder has ended.
+[2020/09/16-16:32:52] [i] Endpoint has been stopped.
+[2020/09/16-16:32:52] [i] Administrative endpoint terminated.
+[2020/09/16-16:32:52] [i] ipnadminep has ended.
+[2020/09/16-16:32:52] [i] Plan has been stopped: ipn:1.0
+[2020/09/16-16:32:52] [i] bpclm has ended: ipn:1.0
+[2020/09/16-16:32:52] [i] bptransit has ended.
+[2020/09/16-16:32:52] [i] bpclock has ended.
+[2020/09/16-16:32:53] at line 745 of cfdp/library/libcfdpP.c, Can't find CFDP database.
+[2020/09/16-16:32:54] at line 1244 of ltp/library/libltpP.c, Can't find LTP database.
+[2020/09/16-16:32:55] [i] rfxclock has ended.
+[2020/09/16-16:33:08] [i] rfxclock is running.
+[2020/09/16-16:33:08] [i] This node deploys bundle protocol version 6.
+[2020/09/16-16:33:08] [?] Can't find ION security database.
+[2020/09/16-16:33:08] [?] Warning: running without bundle security.
+[2020/09/16-16:33:08] [?] Can't find ION security database.
+[2020/09/16-16:33:08] [?] Can't find ION security database.
+[2020/09/16-16:33:08] [i] bpclm is running: ipn:1.0
+[2020/09/16-16:33:16] [?] Can't find ION security database.
+[2020/09/16-16:33:17] [?] Can't find ION security database.
+[2020/09/16-16:33:17] [i] ipnadminep is running.
+[2020/09/16-16:33:17] [?] Can't find ION security database.
+[2020/09/16-16:33:17] [i] tcpcli is running [0.0.0.0:4556].
+[2020/09/16-16:33:17] [?] Can't find ION security database.
+[2020/09/16-16:33:17] [i] bptransit is running.
+[2020/09/16-16:33:17] [?] Can't find ION security database.
+[2020/09/16-16:33:17] [i] bpclock is running.
+[2020/09/16-16:33:17] [i] Connected to TCP socket: 127.0.0.1:4556
+[2020/09/16-16:33:17] [?] Can't find ION security database.
+[2020/09/16-16:33:17] [i] tcpclo is deprecated.  tcpcl outducts are now drained by tcpcli threads.
+[2020/09/16-16:33:17] [?] Can't find ION security database.
+[2020/09/16-16:33:17] [i] ipnfw is running.
+[2020/09/16-16:33:18] [i] tcpcli admin thread has started: ipn:1.0
+[2020/09/16-16:33:18] [i] tcpcli admin thread has started: ipn:1.0
+[2020/09/16-16:33:18] [i] tcpcli sender thread has started: ipn:1.0
+[2020/09/16-16:33:18] [i] tcpcli sender thread has started: ipn:1.0
+[2020/09/16-16:33:27] [?] Can't find ION security database.
+[2020/09/16-16:33:28] [?] Can't find ION security database.
+[2020/09/16-16:33:32] [i] Stopping bpsource.
+[2020/09/16-16:35:58] [?] Can't find ION security database.
+[2020/09/16-16:35:58] [i] ipnfw forwarder has ended.
+[2020/09/16-16:35:58] [i] Endpoint has been stopped.
+[2020/09/16-16:35:58] [i] Administrative endpoint terminated.
+[2020/09/16-16:35:58] [i] ipnadminep has ended.
+[2020/09/16-16:35:58] [i] Plan has been stopped: ipn:1.0
+[2020/09/16-16:35:58] [i] bpclm has ended: ipn:1.0
+[2020/09/16-16:35:58] [i] tcpcli server thread has ended.
+[2020/09/16-16:35:58] [i] bptransit has ended.
+[2020/09/16-16:35:58] [i] bpclock has ended.
+[2020/09/16-16:35:59] [i] tcpcli admin thread has ended: ipn:1.0
+[2020/09/16-16:35:59] [i] tcpcli admin thread has ended: ipn:1.0
+[2020/09/16-16:35:59] [i] Outduct has been stopped: #:7
+[2020/09/16-16:35:59] [i] tcpcli session output stopped: #:7
+[2020/09/16-16:35:59] [i] tcpcli sender thread has ended: ipn:1.0
+[2020/09/16-16:35:59] [i] Outduct has been stopped: 127.0.0.1:4556
+[2020/09/16-16:35:59] [i] tcpcli session output stopped: 127.0.0.1:4556
+[2020/09/16-16:35:59] [i] tcpcli sender thread has ended: ipn:1.0
+[2020/09/16-16:35:59] [i] tcpcli receiver thread has ended: ipn:1.0
+[2020/09/16-16:35:59] [i] tcpcli receiver thread has ended: ipn:1.0
+[2020/09/16-16:36:00] [i] tcpcli clock thread has ended.
+[2020/09/16-16:36:00] [i] tcpcli has ended.
+[2020/09/16-16:36:01] at line 745 of cfdp/library/libcfdpP.c, Can't find CFDP database.
+[2020/09/16-16:36:02] at line 1244 of ltp/library/libltpP.c, Can't find LTP database.
+[2020/09/16-16:36:03] [i] rfxclock has ended.
+[2020/09/16-16:36:24] [i] rfxclock is running.
+[2020/09/16-16:36:24] [i] This node deploys bundle protocol version 6.
+[2020/09/16-16:36:24] [?] Can't find ION security database.
+[2020/09/16-16:36:24] [?] Warning: running without bundle security.
+[2020/09/16-16:36:25] [?] Can't find ION security database.
+[2020/09/16-16:36:25] [?] Unknown duct: tcp/127.0.0.1:4556
+[2020/09/16-16:36:25] [?]   Attaching duct to plan: ipn:1.0
+[2020/09/16-16:36:25] [?] Can't find ION security database.
+[2020/09/16-16:36:25] [i] bpclm is running: ipn:1.0
+[2020/09/16-16:36:33] [?] Can't find ION security database.
+[2020/09/16-16:36:34] [?] Can't find ION security database.
+[2020/09/16-16:36:34] [i] ipnadminep is running.
+[2020/09/16-16:36:34] [?] Can't find ION security database.
+[2020/09/16-16:36:34] [i] ipnfw is running.
+[2020/09/16-16:36:34] [?] Can't find ION security database.
+[2020/09/16-16:36:34] [?] Invalid port number.: 80
+[2020/09/16-16:36:34] [?] tcpcli: can't get induct IP address: 172.31.31.37:80
+[2020/09/16-16:36:34] [?] Can't find ION security database.
+[2020/09/16-16:36:34] [i] tcpclo is deprecated.  tcpcl outducts are now drained by tcpcli threads.
+[2020/09/16-16:36:34] [?] Can't find ION security database.
+[2020/09/16-16:36:34] [i] bptransit is running.
+[2020/09/16-16:36:34] [?] Can't find ION security database.
+[2020/09/16-16:36:34] [i] bpclock is running.
+[2020/09/16-16:37:19] [?] Can't find ION security database.
+[2020/09/16-16:38:49] [?] Can't find ION security database.
+[2020/09/16-16:38:49] [i] ipnfw forwarder has ended.
+[2020/09/16-16:38:49] [i] Endpoint has been stopped.
+[2020/09/16-16:38:49] [i] Administrative endpoint terminated.
+[2020/09/16-16:38:49] [i] ipnadminep has ended.
+[2020/09/16-16:38:49] [i] bptransit has ended.
+[2020/09/16-16:38:49] [i] bpclock has ended.
+[2020/09/16-16:38:49] [i] bpclm has ended: ipn:1.0
+[2020/09/16-16:38:50] at line 745 of cfdp/library/libcfdpP.c, Can't find CFDP database.
+[2020/09/16-16:38:51] at line 1244 of ltp/library/libltpP.c, Can't find LTP database.
+[2020/09/16-16:38:52] [i] rfxclock has ended.
+[2020/09/16-16:39:05] [i] rfxclock is running.
+[2020/09/16-16:39:05] [i] This node deploys bundle protocol version 6.
+[2020/09/16-16:39:05] [?] Can't find ION security database.
+[2020/09/16-16:39:05] [?] Warning: running without bundle security.
+[2020/09/16-16:39:05] [?] Can't find ION security database.
+[2020/09/16-16:39:05] [?] Unknown duct: tcp/127.0.0.1:4556
+[2020/09/16-16:39:05] [?]   Attaching duct to plan: ipn:1.0
+[2020/09/16-16:39:05] [?] Can't find ION security database.
+[2020/09/16-16:39:05] [i] bpclm is running: ipn:1.0
+[2020/09/16-16:39:32] [?] Can't find ION security database.
+[2020/09/16-16:39:32] [?] Can't find ION security database.
+[2020/09/16-16:39:32] [?] Invalid port number.: 80
+[2020/09/16-16:39:32] [?] tcpcli: can't get induct IP address: 172.31.37.132:80
+[2020/09/16-16:39:32] [?] Can't find ION security database.
+[2020/09/16-16:39:32] [i] bptransit is running.
+[2020/09/16-16:39:32] [?] Can't find ION security database.
+[2020/09/16-16:39:32] [i] ipnfw is running.
+[2020/09/16-16:39:32] [?] Can't find ION security database.
+[2020/09/16-16:39:32] [i] tcpclo is deprecated.  tcpcl outducts are now drained by tcpcli threads.
+[2020/09/16-16:39:32] [?] Can't find ION security database.
+[2020/09/16-16:39:32] [i] bpclock is running.
+[2020/09/16-16:39:32] [?] Can't find ION security database.
+[2020/09/16-16:39:32] [i] ipnadminep is running.
+[2020/09/16-16:43:44] [?] Can't find ION security database.
+[2020/09/16-16:43:44] [i] ipnfw forwarder has ended.
+[2020/09/16-16:43:44] [i] Endpoint has been stopped.
+[2020/09/16-16:43:44] [i] Administrative endpoint terminated.
+[2020/09/16-16:43:44] [i] ipnadminep has ended.
+[2020/09/16-16:43:44] [i] bptransit has ended.
+[2020/09/16-16:43:44] [i] bpclock has ended.
+[2020/09/16-16:43:44] [i] bpclm has ended: ipn:1.0
+[2020/09/16-16:43:45] at line 745 of cfdp/library/libcfdpP.c, Can't find CFDP database.
+[2020/09/16-16:43:46] at line 1244 of ltp/library/libltpP.c, Can't find LTP database.
+[2020/09/16-16:43:47] [i] rfxclock has ended.
+[2020/09/16-16:45:05] [i] rfxclock is running.
+[2020/09/16-16:45:05] [i] This node deploys bundle protocol version 6.
+[2020/09/16-16:45:05] [?] Can't find ION security database.
+[2020/09/16-16:45:05] [?] Warning: running without bundle security.
+[2020/09/16-16:45:05] [?] Can't find ION security database.
+[2020/09/16-16:45:05] [?] Can't find ION security database.
+[2020/09/16-16:45:05] [i] bpclm is running: ipn:1.0
+[2020/09/16-16:45:22] [?] Can't find ION security database.
+[2020/09/16-16:45:22] [?] Can't find ION security database.
+[2020/09/16-16:45:22] [i] ipnadminep is running.
+[2020/09/16-16:45:22] [?] Can't find ION security database.
+[2020/09/16-16:45:22] [i] ipnfw is running.
+[2020/09/16-16:45:22] [?] Can't find ION security database.
+[2020/09/16-16:45:22] [i] tcpclo is deprecated.  tcpcl outducts are now drained by tcpcli threads.
+[2020/09/16-16:45:22] [?] Can't find ION security database.
+[2020/09/16-16:45:22] [i] tcpcli is running [172.31.37.132:4556].
+[2020/09/16-16:45:22] [?] Can't find ION security database.
+[2020/09/16-16:45:22] [i] bpclock is running.
+[2020/09/16-16:45:22] [?] Can't find ION security database.
+[2020/09/16-16:45:22] [i] bptransit is running.
+[2020/09/16-16:45:22] [i] Connected to TCP socket: 172.31.37.132:4556
+[2020/09/16-16:45:23] [i] tcpcli admin thread has started: ipn:1.0
+[2020/09/16-16:45:23] [i] tcpcli admin thread has started: ipn:1.0
+[2020/09/16-16:45:23] [i] tcpcli sender thread has started: ipn:1.0
+[2020/09/16-16:45:23] [i] tcpcli sender thread has started: ipn:1.0
+[2020/09/16-16:45:55] [?] Can't find ION security database.
+[2020/09/16-16:45:59] [?] Can't find ION security database.
+[2020/09/16-16:55:47] [i] Stopping bpsource.
+[2020/09/16-16:59:10] [?] Can't find ION security database.
+[2020/09/16-16:59:10] [i] ipnfw forwarder has ended.
+[2020/09/16-16:59:10] [i] Endpoint has been stopped.
+[2020/09/16-16:59:10] [i] Administrative endpoint terminated.
+[2020/09/16-16:59:10] [i] ipnadminep has ended.
+[2020/09/16-16:59:10] [i] Plan has been stopped: ipn:1.0
+[2020/09/16-16:59:10] [i] bpclm has ended: ipn:1.0
+[2020/09/16-16:59:10] [i] tcpcli server thread has ended.
+[2020/09/16-16:59:10] [i] bptransit has ended.
+[2020/09/16-16:59:10] [i] bpclock has ended.
+[2020/09/16-16:59:11] [i] tcpcli admin thread has ended: ipn:1.0
+[2020/09/16-16:59:11] [i] tcpcli admin thread has ended: ipn:1.0
+[2020/09/16-16:59:11] [i] Outduct has been stopped: #:7
+[2020/09/16-16:59:11] [i] tcpcli session output stopped: #:7
+[2020/09/16-16:59:11] [i] tcpcli sender thread has ended: ipn:1.0
+[2020/09/16-16:59:11] [i] Outduct has been stopped: 172.31.37.132:4556
+[2020/09/16-16:59:11] [i] tcpcli session output stopped: 172.31.37.132:4556
+[2020/09/16-16:59:11] [i] tcpcli sender thread has ended: ipn:1.0
+[2020/09/16-16:59:11] [i] tcpcli receiver thread has ended: ipn:1.0
+[2020/09/16-16:59:11] [i] tcpcli receiver thread has ended: ipn:1.0
+[2020/09/16-16:59:12] [i] tcpcli clock thread has ended.
+[2020/09/16-16:59:12] [i] tcpcli has ended.
+[2020/09/16-16:59:13] at line 745 of cfdp/library/libcfdpP.c, Can't find CFDP database.
+[2020/09/16-16:59:14] at line 1244 of ltp/library/libltpP.c, Can't find LTP database.
+[2020/09/16-16:59:15] [i] rfxclock has ended.

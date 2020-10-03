@@ -1,0 +1,94 @@
+[2020/09/16-18:32:00] [i] rfxclock is running.
+[2020/09/16-18:32:00] [i] No congestion collapse predicted.
+[2020/09/16-18:32:00] [i] ionwarn finished.
+[2020/09/16-18:32:01] [i] This node deploys bundle protocol version 6.
+[2020/09/16-18:32:01] [?] Can't find ION security database.
+[2020/09/16-18:32:01] [?] Warning: running without bundle security.
+[2020/09/16-18:32:02] [i] No congestion collapse predicted.
+[2020/09/16-18:32:02] [i] ionwarn finished.
+[2020/09/16-18:32:02] [?] Can't find ION security database.
+[2020/09/16-18:32:02] [?] Can't find ION security database.
+[2020/09/16-18:32:02] [i] bpclm is running: ipn:1.0
+[2020/09/16-18:32:22] [?] Can't find ION security database.
+[2020/09/16-18:32:22] [?] Can't find ION security database.
+[2020/09/16-18:32:22] [i] ipnadminep is running.
+[2020/09/16-18:32:22] [?] Can't find ION security database.
+[2020/09/16-18:32:22] [i] ipnfw is running.
+[2020/09/16-18:32:22] [?] Can't find ION security database.
+[2020/09/16-18:32:22] [i] bptransit is running.
+[2020/09/16-18:32:22] [?] Can't find ION security database.
+[2020/09/16-18:32:22] [i] tcpclo is deprecated.  tcpcl outducts are now drained by tcpcli threads.
+[2020/09/16-18:32:22] [?] Can't find ION security database.
+[2020/09/16-18:32:22] [i] tcpcli is running [172.31.37.132:4556].
+[2020/09/16-18:32:22] [i] Connected to TCP socket: 172.31.37.132:4556
+[2020/09/16-18:32:22] [?] Can't find ION security database.
+[2020/09/16-18:32:22] [i] bpclock is running.
+[2020/09/16-18:32:23] [i] tcpcli admin thread has started: ipn:1.0
+[2020/09/16-18:32:23] [i] tcpcli admin thread has started: ipn:1.0
+[2020/09/16-18:32:23] [i] tcpcli sender thread has started: ipn:1.0
+[2020/09/16-18:32:23] [i] tcpcli sender thread has started: ipn:1.0
+[2020/09/16-18:32:23] [x] src from 1970/01/01-00:00:00 to 2020/09/16-18:32:23: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/09/16-18:32:23] [x] fwd from 1970/01/01-00:00:00 to 2020/09/16-18:32:23: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/09/16-18:32:23] [x] xmt from 1970/01/01-00:00:00 to 2020/09/16-18:32:23: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/09/16-18:32:23] [x] rcv from 1970/01/01-00:00:00 to 2020/09/16-18:32:23: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/09/16-18:32:23] [x] dlv from 1970/01/01-00:00:00 to 2020/09/16-18:32:23: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/09/16-18:32:23] [x] ctr from 1970/01/01-00:00:00 to 2020/09/16-18:32:23: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/09/16-18:32:23] [x] rfw from 1970/01/01-00:00:00 to 2020/09/16-18:32:23: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/09/16-18:32:23] [x] exp from 1970/01/01-00:00:00 to 2020/09/16-18:32:23: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/09/16-18:33:02] [?] Can't find ION security database.
+[2020/09/16-18:33:07] [?] Can't find ION security database.
+[2020/09/16-18:33:26] [i] Stopping bpsource.
+[2020/09/16-18:33:31] [?] Can't find ION security database.
+[2020/09/16-18:33:31] [i] ipnfw forwarder has ended.
+[2020/09/16-18:33:31] [i] Endpoint has been stopped.
+[2020/09/16-18:33:31] [i] Administrative endpoint terminated.
+[2020/09/16-18:33:31] [i] ipnadminep has ended.
+[2020/09/16-18:33:31] [i] Plan has been stopped: ipn:1.0
+[2020/09/16-18:33:31] [i] bpclm has ended: ipn:1.0
+[2020/09/16-18:33:31] [i] tcpcli server thread has ended.
+[2020/09/16-18:33:31] [i] bptransit has ended.
+[2020/09/16-18:33:31] [i] bpclock has ended.
+[2020/09/16-18:33:32] [i] tcpcli admin thread has ended: ipn:1.0
+[2020/09/16-18:33:32] [i] tcpcli admin thread has ended: ipn:1.0
+[2020/09/16-18:33:32] [i] Outduct has been stopped: #:7
+[2020/09/16-18:33:32] [i] tcpcli session output stopped: #:7
+[2020/09/16-18:33:32] [i] tcpcli sender thread has ended: ipn:1.0
+[2020/09/16-18:33:32] [i] Outduct has been stopped: 172.31.37.132:4556
+[2020/09/16-18:33:32] [i] tcpcli session output stopped: 172.31.37.132:4556
+[2020/09/16-18:33:32] [i] tcpcli sender thread has ended: ipn:1.0
+[2020/09/16-18:33:32] [i] tcpcli receiver thread has ended: ipn:1.0
+[2020/09/16-18:33:32] [i] tcpcli receiver thread has ended: ipn:1.0
+[2020/09/16-18:33:34] [i] tcpcli clock thread has ended.
+[2020/09/16-18:33:34] [i] tcpcli has ended.
+[2020/09/16-18:33:35] at line 745 of cfdp/library/libcfdpP.c, Can't find CFDP database.
+[2020/09/16-18:33:36] at line 1244 of ltp/library/libltpP.c, Can't find LTP database.
+[2020/09/16-18:33:37] [i] rfxclock has ended.
+[2020/09/16-18:34:33] [i] rfxclock is running.
+[2020/09/16-18:34:33] [i] No congestion collapse predicted.
+[2020/09/16-18:34:33] [i] ionwarn finished.
+[2020/09/16-18:34:34] [i] This node deploys bundle protocol version 6.
+[2020/09/16-18:34:34] [?] Can't find ION security database.
+[2020/09/16-18:34:34] [?] Warning: running without bundle security.
+[2020/09/16-18:34:35] [i] No congestion collapse predicted.
+[2020/09/16-18:34:35] [i] ionwarn finished.
+[2020/09/16-18:34:35] [?] Can't find ION security database.
+[2020/09/16-18:34:35] [?] Can't find ION security database.
+[2020/09/16-18:34:35] [i] bpclm is running: ipn:1.0
+[2020/09/16-18:34:35] [?] Can't find ION security database.
+[2020/09/16-18:34:35] [i] bpclm is running: ipn:2.0
+[2020/09/16-18:34:46] [?] Can't find ION security database.
+[2020/09/16-18:34:46] [?] Can't find ION security database.
+[2020/09/16-18:34:46] [i] tcpclo is deprecated.  tcpcl outducts are now drained by tcpcli threads.
+[2020/09/16-18:34:46] [?] Can't find ION security database.
+[2020/09/16-18:34:46] [i] tcpclo is deprecated.  tcpcl outducts are now drained by tcpcli threads.
+[2020/09/16-18:34:46] [?] Can't find ION security database.
+[2020/09/16-18:34:46] [i] ipnadminep is running.
+[2020/09/16-18:34:46] [?] Can't find ION security database.
+[2020/09/16-18:34:46] [i] bptransit is running.
+[2020/09/16-18:34:46] [?] Can't find ION security database.
+[2020/09/16-18:34:46] [i] tcpcli is running [172.31.37.132:4556].
+[2020/09/16-18:34:46] [?] Can't find ION security database.
+[2020/09/16-18:34:46] [i] ipnfw is running.
+[2020/09/16-18:34:46] [?] Can't find ION security database.
+[2020/09/16-18:34:46] [i] bpclock is running.
+[2020/09/16-18:34:46] [i] Connected to TCP socket: 172.31.37.132:4556

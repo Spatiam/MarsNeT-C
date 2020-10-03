@@ -1,0 +1,66 @@
+[2020/09/15-15:43:43] [i] rfxclock is running.
+[2020/09/15-15:43:43] [i] No congestion collapse predicted.
+[2020/09/15-15:43:43] [i] ionwarn finished.
+[2020/09/15-15:43:44] [i] Span to engine 1 (max BER 0.000100, max xmit segment size 1024, max recv segment size 1): xmit segment loss rate 0.559294, recv segment loss rate 0.000800, max timeouts 24.
+[2020/09/15-15:43:44] [i] Total max export sessions does not exceed estimate.
+[2020/09/15-15:43:44] [i] udplso is running, spec=[127.0.0.1:1113], rengine=1.
+[2020/09/15-15:43:44] [i] ltpmeter is running.
+[2020/09/15-15:43:44] [i] ltpdeliv is running.
+[2020/09/15-15:43:44] [i] ltpclock is running.
+[2020/09/15-15:43:44] [i] udplsi is running, spec=[0.0.0.0:1113].
+[2020/09/15-15:43:45] [i] No congestion collapse predicted.
+[2020/09/15-15:43:45] [i] ionwarn finished.
+[2020/09/15-15:43:45] [i] This node deploys bundle protocol version 6.
+[2020/09/15-15:43:45] [?] Can't find ION security database.
+[2020/09/15-15:43:45] [?] Warning: running without bundle security.
+[2020/09/15-15:43:45] [?] Can't find ION security database.
+[2020/09/15-15:43:45] [i] ltpclo is running.
+[2020/09/15-15:43:45] [?] Can't find ION security database.
+[2020/09/15-15:43:45] [i] ltpcli is running.
+[2020/09/15-15:43:45] [?] Can't find ION security database.
+[2020/09/15-15:43:45] [i] ipnfw is running.
+[2020/09/15-15:43:45] [?] Can't find ION security database.
+[2020/09/15-15:43:45] [i] bptransit is running.
+[2020/09/15-15:43:45] [?] Can't find ION security database.
+[2020/09/15-15:43:45] [i] ipnadminep is running.
+[2020/09/15-15:43:45] [?] Can't find ION security database.
+[2020/09/15-15:43:45] [i] bpclock is running.
+[2020/09/15-15:43:46] [?] Can't find ION security database.
+[2020/09/15-15:43:46] [?] Can't find ION security database.
+[2020/09/15-15:43:46] [i] bpclm is running: ipn:1.0
+[2020/09/15-15:45:03] [?] Can't find ION security database.
+[2020/09/15-15:45:22] [?] Can't find ION security database.
+[2020/09/15-15:45:25] [i] Span to engine 1 (max BER 0.000100, max xmit segment size 1024, max recv segment size 44): xmit segment loss rate 0.559294, recv segment loss rate 0.034595, max timeouts 24.
+[2020/09/15-15:45:28] [i] Stopping bpsource.
+[2020/09/15-16:20:51] Stopping ionsecadmin.
+[2020/09/15-16:20:51] [i] This node deploys bundle protocol version 6.
+[2020/09/15-16:20:51] [i] Bundle security is enabled.
+[2020/09/15-16:20:51] [?] Duplicate scheme: ipn
+[2020/09/15-16:20:51] [?] Duplicate endpoint: ipn:1.1
+[2020/09/15-16:20:51] [?] Duplicate endpoint: ipn:1.2
+[2020/09/15-16:20:51] [?] Duplicate egress plan: ipn:1.0
+[2020/09/15-16:23:52] [i] Stopping bpsource.
+[2020/09/15-16:24:46] [i] Endpoint has been stopped.
+[2020/09/15-16:24:46] [i] Administrative endpoint terminated.
+[2020/09/15-16:24:46] [i] ipnadminep has ended.
+[2020/09/15-16:24:46] [i] ipnfw forwarder has ended.
+[2020/09/15-16:24:46] [i] Plan has been stopped: ipn:1.0
+[2020/09/15-16:24:46] [i] bpclm has ended: ipn:1.0
+[2020/09/15-16:24:46] [i] Outduct has been stopped: 1
+[2020/09/15-16:24:46] [i] ltpclo outduct closed.
+[2020/09/15-16:24:46] [i] ltpclo duct has ended.
+[2020/09/15-16:24:46] [i] bptransit has ended.
+[2020/09/15-16:24:46] [i] bpclock has ended.
+[2020/09/15-16:24:46] [i] ltpcli receiver thread has ended.
+[2020/09/15-16:24:46] [i] ltpcli duct has ended.
+[2020/09/15-16:24:47] at line 745 of cfdp/library/libcfdpP.c, Can't find CFDP database.
+[2020/09/15-16:24:48] [i] ltpclock has ended.
+[2020/09/15-16:24:48] [i] LTP meter to engine 1 is stopped.
+[2020/09/15-16:24:48] [i] ltpmeter has ended.
+[2020/09/15-16:24:48] [i] LSO to engine 1 is stopped.
+[2020/09/15-16:24:48] [i] udplsi receiver thread has ended.
+[2020/09/15-16:24:48] [i] udplso receiver thread has ended.
+[2020/09/15-16:24:48] [i] udplsi has ended.
+[2020/09/15-16:24:48] [i] udplso has ended.
+[2020/09/15-16:24:48] [i] ltpdeliv has ended.
+[2020/09/15-16:24:49] [i] rfxclock has ended.

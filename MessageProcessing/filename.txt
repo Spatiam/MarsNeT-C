@@ -1,0 +1,539 @@
+Trying 137.78.251.144...
+Connected to ssd.jpl.nasa.gov.
+Escape character is '^]'.
+ 
+  ======================================================================
+  |                     Jet Propulsion Laboratory                      |
+  |                                                                    |
+  |                  * * *    W A R N I N G   * * *                    |
+  |                                                                    |
+  |                          Property of the                           |
+  |                      UNITED STATES GOVERNMENT                      |
+  |                                                                    |
+  |    This computer is funded by the United States Government and     |
+  | operated by the California Institute of Technology in support of   |
+  | ongoing U.S. Government programs and activities.  If you are not   |
+  | authorized to access this system, disconnect now.  Users of this   |
+  | system have no expectation of privacy. By continuing, you consent  |
+  |     to your keystrokes and data content being monitored.           |
+  ======================================================================
+ 
+[H[J                                                                               
+     ___    _____     ___                                                      
+    /_ /|  /____/ \  /_ /|       Horizons On-line Ephemeris System v4.70       
+    | | | |  __ \ /| | | |       Solar System Dynamics Group                   
+ ___| | | | |__) |/  | | |__     Jet Propulsion Laboratory                     
+/___| | | |  ___/    | |/__ /|   Pasadena, CA, USA                             
+|_____|/  |_|/       |_____|/                                                  
+ 
+ Establishing connection, stand-by ...  
+[H[J 
+JPL Horizons, version 4.70 
+Type '?' for brief help, '?!' for details, 
+'-' for previous prompt, 'x' to exit 
+System news updated October 2, 2020
+ 
+Horizons> 499
+[?1h=*******************************************************************************
+ Revised: June 21, 2016                 Mars                            499 / 4
+ 
+ PHYSICAL DATA (updated 2019-Oct-29):
+  Vol. mean radius (km) = 3389.92+-0.04   Density (g/cm^3)      =  3.933(5+-4)
+  Mass x10^23 (kg)      =    6.4171       Flattening, f         =  1/169.779
+  Volume (x10^10 km^3)  =   16.318        Equatorial radius (km)=  3396.19
+  Sidereal rot. period  =   24.622962 hr  Sid. rot. rate, rad/s =  0.0000708822 
+  Mean solar day (sol)  =   88775.24415 s Polar gravity m/s^2   =  3.758
+  Core radius (km)      = ~1700           Equ. gravity  m/s^2   =  3.71
+  Geometric Albedo      =    0.150                                              
+
+  GM (km^3/s^2)         = 42828.375214    Mass ratio (Sun/Mars) = 3098703.59
+  GM 1-sigma (km^3/s^2) = +- 0.00028      Mass of atmosphere, kg= ~ 2.5 x 10^16
+  Mean temperature (K)  =  210            Atmos. pressure (bar) =    0.0056 
+  Obliquity to orbit    =   25.19 deg     Max. angular diam.    =  17.9"
+  Mean sidereal orb per =    1.88081578 y Visual mag. V(1,0)    =  -1.52
+  Mean sidereal orb per =  686.98 d       Orbital speed,  km/s  =  24.13
+  Hill's sphere rad. Rp =  319.8          Escape speed, km/s    =   5.027
+                                 Perihelion  Aphelion    Mean
+  Solar Constant (W/m^2)         717         493         589
+  Maximum Planetary IR (W/m^2)   470         315         390
+  Minimum Planetary IR (W/m^2)    30          30          30
+[7m < Scroll & Page: space, <cr>, <b>ack, OR arrow keys. <q> ends display. > 91%[m[K[K*******************************************************************************
+[K[?1l> Select ... [E]phemeris, [F]tp, [M]ail, [R]edisplay, ?, <cr>: E
+ 
+ Observe, Elements, Vectors  [o,e,v,?] : o
+ Coordinate center [ <id>,coord,geo  ] : 
+ Starting UT  [>=   1600-Jan-01 23:59] : 
+Using START_TIME based on current system time
+ Ending   UT  [<=   2500-Jan-02 23:58] : 
+Using STOP_TIME based on current system date +14 days
+ Output interval [ex: 10m, 1h, 1d, ? ] : 1h
+ 
+ Current output table defaults --
+   Reference frame       = ICRF
+   Time zone correction  = UT+00:00
+   Time format           = CAL
+   Time digits output    = MIN
+   R.A. format           = HMS 
+   RA/DEC extra precision= NO         
+   Apparent coord. type  = AIRLESS    
+   Range units           = AU  
+   Suppress range-rate   = NO  
+   Minimum elevation     = -90.0
+   Maximum airmass       = 38.0000
+   Rise-Transit-Set only = NO
+   Skip daylight         = NO
+   Solar elong. cut-off  = 0,180
+   Hour angle cut-off    = 0.000000000
+   RA/DEC rate cut-off   = 0.0
+   CSV spreadsheet output= NO
+   Table quantities      = A
+ 
+ Accept default output [ cr=(y), n, ?] : 
+ Select table quantities [ <#,#..>, ?] : ?
+[?1h=--------------------------------------------------------------------------------
+ Select output quantities using COMMA-SEPARATED numeric codes, '?!' for details:
+
+ 1. Astrometric RA & DEC  17. N. Pole Pos. Ang & Dis  33. Galactic long. & lat. 
+*2. Apparent RA & DEC     18. Helio eclip. lon & lat  34. Local app. SOLAR time 
+ 3.   Rates: RA & DEC     19. Sun range & range rate  35. Earth -> site lt-time
+*4. Apparent AZ & EL      20. Obsrv range & rng rate >36. RA & DEC uncertainty
+ 5.   Rates: AZ & EL      21. Down-leg light-time    >37. POS error ellipse    
+ 6. Sat. X & Y, pos. ang  22. Speed wrt Sun & obsrvr >38. POS uncertainty (RSS)
+ 7. Local app. sid. time  23. Sun-Obs-Targ ELONG ang >39. Range & rng-rate sig.
+ 8. Airmass & Extinction  24. Sun-Targ-Obs~PHASE ang >40. Doppler/delay sigmas 
+ 9. Apparent visual mag.  25. Targ-Obsrv-Moon/Illum%  41. True anomaly angle   
+10. Illuminated fraction  26. Obs-Primary-Targ angle *42. Local app. hour angle
+11. Defect of illumin.    27. Radial & -vel posn.ang  43. PHASE angle & bisector
+12. Sat. angle separ/vis  28. Orbit plane angle       44. Apprnt long. Sun (L_s)
+13. Target angular diam.  29. Constellation name     *45. Inertial app. RA & DEC
+14. Obsrvr sub-lon & lat  30. Delta_T (TDB - UT)      46.  Rate: Inertl RA & DEC
+15. Sun sub-lon & lat    *31. Obsrv eclip lon & lat 
+16. Sub-Sun Pos Ang & Dis 32. North pole RA & DEC
+
+  A = All quantities      B = Body-center -> Any      C = Body-cntr -> Small-bdy
+  D = Topo -> Small-body  E = Body-center -> Spacraft F = Topo -> Spacecraft 
+--------------------------------------------------------------------------------
+[K[?1l> Select table quantities [ <#,#..>, ?] : 21
+ 
+ Working ...   - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | /  
+[?1h=*******************************************************************************
+Ephemeris / PORT_LOGIN Sat Oct  3 08:03:53 2020 Pasadena, USA    / Horizons    
+*******************************************************************************
+Target body name: Mars (499)                      {source: mar097}
+Center body name: Earth (399)                     {source: mar097}
+Center-site name: GEOCENTRIC
+*******************************************************************************
+Start time      : A.D. 2020-Oct-03 00:00:00.0000 UT      
+Stop  time      : A.D. 2020-Oct-17 00:00:00.0000 UT      
+Step-size       : 60 minutes
+*******************************************************************************
+Target pole/equ : IAU_MARS                        {West-longitude positive}
+Target radii    : 3396.2 x 3396.2 x 3376.2 km     {Equator, meridian, pole}    
+Center geodetic : 0.00000000,0.00000000,0.0000000 {E-lon(deg),Lat(deg),Alt(km)}
+Center cylindric: 0.00000000,0.00000000,0.0000000 {E-lon(deg),Dxy(km),Dz(km)}
+Center pole/equ : High-precision EOP model        {East-longitude positive}
+Center radii    : 6378.1 x 6378.1 x 6356.8 km     {Equator, meridian, pole}    
+Target primary  : Sun
+Vis. interferer : MOON (R_eq= 1737.400) km        {source: mar097}
+Rel. light bend : Sun, EARTH                      {source: mar097}
+Rel. lght bnd GM: 1.3271E+11, 3.9860E+05 km^3/s^2                              
+Atmos refraction: NO (AIRLESS)
+RA format       : HMS
+Time format     : CAL 
+EOP file        : eop.201002.p201224                                           
+EOP coverage    : DATA-BASED 1962-JAN-20 TO 2020-OCT-02. PREDICTS-> 2020-DEC-23
+Units conversion: 1 au= 149597870.700 km, c= 299792.458 km/s, 1 day= 86400.0 s 
+Table cut-offs 1: Elevation (-90.0deg=NO ),Airmass (>38.000=NO), Daylight (NO )
+Table cut-offs 2: Solar elongation (  0.0,180.0=NO ),Local Hour Angle( 0.0=NO )
+Table cut-offs 3: RA/DEC angular rate (     0.0=NO )                           
+*******************************************************************************
+ Date__(UT)__HR:MN     1-way_down_LT
+************************************
+[7m < Scroll & Page: space, <cr>, <b>ack, OR arrow keys. <q> ends display. > 12%[m[K[K$$SOE
+ 2020-Oct-03 00:00        3.45889244
+ 2020-Oct-03 01:00        3.45870482
+ 2020-Oct-03 02:00        3.45851934
+ 2020-Oct-03 03:00        3.45833600
+ 2020-Oct-03 04:00        3.45815480
+ 2020-Oct-03 05:00        3.45797574
+ 2020-Oct-03 06:00        3.45779883
+ 2020-Oct-03 07:00        3.45762406
+ 2020-Oct-03 08:00        3.45745143
+ 2020-Oct-03 09:00        3.45728096
+ 2020-Oct-03 10:00        3.45711263
+ 2020-Oct-03 11:00        3.45694645
+ 2020-Oct-03 12:00        3.45678243
+ 2020-Oct-03 13:00        3.45662055
+ 2020-Oct-03 14:00        3.45646083
+ 2020-Oct-03 15:00        3.45630326
+ 2020-Oct-03 16:00        3.45614785
+ 2020-Oct-03 17:00        3.45599460
+ 2020-Oct-03 18:00        3.45584350
+ 2020-Oct-03 19:00        3.45569456
+ 2020-Oct-03 20:00        3.45554779
+ 2020-Oct-03 21:00        3.45540317
+ 2020-Oct-03 22:00        3.45526072
+ 2020-Oct-03 23:00        3.45512043
+ 2020-Oct-04 00:00        3.45498231
+ 2020-Oct-04 01:00        3.45484636
+ 2020-Oct-04 02:00        3.45471257
+ 2020-Oct-04 03:00        3.45458095
+ 2020-Oct-04 04:00        3.45445150
+ 2020-Oct-04 05:00        3.45432423
+ 2020-Oct-04 06:00        3.45419912
+ 2020-Oct-04 07:00        3.45407619
+[7m < Scroll & Page: space, <cr>, <b>ack, OR arrow keys. <q> ends display. > 20%[m[K[K 2020-Oct-04 08:00        3.45395544
+ 2020-Oct-04 09:00        3.45383686
+ 2020-Oct-04 10:00        3.45372046
+ 2020-Oct-04 11:00        3.45360623
+ 2020-Oct-04 12:00        3.45349419
+ 2020-Oct-04 13:00        3.45338433
+ 2020-Oct-04 14:00        3.45327664
+ 2020-Oct-04 15:00        3.45317115
+ 2020-Oct-04 16:00        3.45306783
+ 2020-Oct-04 17:00        3.45296671
+ 2020-Oct-04 18:00        3.45286777
+ 2020-Oct-04 19:00        3.45277101
+ 2020-Oct-04 20:00        3.45267645
+ 2020-Oct-04 21:00        3.45258407
+ 2020-Oct-04 22:00        3.45249389
+ 2020-Oct-04 23:00        3.45240590
+ 2020-Oct-05 00:00        3.45232010
+ 2020-Oct-05 01:00        3.45223650
+ 2020-Oct-05 02:00        3.45215510
+ 2020-Oct-05 03:00        3.45207589
+ 2020-Oct-05 04:00        3.45199888
+ 2020-Oct-05 05:00        3.45192407
+ 2020-Oct-05 06:00        3.45185146
+ 2020-Oct-05 07:00        3.45178105
+ 2020-Oct-05 08:00        3.45171284
+ 2020-Oct-05 09:00        3.45164684
+ 2020-Oct-05 10:00        3.45158304
+ 2020-Oct-05 11:00        3.45152145
+ 2020-Oct-05 12:00        3.45146207
+ 2020-Oct-05 13:00        3.45140490
+ 2020-Oct-05 14:00        3.45134993
+ 2020-Oct-05 15:00        3.45129718
+ 2020-Oct-05 16:00        3.45124663
+[7m < Scroll & Page: space, <cr>, <b>ack, OR arrow keys. <q> ends display. > 27%[m[K[K 2020-Oct-05 17:00        3.45119830
+ 2020-Oct-05 18:00        3.45115219
+ 2020-Oct-05 19:00        3.45110829
+ 2020-Oct-05 20:00        3.45106660
+ 2020-Oct-05 21:00        3.45102713
+ 2020-Oct-05 22:00        3.45098989
+ 2020-Oct-05 23:00        3.45095486
+ 2020-Oct-06 00:00        3.45092205
+ 2020-Oct-06 01:00        3.45089146
+ 2020-Oct-06 02:00        3.45086310
+ 2020-Oct-06 03:00        3.45083696
+ 2020-Oct-06 04:00        3.45081304
+ 2020-Oct-06 05:00        3.45079135
+ 2020-Oct-06 06:00        3.45077189
+ 2020-Oct-06 07:00        3.45075466
+ 2020-Oct-06 08:00        3.45073966
+ 2020-Oct-06 09:00        3.45072688
+ 2020-Oct-06 10:00        3.45071634
+ 2020-Oct-06 11:00        3.45070803
+ 2020-Oct-06 12:00        3.45070196
+ 2020-Oct-06 13:00        3.45069812
+ 2020-Oct-06 14:00        3.45069651
+ 2020-Oct-06 15:00        3.45069714
+ 2020-Oct-06 16:00        3.45070001
+ 2020-Oct-06 17:00        3.45070512
+ 2020-Oct-06 18:00        3.45071247
+ 2020-Oct-06 19:00        3.45072206
+ 2020-Oct-06 20:00        3.45073389
+ 2020-Oct-06 21:00        3.45074797
+ 2020-Oct-06 22:00        3.45076429
+ 2020-Oct-06 23:00        3.45078285
+ 2020-Oct-07 00:00        3.45080366
+ 2020-Oct-07 01:00        3.45082672
+[7m < Scroll & Page: space, <cr>, <b>ack, OR arrow keys. <q> ends display. > 34%[m[K[K 2020-Oct-07 02:00        3.45085203
+ 2020-Oct-07 03:00        3.45087958
+ 2020-Oct-07 04:00        3.45090939
+ 2020-Oct-07 05:00        3.45094145
+ 2020-Oct-07 06:00        3.45097576
+ 2020-Oct-07 07:00        3.45101232
+ 2020-Oct-07 08:00        3.45105114
+ 2020-Oct-07 09:00        3.45109222
+ 2020-Oct-07 10:00        3.45113555
+ 2020-Oct-07 11:00        3.45118114
+ 2020-Oct-07 12:00        3.45122898
+ 2020-Oct-07 13:00        3.45127909
+ 2020-Oct-07 14:00        3.45133146
+ 2020-Oct-07 15:00        3.45138609
+ 2020-Oct-07 16:00        3.45144298
+ 2020-Oct-07 17:00        3.45150213
+ 2020-Oct-07 18:00        3.45156355
+ 2020-Oct-07 19:00        3.45162724
+ 2020-Oct-07 20:00        3.45169319
+ 2020-Oct-07 21:00        3.45176141
+ 2020-Oct-07 22:00        3.45183190
+ 2020-Oct-07 23:00        3.45190465
+ 2020-Oct-08 00:00        3.45197968
+ 2020-Oct-08 01:00        3.45205698
+ 2020-Oct-08 02:00        3.45213655
+ 2020-Oct-08 03:00        3.45221840
+ 2020-Oct-08 04:00        3.45230252
+ 2020-Oct-08 05:00        3.45238891
+ 2020-Oct-08 06:00        3.45247758
+ 2020-Oct-08 07:00        3.45256853
+ 2020-Oct-08 08:00        3.45266176
+ 2020-Oct-08 09:00        3.45275726
+ 2020-Oct-08 10:00        3.45285505
+[7m < Scroll & Page: space, <cr>, <b>ack, OR arrow keys. <q> ends display. > 42%[m[K[K 2020-Oct-08 11:00        3.45295511
+ 2020-Oct-08 12:00        3.45305746
+ 2020-Oct-08 13:00        3.45316209
+ 2020-Oct-08 14:00        3.45326901
+ 2020-Oct-08 15:00        3.45337821
+ 2020-Oct-08 16:00        3.45348969
+ 2020-Oct-08 17:00        3.45360346
+ 2020-Oct-08 18:00        3.45371952
+ 2020-Oct-08 19:00        3.45383787
+ 2020-Oct-08 20:00        3.45395851
+ 2020-Oct-08 21:00        3.45408144
+ 2020-Oct-08 22:00        3.45420665
+ 2020-Oct-08 23:00        3.45433417
+ 2020-Oct-09 00:00        3.45446397
+ 2020-Oct-09 01:00        3.45459607
+ 2020-Oct-09 02:00        3.45473046
+ 2020-Oct-09 03:00        3.45486715
+ 2020-Oct-09 04:00        3.45500613
+ 2020-Oct-09 05:00        3.45514741
+ 2020-Oct-09 06:00        3.45529099
+ 2020-Oct-09 07:00        3.45543687
+ 2020-Oct-09 08:00        3.45558505
+ 2020-Oct-09 09:00        3.45573553
+ 2020-Oct-09 10:00        3.45588832
+ 2020-Oct-09 11:00        3.45604340
+ 2020-Oct-09 12:00        3.45620079
+ 2020-Oct-09 13:00        3.45636049
+ 2020-Oct-09 14:00        3.45652248
+ 2020-Oct-09 15:00        3.45668679
+ 2020-Oct-09 16:00        3.45685340
+ 2020-Oct-09 17:00        3.45702232
+ 2020-Oct-09 18:00        3.45719355
+ 2020-Oct-09 19:00        3.45736709
+[7m < Scroll & Page: space, <cr>, <b>ack, OR arrow keys. <q> ends display. > 49%[m[K[K 2020-Oct-09 20:00        3.45754294
+ 2020-Oct-09 21:00        3.45772110
+ 2020-Oct-09 22:00        3.45790157
+ 2020-Oct-09 23:00        3.45808435
+ 2020-Oct-10 00:00        3.45826945
+ 2020-Oct-10 01:00        3.45845686
+ 2020-Oct-10 02:00        3.45864659
+ 2020-Oct-10 03:00        3.45883864
+ 2020-Oct-10 04:00        3.45903300
+ 2020-Oct-10 05:00        3.45922968
+ 2020-Oct-10 06:00        3.45942868
+ 2020-Oct-10 07:00        3.45962999
+ 2020-Oct-10 08:00        3.45983363
+ 2020-Oct-10 09:00        3.46003959
+ 2020-Oct-10 10:00        3.46024787
+ 2020-Oct-10 11:00        3.46045847
+ 2020-Oct-10 12:00        3.46067140
+ 2020-Oct-10 13:00        3.46088665
+ 2020-Oct-10 14:00        3.46110423
+ 2020-Oct-10 15:00        3.46132413
+ 2020-Oct-10 16:00        3.46154636
+ 2020-Oct-10 17:00        3.46177091
+ 2020-Oct-10 18:00        3.46199780
+ 2020-Oct-10 19:00        3.46222701
+ 2020-Oct-10 20:00        3.46245855
+ 2020-Oct-10 21:00        3.46269242
+ 2020-Oct-10 22:00        3.46292863
+ 2020-Oct-10 23:00        3.46316716
+ 2020-Oct-11 00:00        3.46340803
+ 2020-Oct-11 01:00        3.46365123
+ 2020-Oct-11 02:00        3.46389676
+ 2020-Oct-11 03:00        3.46414463
+ 2020-Oct-11 04:00        3.46439484
+[7m < Scroll & Page: space, <cr>, <b>ack, OR arrow keys. <q> ends display. > 56%[m[K[K 2020-Oct-11 05:00        3.46464738
+ 2020-Oct-11 06:00        3.46490226
+ 2020-Oct-11 07:00        3.46515948
+ 2020-Oct-11 08:00        3.46541903
+ 2020-Oct-11 09:00        3.46568092
+ 2020-Oct-11 10:00        3.46594516
+ 2020-Oct-11 11:00        3.46621173
+ 2020-Oct-11 12:00        3.46648065
+ 2020-Oct-11 13:00        3.46675190
+ 2020-Oct-11 14:00        3.46702550
+ 2020-Oct-11 15:00        3.46730145
+ 2020-Oct-11 16:00        3.46757973
+ 2020-Oct-11 17:00        3.46786036
+ 2020-Oct-11 18:00        3.46814334
+ 2020-Oct-11 19:00        3.46842866
+ 2020-Oct-11 20:00        3.46871633
+ 2020-Oct-11 21:00        3.46900635
+ 2020-Oct-11 22:00        3.46929871
+ 2020-Oct-11 23:00        3.46959342
+ 2020-Oct-12 00:00        3.46989049
+ 2020-Oct-12 01:00        3.47018990
+ 2020-Oct-12 02:00        3.47049166
+ 2020-Oct-12 03:00        3.47079577
+ 2020-Oct-12 04:00        3.47110224
+ 2020-Oct-12 05:00        3.47141106
+ 2020-Oct-12 06:00        3.47172223
+ 2020-Oct-12 07:00        3.47203575
+ 2020-Oct-12 08:00        3.47235163
+ 2020-Oct-12 09:00        3.47266986
+ 2020-Oct-12 10:00        3.47299045
+ 2020-Oct-12 11:00        3.47331340
+ 2020-Oct-12 12:00        3.47363870
+ 2020-Oct-12 13:00        3.47396636
+[7m < Scroll & Page: space, <cr>, <b>ack, OR arrow keys. <q> ends display. > 63%[m[K[K 2020-Oct-12 14:00        3.47429637
+ 2020-Oct-12 15:00        3.47462875
+ 2020-Oct-12 16:00        3.47496348
+ 2020-Oct-12 17:00        3.47530057
+ 2020-Oct-12 18:00        3.47564003
+ 2020-Oct-12 19:00        3.47598184
+ 2020-Oct-12 20:00        3.47632601
+ 2020-Oct-12 21:00        3.47667255
+ 2020-Oct-12 22:00        3.47702145
+ 2020-Oct-12 23:00        3.47737271
+ 2020-Oct-13 00:00        3.47772633
+ 2020-Oct-13 01:00        3.47808232
+ 2020-Oct-13 02:00        3.47844068
+ 2020-Oct-13 03:00        3.47880139
+ 2020-Oct-13 04:00        3.47916448
+ 2020-Oct-13 05:00        3.47952993
+ 2020-Oct-13 06:00        3.47989774
+ 2020-Oct-13 07:00        3.48026792
+ 2020-Oct-13 08:00        3.48064047
+ 2020-Oct-13 09:00        3.48101539
+ 2020-Oct-13 10:00        3.48139267
+ 2020-Oct-13 11:00        3.48177233
+ 2020-Oct-13 12:00        3.48215435
+ 2020-Oct-13 13:00        3.48253875
+ 2020-Oct-13 14:00        3.48292551
+ 2020-Oct-13 15:00        3.48331464
+ 2020-Oct-13 16:00        3.48370615
+ 2020-Oct-13 17:00        3.48410002
+ 2020-Oct-13 18:00        3.48449627
+ 2020-Oct-13 19:00        3.48489489
+ 2020-Oct-13 20:00        3.48529588
+ 2020-Oct-13 21:00        3.48569925
+ 2020-Oct-13 22:00        3.48610499
+[7m < Scroll & Page: space, <cr>, <b>ack, OR arrow keys. <q> ends display. > 71%[m[K[K 2020-Oct-13 23:00        3.48651310
+ 2020-Oct-14 00:00        3.48692359
+ 2020-Oct-14 01:00        3.48733645
+ 2020-Oct-14 02:00        3.48775169
+ 2020-Oct-14 03:00        3.48816931
+ 2020-Oct-14 04:00        3.48858929
+ 2020-Oct-14 05:00        3.48901166
+ 2020-Oct-14 06:00        3.48943640
+ 2020-Oct-14 07:00        3.48986352
+ 2020-Oct-14 08:00        3.49029301
+ 2020-Oct-14 09:00        3.49072489
+ 2020-Oct-14 10:00        3.49115914
+ 2020-Oct-14 11:00        3.49159577
+ 2020-Oct-14 12:00        3.49203478
+ 2020-Oct-14 13:00        3.49247616
+ 2020-Oct-14 14:00        3.49291993
+ 2020-Oct-14 15:00        3.49336607
+ 2020-Oct-14 16:00        3.49381460
+ 2020-Oct-14 17:00        3.49426550
+ 2020-Oct-14 18:00        3.49471878
+ 2020-Oct-14 19:00        3.49517445
+ 2020-Oct-14 20:00        3.49563249
+ 2020-Oct-14 21:00        3.49609292
+ 2020-Oct-14 22:00        3.49655573
+ 2020-Oct-14 23:00        3.49702091
+ 2020-Oct-15 00:00        3.49748849
+ 2020-Oct-15 01:00        3.49795844
+ 2020-Oct-15 02:00        3.49843077
+ 2020-Oct-15 03:00        3.49890549
+ 2020-Oct-15 04:00        3.49938259
+ 2020-Oct-15 05:00        3.49986207
+ 2020-Oct-15 06:00        3.50034393
+ 2020-Oct-15 07:00        3.50082818
+[7m < Scroll & Page: space, <cr>, <b>ack, OR arrow keys. <q> ends display. > 78%[m[K[K 2020-Oct-15 08:00        3.50131481
+ 2020-Oct-15 09:00        3.50180382
+ 2020-Oct-15 10:00        3.50229522
+ 2020-Oct-15 11:00        3.50278900
+ 2020-Oct-15 12:00        3.50328516
+ 2020-Oct-15 13:00        3.50378371
+ 2020-Oct-15 14:00        3.50428464
+ 2020-Oct-15 15:00        3.50478795
+ 2020-Oct-15 16:00        3.50529365
+ 2020-Oct-15 17:00        3.50580173
+ 2020-Oct-15 18:00        3.50631220
+ 2020-Oct-15 19:00        3.50682505
+ 2020-Oct-15 20:00        3.50734029
+ 2020-Oct-15 21:00        3.50785791
+ 2020-Oct-15 22:00        3.50837791
+ 2020-Oct-15 23:00        3.50890030
+ 2020-Oct-16 00:00        3.50942508
+ 2020-Oct-16 01:00        3.50995224
+ 2020-Oct-16 02:00        3.51048178
+ 2020-Oct-16 03:00        3.51101371
+ 2020-Oct-16 04:00        3.51154802
+ 2020-Oct-16 05:00        3.51208471
+ 2020-Oct-16 06:00        3.51262379
+ 2020-Oct-16 07:00        3.51316526
+ 2020-Oct-16 08:00        3.51370911
+ 2020-Oct-16 09:00        3.51425534
+ 2020-Oct-16 10:00        3.51480396
+ 2020-Oct-16 11:00        3.51535496
+ 2020-Oct-16 12:00        3.51590835
+ 2020-Oct-16 13:00        3.51646412
+ 2020-Oct-16 14:00        3.51702228
+ 2020-Oct-16 15:00        3.51758282
+ 2020-Oct-16 16:00        3.51814574
+[7m < Scroll & Page: space, <cr>, <b>ack, OR arrow keys. <q> ends display. > 85%[m[K[K 2020-Oct-16 17:00        3.51871104
+ 2020-Oct-16 18:00        3.51927873
+ 2020-Oct-16 19:00        3.51984881
+ 2020-Oct-16 20:00        3.52042126
+ 2020-Oct-16 21:00        3.52099610
+ 2020-Oct-16 22:00        3.52157333
+ 2020-Oct-16 23:00        3.52215293
+ 2020-Oct-17 00:00        3.52273492
+$$EOE
+*******************************************************************************
+Column meaning:
+ 
+TIME
+
+  Times PRIOR to 1962 are UT1, a mean-solar time closely related to the
+prior but now-deprecated GMT. Times AFTER 1962 are in UTC, the current
+civil or "wall-clock" time-scale. UTC is kept within 0.9 seconds of UT1
+using integer leap-seconds for 1972 and later years.
+
+  Conversion from the internal Barycentric Dynamical Time (TDB) of solar
+system dynamics to the non-uniform civil UT time-scale requested for output
+has not been determined for UTC times after the next July or January 1st.
+Therefore, the last known leap-second is used as a constant over future
+intervals.
+
+  Time tags refer to the UT time-scale conversion from TDB on Earth
+regardless of observer location within the solar system, although clock
+rates may differ due to the local gravity field and no analog to "UT"
+may be defined for that location.
+
+  Any 'b' symbol in the 1st-column denotes a B.C. date. First-column blank
+(" ") denotes an A.D. date. Calendar dates prior to 1582-Oct-15 are in the
+Julian calendar system. Later calendar dates are in the Gregorian system.
+[7m < Scroll & Page: space, <cr>, <b>ack, OR arrow keys. <q> ends display. > 94%[m[K[K
+  NOTE: "n.a." in output means quantity "not available" at the print-time.
+ 
+ '1-way_down_LT' =
+   1-way down-leg light-time from target center to observer. The elapsed time
+since light (observed at print-time) would have left or reflected off a point
+at the center of the target. Units: MINUTES
+
+
+ Computations by ...
+     Solar System Dynamics Group, Horizons On-Line Ephemeris System
+     4800 Oak Grove Drive, Jet Propulsion Laboratory
+     Pasadena, CA  91109   USA
+     Information  : https://ssd.jpl.nasa.gov/
+     Documentation: https://ssd.jpl.nasa.gov/?horizons_doc
+     Connect      : https://ssd.jpl.nasa.gov/?horizons (browser)
+                    telnet ssd.jpl.nasa.gov 6775       (command-line)
+                    e-mail command interface available
+                    Script and CGI interfaces available
+     Author       : Jon.D.Giorgini@jpl.nasa.gov
+
+*******************************************************************************
+[K[?1l> >>> Select... [A]gain, [N]ew-case, [F]tp, [M]ail, [R]edisplay, ? :      M
+ 
+ Enter your Internet e-mail address [?]: ^C^C

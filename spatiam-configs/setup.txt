@@ -1,0 +1,4 @@
+# Set up env variable to run multiple ION nodes on a single machine
+export ION_NODE_LIST_DIR=/home/ec2-user/Spatiam/IonDTN-3.7.1-AWS-CIMS/spatiam-configs/nodes
+
+# Run following ION commands with sudo -E to keep the variable value

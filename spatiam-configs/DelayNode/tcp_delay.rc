@@ -1,0 +1,78 @@
+# ION Config file for 'Delay' node that sits between mars and the earth
+
+## begin ionadmin 
+
+# Initialization
+1 2 ''
+s
+
+# Set contacts
+a contact +1 +3600 1 1 100000
+a contact +1 +3600 2 1 100000
+a contact +1 +3600 1 2 100000
+
+a contact +1 +3600 4 4 100000
+a contact +1 +3600 2 4 100000
+a contact +1 +3600 4 2 100000
+
+# a contact +1 +3600 2 2 100000
+# a contact +1 +3600 2 3 100000
+# a contact +1 +3600 3 2 100000
+# a contact +1 +3600 3 3 100000
+
+
+# Set ranges
+a range +1 +3600 1 1 3
+a range +1 +3600 2 1 3
+a range +1 +3600 2 2 3
+
+a range +1 +3600 4 4 3
+a range +1 +3600 2 4 3
+
+# a range +1 +3600 2 3 3
+# a range +1 +3600 3 3 3
+
+
+## end ionadmin 
+
+
+## begin bpadmin 
+
+# Initialization 
+1
+a scheme ipn 'ipnfw' 'ipnadminep'
+
+# Endoint
+a endpoint ipn:2.0 q
+a endpoint ipn:2.1 q
+a endpoint ipn:2.2 q
+
+a protocol tcp 1400 100
+
+# Delay node
+a induct tcp 172.32.230.229:4556 tcpcli
+
+# Earth Node
+a outduct tcp 34.194.150.177:4556 tcpclo
+a outduct tcp 34.194.150.177:1333 tcpclo
+
+
+# Mars Node
+a outduct tcp 18.210.189.182:4556 tcpclo
+
+s
+## end bpadmin 
+
+
+## begin ipnadmin 
+# Delay Node
+a plan 2 tcp/172.32.230.229:4556
+
+# Earth Node
+a plan 1 tcp/34.194.150.177:4556
+a plan 4 tcp/34.194.150.177:1333
+
+# Mars Node
+a plan 3 tcp/18.210.189.182:4556
+
+## end ipnadmin 

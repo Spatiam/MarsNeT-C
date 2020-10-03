@@ -1,0 +1,52 @@
+## begin ionadmin
+1 12 ''
+s
+  
+a contact +1 +3600 12 12 100000
+a contact +1 +3600 12 2 100000
+a contact +1 +3600 2 12 100000
+a contact +1 +3600 2 2 100000
+a range +1 +3600 12 12 1
+a range +1 +3600 12 2 1
+a range +1 +3600 2 12 1
+a range +1 +3600 2 2 1
+m production 1000000
+m consumption 1000000
+## end ionadmin
+  
+## begin ionsecadmin
+1
+## end ionsecadmin
+  
+## begin ltpadmin
+1 32
+
+a span 12 32 32 1400 10000 1 'udplso 172.31.37.132:1113' 300
+a span 2 32 32 1400 10000 1 'udplso 107.22.251.253:4556' 300
+
+s 'udplsi 172.31.37.132:1113'
+## end ltpadmin
+  
+## begin bpadmin
+1
+a scheme ipn 'ipnfw' 'ipnadminep'
+
+a endpoint ipn:12.0 q
+a endpoint ipn:12.1 q
+a endpoint ipn:12.2 q
+
+a protocol ltp 1400 100
+
+a induct ltp 12 ltpcli
+
+a outduct ltp 12 ltpclo
+a outduct ltp 2 ltpclo
+
+s
+## end bpadmin
+  
+## begin ipnadmin
+a plan 12 ltp/12
+a plan 2 ltp/2
+  
+## end ipnadmin

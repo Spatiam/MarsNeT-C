@@ -1,0 +1,66 @@
+[2020/09/15-15:23:03] [i] rfxclock is running.
+[2020/09/15-15:23:03] [i] No congestion forecast; horizon reached.
+[2020/09/15-15:23:03] [i] ionwarn finished.
+[2020/09/15-15:23:04] [i] This node deploys bundle protocol version 6.
+[2020/09/15-15:23:04] [?] Can't find ION security database.
+[2020/09/15-15:23:04] [?] Warning: running without bundle security.
+[2020/09/15-15:23:04] [?] Can't find ION security database.
+[2020/09/15-15:23:04] [i] udpclo is running, spec = '127.0.0.1:4556', rtt = 2
+[2020/09/15-15:23:04] [?] Can't find ION security database.
+[2020/09/15-15:23:04] [i] ipnadminep is running.
+[2020/09/15-15:23:04] [?] Can't find ION security database.
+[2020/09/15-15:23:04] [i] bptransit is running.
+[2020/09/15-15:23:04] [?] Can't find ION security database.
+[2020/09/15-15:23:04] [i] ipnfw is running.
+[2020/09/15-15:23:04] [?] Can't find ION security database.
+[2020/09/15-15:23:04] [i] udpcli is running, spec=[0.0.0.0:4556].
+[2020/09/15-15:23:04] [?] Can't find ION security database.
+[2020/09/15-15:23:04] [i] bpclock is running.
+[2020/09/15-15:23:05] [i] No congestion forecast; horizon reached.
+[2020/09/15-15:23:05] [i] ionwarn finished.
+[2020/09/15-15:23:05] [?] Can't find ION security database.
+[2020/09/15-15:23:05] [?] Can't find ION security database.
+[2020/09/15-15:23:05] [i] bpclm is running: ipn:1.0
+[2020/09/15-15:23:05] [x] src from 1970/01/01-00:00:00 to 2020/09/15-15:23:05: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/09/15-15:23:05] [x] fwd from 1970/01/01-00:00:00 to 2020/09/15-15:23:05: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/09/15-15:23:05] [x] xmt from 1970/01/01-00:00:00 to 2020/09/15-15:23:05: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/09/15-15:23:05] [x] rcv from 1970/01/01-00:00:00 to 2020/09/15-15:23:05: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/09/15-15:23:05] [x] dlv from 1970/01/01-00:00:00 to 2020/09/15-15:23:05: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/09/15-15:23:05] [x] ctr from 1970/01/01-00:00:00 to 2020/09/15-15:23:05: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/09/15-15:23:05] [x] rfw from 1970/01/01-00:00:00 to 2020/09/15-15:23:05: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/09/15-15:23:05] [x] exp from 1970/01/01-00:00:00 to 2020/09/15-15:23:05: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/09/15-15:23:11] [?] Can't find ION security database.
+[2020/09/15-15:23:11] [?] Can't find ION security database.
+[2020/09/15-15:23:15] [?] Can't find ION security database.
+[2020/09/15-15:23:18] [?] Can't find ION security database.
+[2020/09/15-15:23:18] at line 1577 of ici/sdr/sdrxn.c, SDR profile not found. (acs)
+[2020/09/15-15:23:18] [i] This task is unable to exercise ACS because the ACS SDR is not initialized, as noted in message above: 15679
+[2020/09/15-15:23:18] at line 1577 of ici/sdr/sdrxn.c, SDR profile not found. (acs)
+[2020/09/15-15:23:18] [i] This task is unable to exercise ACS because the ACS SDR is not initialized, as noted in message above: 15449
+[2020/09/15-15:23:18] at line 1577 of ici/sdr/sdrxn.c, SDR profile not found. (acs)
+[2020/09/15-15:23:18] [i] This task is unable to exercise ACS because the ACS SDR is not initialized, as noted in message above: 15451
+[2020/09/15-15:23:18] at line 1577 of ici/sdr/sdrxn.c, SDR profile not found. (acs)
+[2020/09/15-15:23:18] [i] This task is unable to exercise ACS because the ACS SDR is not initialized, as noted in message above: 15662
+[2020/09/15-15:23:21] [?] Can't find ION security database.
+[2020/09/15-15:23:21] at line 1577 of ici/sdr/sdrxn.c, SDR profile not found. (acs)
+[2020/09/15-15:23:21] [i] This task is unable to exercise ACS because the ACS SDR is not initialized, as noted in message above: 15701
+[2020/09/15-15:23:23] [?] Can't find ION security database.
+[2020/09/15-15:23:24] at line 1577 of ici/sdr/sdrxn.c, SDR profile not found. (acs)
+[2020/09/15-15:23:24] [i] This task is unable to exercise ACS because the ACS SDR is not initialized, as noted in message above: 15718
+[2020/09/15-15:23:48] [?] Can't find ION security database.
+[2020/09/15-15:23:48] [i] ipnfw forwarder has ended.
+[2020/09/15-15:23:48] [i] Endpoint has been stopped.
+[2020/09/15-15:23:48] [i] Administrative endpoint terminated.
+[2020/09/15-15:23:48] [i] ipnadminep has ended.
+[2020/09/15-15:23:48] [i] Plan has been stopped: ipn:1.0
+[2020/09/15-15:23:48] [i] bpclm has ended: ipn:1.0
+[2020/09/15-15:23:48] [i] udpcli receiver thread has ended.
+[2020/09/15-15:23:48] [i] udpcli duct has ended.
+[2020/09/15-15:23:48] [i] Outduct has been stopped: 127.0.0.1:4556
+[2020/09/15-15:23:48] [i] udpclo outduct closed.
+[2020/09/15-15:23:48] [i] udpclo duct has ended.
+[2020/09/15-15:23:48] [i] bptransit has ended.
+[2020/09/15-15:23:48] [i] bpclock has ended.
+[2020/09/15-15:23:49] at line 745 of cfdp/library/libcfdpP.c, Can't find CFDP database.
+[2020/09/15-15:23:50] at line 1244 of ltp/library/libltpP.c, Can't find LTP database.
+[2020/09/15-15:23:51] [i] rfxclock has ended.

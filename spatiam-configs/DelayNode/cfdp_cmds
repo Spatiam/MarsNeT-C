@@ -1,0 +1,13 @@
+z 2
+d 1
+f sourceFile
+t receivedFile
+a 10
+&
+z 10
+d 1
+f sourceFile
+t earthFile
+|
+z 18
+q

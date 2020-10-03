@@ -1,0 +1,62 @@
+# ION Config file for 'Earth' Satellite
+
+## begin ionadmin 
+
+# Initialization
+1 4 ''
+s
+
+# Set contacts
+a contact +1 +3600 4 4 100000
+a contact +1 +3600 2 4 100000
+a contact +1 +3600 4 2 100000
+a contact +1 +3600 2 2 100000
+
+# Set ranges
+a range +1 +3600 4 4 3
+a range +1 +3600 2 4 3
+a range +1 +3600 2 2 3
+
+
+## end ionadmin 
+
+## begin bpadmin 
+
+# Initialization 
+1
+a scheme ipn 'ipnfw' 'ipnadminep'
+
+# Endoint
+a endpoint ipn:4.0 q
+a endpoint ipn:4.1 q
+a endpoint ipn:4.2 q
+
+a protocol tcp 1400 100
+
+# Earth node
+a induct tcp 172.31.37.132:1333 tcpcli
+
+# AMO's Mac
+# a outduct tcp 88.152.185.96:4556 tcpclo
+
+# Delay node
+a outduct tcp 107.22.251.253:4556 tcpclo
+
+s
+## end bpadmin 
+
+
+
+## begin ipnadmin 
+# Earth Node
+a plan 4 tcp/172.31.37.132:1333
+
+a plan 1 tcp/172.31.37.132:4556
+
+# AMO's MAC
+# a plan 2 tcp/88.152.185.96:4556
+
+a plan 2 tcp/107.22.251.253:4556
+
+
+## end ipnadmin 

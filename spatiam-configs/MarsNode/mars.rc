@@ -1,0 +1,56 @@
+# ION Config file for 'Earth' Satellite
+
+## begin ionadmin 
+
+# Initialization
+1 3 ''
+s
+
+# Set contacts
+a contact +1 +3600 2 2 100000
+a contact +1 +3600 3 2 100000
+a contact +1 +3600 2 3 100000
+a contact +1 +3600 3 3 100000
+
+# Set ranges
+a range +1 +3600 2 2 3
+a range +1 +3600 3 2 3
+a range +1 +3600 3 3 3
+
+## end ionadmin 
+
+
+## begin bpadmin 
+
+# Initialization 
+1
+a scheme ipn 'ipnfw' 'ipnadminep'
+
+# Endoint
+a endpoint ipn:3.0 q
+a endpoint ipn:3.1 q
+a endpoint ipn:3.2 q
+
+a protocol tcp 1400 100
+
+# Mars node
+a induct tcp 172.33.72.212:4556 tcpcli
+
+# Delay node
+a outduct tcp 107.22.251.253:4556 tcpclo
+
+
+s
+## end bpadmin 
+
+
+## begin ipnadmin 
+
+# Mars Node
+a plan 3 tcp/172.33.72.212:4556
+
+# Delay Node
+a plan 2 tcp/107.22.251.253:4556
+
+
+## end ipnadmin 

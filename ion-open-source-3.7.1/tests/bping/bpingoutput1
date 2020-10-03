@@ -1,0 +1,8 @@
+read interval of 1 ad 1.000000
+64 bytes from ipn:1.1  seq=0 time=0.021286 s
+64 bytes from ipn:1.1  seq=1 time=0.024532 s
+64 bytes from ipn:1.1  seq=2 time=0.234587 s
+64 bytes from ipn:1.1  seq=3 time=0.024525 s
+64 bytes from ipn:1.1  seq=4 time=0.024636 s
+5 bundles transmitted, 5 bundles received, 0.00% bundle loss, time 4.040790 s
+rtt min/avg/max/sdev = 21.286/65.913/234.587/84.346 ms

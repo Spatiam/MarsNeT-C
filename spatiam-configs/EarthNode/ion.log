@@ -1,0 +1,1008 @@
+[2020/09/30-21:23:24] [?] Duplicate span: 1
+[2020/09/30-21:23:24] [?] Duplicate span: 2
+[2020/09/30-21:23:24] [?] Total max export sessions exceeds estimate.  Session lookup speed may be degraded: -32
+[2020/09/30-21:23:24] [i] udplso is running, spec=[172.31.37.132:4556], rengine=1.
+[2020/09/30-21:23:24] [i] udplso is running, spec=[107.22.251.253:4556], rengine=2.
+[2020/09/30-21:23:24] [i] ltpmeter is running.
+[2020/09/30-21:23:24] [i] ltpmeter is running.
+[2020/09/30-21:23:25] [i] This node deploys bundle protocol version 6.
+[2020/09/30-21:23:25] [i] Bundle security is enabled.
+[2020/09/30-21:23:25] [?] Duplicate scheme: ipn
+[2020/09/30-21:23:25] [?] Duplicate endpoint: ipn:1.0
+[2020/09/30-21:23:25] [?] Duplicate endpoint: ipn:1.1
+[2020/09/30-21:23:25] [?] Duplicate endpoint: ipn:1.2
+[2020/09/30-21:23:25] [?] Duplicate protocol: ltp
+[2020/09/30-21:23:25] [?] Duplicate induct: 1
+[2020/09/30-21:23:25] [?] Duplicate outduct: 1
+[2020/09/30-21:23:25] [?] Duplicate outduct: 2
+[2020/09/30-21:23:26] [?] Duplicate egress plan: ipn:1.0
+[2020/09/30-21:23:26] [?] Duct is already attached to a plan: 1
+[2020/09/30-21:23:26] [?] Duplicate egress plan: ipn:2.0
+[2020/09/30-21:23:26] [?] Duct is already attached to a plan: 2
+[2020/09/30-21:23:40] at line 745 of cfdp/library/libcfdpP.c, Can't find CFDP database.
+[2020/09/30-21:23:41] [i] LTP meter to engine 1 is stopped.
+[2020/09/30-21:23:41] [i] ltpmeter has ended.
+[2020/09/30-21:23:41] [i] LSO to engine 1 is stopped.
+[2020/09/30-21:23:41] [i] udplso receiver thread has ended.
+[2020/09/30-21:23:41] [i] udplso has ended.
+[2020/09/30-21:23:41] [i] LTP meter to engine 2 is stopped.
+[2020/09/30-21:23:41] [i] ltpmeter has ended.
+[2020/09/30-21:23:41] [i] LSO to engine 2 is stopped.
+[2020/09/30-21:23:41] [i] udplso receiver thread has ended.
+[2020/09/30-21:23:41] [i] udplso has ended.
+[2020/09/30-21:32:35] [i] rfxclock is running.
+[2020/09/30-21:32:35] [i] No congestion collapse predicted.
+[2020/09/30-21:32:35] [i] ionwarn finished.
+[2020/09/30-21:32:37] [i] No congestion collapse predicted.
+[2020/09/30-21:32:37] [i] ionwarn finished.
+[2020/09/30-21:32:37] [i] Span to engine 1 (max BER 0.000100, max xmit segment size 1400, max recv segment size 1): xmit segment loss rate 0.673799, recv segment loss rate 0.000800, max timeouts 35.
+[2020/09/30-21:32:37] [i] Span to engine 2 (max BER 0.000100, max xmit segment size 1400, max recv segment size 1): xmit segment loss rate 0.673799, recv segment loss rate 0.000800, max timeouts 35.
+[2020/09/30-21:32:37] [?] Total max export sessions exceeds estimate.  Session lookup speed may be degraded: -32
+[2020/09/30-21:32:37] [i] udplso is running, spec=[107.22.251.253:4556], rengine=2.
+[2020/09/30-21:32:37] [i] ltpmeter is running.
+[2020/09/30-21:32:37] [i] ltpmeter is running.
+[2020/09/30-21:32:37] [i] udplso is running, spec=[172.31.37.132:4556], rengine=1.
+[2020/09/30-21:32:37] [i] ltpdeliv is running.
+[2020/09/30-21:32:37] [i] ltpclock is running.
+[2020/09/30-21:32:37] [i] udplsi is running, spec=[172.31.37.132:4556].
+[2020/09/30-21:32:38] [i] This node deploys bundle protocol version 6.
+[2020/09/30-21:32:38] [i] Bundle security is enabled.
+[2020/09/30-21:32:38] [i] ltpclo is running.
+[2020/09/30-21:32:38] [i] ltpclo is running.
+[2020/09/30-21:32:38] [i] ltpcli is running.
+[2020/09/30-21:32:38] [i] ipnadminep is running.
+[2020/09/30-21:32:38] [i] ipnfw is running.
+[2020/09/30-21:32:38] [i] bptransit is running.
+[2020/09/30-21:32:38] [i] bpclock is running.
+[2020/09/30-21:32:39] [i] bpclm is running: ipn:1.0
+[2020/09/30-21:32:39] [i] bpclm is running: ipn:2.0
+[2020/09/30-21:32:39] [x] src from 1970/01/01-00:00:00 to 2020/09/30-21:32:39: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/09/30-21:32:39] [x] fwd from 1970/01/01-00:00:00 to 2020/09/30-21:32:39: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/09/30-21:32:39] [x] xmt from 1970/01/01-00:00:00 to 2020/09/30-21:32:39: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/09/30-21:32:39] [x] rcv from 1970/01/01-00:00:00 to 2020/09/30-21:32:39: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/09/30-21:32:39] [x] dlv from 1970/01/01-00:00:00 to 2020/09/30-21:32:39: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/09/30-21:32:39] [x] ctr from 1970/01/01-00:00:00 to 2020/09/30-21:32:39: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/09/30-21:32:39] [x] rfw from 1970/01/01-00:00:00 to 2020/09/30-21:32:39: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/09/30-21:32:39] [x] exp from 1970/01/01-00:00:00 to 2020/09/30-21:32:39: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/09/30-21:34:46] [i] Span to engine 12 (max BER 0.000100, max xmit segment size 1400, max recv segment size 1): xmit segment loss rate 0.673799, recv segment loss rate 0.000800, max timeouts 35.
+[2020/09/30-21:34:46] [?] Duplicate span: 2
+[2020/09/30-21:34:46] [?] Total max export sessions exceeds estimate.  Session lookup speed may be degraded: -64
+[2020/09/30-21:34:46] [i] udplso is running, spec=[172.31.37.132:4556], rengine=1.
+[2020/09/30-21:34:46] [i] udplso is running, spec=[107.22.251.253:4556], rengine=2.
+[2020/09/30-21:34:46] [i] ltpmeter is running.
+[2020/09/30-21:34:46] [i] udplso is running, spec=[172.31.37.132:1113], rengine=12.
+[2020/09/30-21:34:46] [i] ltpmeter is running.
+[2020/09/30-21:34:46] [i] ltpmeter is running.
+[2020/09/30-21:34:47] [i] This node deploys bundle protocol version 6.
+[2020/09/30-21:34:47] [i] Bundle security is enabled.
+[2020/09/30-21:34:47] [?] Duplicate scheme: ipn
+[2020/09/30-21:34:47] [?] Duplicate protocol: ltp
+[2020/09/30-21:34:47] [?] Duplicate outduct: 2
+[2020/09/30-21:34:47] [i] ltpclo is running.
+[2020/09/30-21:34:47] [i] ltpcli is running.
+[2020/09/30-21:34:48] [?] Duplicate egress plan: ipn:2.0
+[2020/09/30-21:34:48] [?] Duct is already attached to a plan: 2
+[2020/09/30-21:34:48] at line 1866 of ltp/library/libltpP.c, Client service already in use. (1)
+[2020/09/30-21:34:48] at line 254 of bpv6/ltp/ltpcli.c, ltpcli can't open client access. (1)
+[2020/09/30-21:34:48] [i] ltpcli duct has ended.
+[2020/09/30-21:34:48] [i] bpclm is running: ipn:12.0
+[2020/09/30-21:38:06] [i] Stopping bpsource.
+[2020/09/30-21:38:15] [i] Stopping bpsource.
+[2020/09/30-21:38:28] [i] Stopping bpsource.
+[2020/09/30-21:39:37] [i] Stopping bpsource.
+[2020/09/30-21:39:37] [i] Stopping bpsource.
+[2020/09/30-22:24:05] [i] ipnfw forwarder has ended.
+[2020/09/30-22:24:05] [i] Endpoint has been stopped.
+[2020/09/30-22:24:05] [i] Administrative endpoint terminated.
+[2020/09/30-22:24:05] [i] ipnadminep has ended.
+[2020/09/30-22:24:05] [i] Plan has been stopped: ipn:1.0
+[2020/09/30-22:24:05] [i] bpclm has ended: ipn:1.0
+[2020/09/30-22:24:05] [i] Plan has been stopped: ipn:2.0
+[2020/09/30-22:24:05] [i] bpclm has ended: ipn:2.0
+[2020/09/30-22:24:05] [i] Outduct has been stopped: 1
+[2020/09/30-22:24:05] [i] ltpclo outduct closed.
+[2020/09/30-22:24:05] [i] ltpclo duct has ended.
+[2020/09/30-22:24:05] [i] Outduct has been stopped: 2
+[2020/09/30-22:24:05] [i] ltpclo outduct closed.
+[2020/09/30-22:24:05] [i] ltpclo duct has ended.
+[2020/09/30-22:24:05] [i] Outduct has been stopped: 12
+[2020/09/30-22:24:05] [i] ltpclo outduct closed.
+[2020/09/30-22:24:05] [i] ltpclo duct has ended.
+[2020/09/30-22:24:05] [i] bptransit has ended.
+[2020/09/30-22:24:05] [i] bpclock has ended.
+[2020/09/30-22:24:05] [i] ltpcli receiver thread has ended.
+[2020/09/30-22:24:05] [i] ltpcli duct has ended.
+[2020/09/30-22:24:06] [i] bpclm has ended: ipn:12.0
+[2020/09/30-22:24:07] at line 745 of cfdp/library/libcfdpP.c, Can't find CFDP database.
+[2020/09/30-22:24:08] [i] udplsi receiver thread has ended.
+[2020/09/30-22:24:08] [i] udplsi has ended.
+[2020/09/30-22:24:08] [i] LTP meter to engine 1 is stopped.
+[2020/09/30-22:24:08] [i] ltpmeter has ended.
+[2020/09/30-22:24:08] [i] LTP meter to engine 1 is stopped.
+[2020/09/30-22:24:08] [i] ltpmeter has ended.
+[2020/09/30-22:24:08] [i] LSO to engine 1 is stopped.
+[2020/09/30-22:24:08] [i] LSO to engine 1 is stopped.
+[2020/09/30-22:24:08] [i] udplso receiver thread has ended.
+[2020/09/30-22:24:08] [i] udplso receiver thread has ended.
+[2020/09/30-22:24:08] [i] udplso has ended.
+[2020/09/30-22:24:08] [i] udplso has ended.
+[2020/09/30-22:24:08] [i] LTP meter to engine 2 is stopped.
+[2020/09/30-22:24:08] [i] ltpmeter has ended.
+[2020/09/30-22:24:08] [i] LTP meter to engine 2 is stopped.
+[2020/09/30-22:24:08] [i] ltpmeter has ended.
+[2020/09/30-22:24:08] [i] LSO to engine 2 is stopped.
+[2020/09/30-22:24:08] [i] LSO to engine 2 is stopped.
+[2020/09/30-22:24:08] [i] udplso receiver thread has ended.
+[2020/09/30-22:24:08] [i] udplso receiver thread has ended.
+[2020/09/30-22:24:08] [i] udplso has ended.
+[2020/09/30-22:24:08] [i] udplso has ended.
+[2020/09/30-22:24:08] [i] LTP meter to engine 12 is stopped.
+[2020/09/30-22:24:08] [i] ltpmeter has ended.
+[2020/09/30-22:24:08] [i] LSO to engine 12 is stopped.
+[2020/09/30-22:24:08] [i] udplso receiver thread has ended.
+[2020/09/30-22:24:08] [i] udplso has ended.
+[2020/09/30-22:24:08] [i] ltpclock has ended.
+[2020/09/30-22:24:08] [i] ltpdeliv has ended.
+[2020/09/30-22:24:09] [i] rfxclock has ended.
+[2020/09/30-22:24:16] at line 745 of cfdp/library/libcfdpP.c, Can't find CFDP database.
+[2020/10/01-08:28:47] [i] rfxclock is running.
+[2020/10/01-08:28:47] [i] No congestion collapse predicted.
+[2020/10/01-08:28:47] [i] ionwarn finished.
+[2020/10/01-08:28:49] [i] No congestion collapse predicted.
+[2020/10/01-08:28:49] [i] ionwarn finished.
+[2020/10/01-08:28:49] [i] Span to engine 1 (max BER 0.000100, max xmit segment size 1400, max recv segment size 1): xmit segment loss rate 0.673799, recv segment loss rate 0.000800, max timeouts 35.
+[2020/10/01-08:28:49] [i] Span to engine 2 (max BER 0.000100, max xmit segment size 1400, max recv segment size 1): xmit segment loss rate 0.673799, recv segment loss rate 0.000800, max timeouts 35.
+[2020/10/01-08:28:49] [?] Total max export sessions exceeds estimate.  Session lookup speed may be degraded: -32
+[2020/10/01-08:28:49] [i] ltpmeter is running.
+[2020/10/01-08:28:49] [i] ltpmeter is running.
+[2020/10/01-08:28:49] [i] udplso is running, spec=[172.31.37.132:4556], rengine=1.
+[2020/10/01-08:28:49] [i] udplso is running, spec=[107.22.251.253:4556], rengine=2.
+[2020/10/01-08:28:49] [i] ltpdeliv is running.
+[2020/10/01-08:28:49] [i] ltpclock is running.
+[2020/10/01-08:28:49] [i] udplsi is running, spec=[172.31.37.132:4556].
+[2020/10/01-08:28:50] [i] This node deploys bundle protocol version 6.
+[2020/10/01-08:28:50] [i] Bundle security is enabled.
+[2020/10/01-08:28:50] [i] ltpclo is running.
+[2020/10/01-08:28:50] [i] ltpcli is running.
+[2020/10/01-08:28:50] [i] ipnfw is running.
+[2020/10/01-08:28:50] [i] ipnadminep is running.
+[2020/10/01-08:28:50] [i] ltpclo is running.
+[2020/10/01-08:28:50] [i] bptransit is running.
+[2020/10/01-08:28:50] [i] bpclock is running.
+[2020/10/01-08:28:51] [i] bpclm is running: ipn:1.0
+[2020/10/01-08:28:51] [i] bpclm is running: ipn:2.0
+[2020/10/01-08:28:51] [x] src from 1970/01/01-00:00:00 to 2020/10/01-08:28:51: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-08:28:51] [x] fwd from 1970/01/01-00:00:00 to 2020/10/01-08:28:51: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-08:28:51] [x] xmt from 1970/01/01-00:00:00 to 2020/10/01-08:28:51: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-08:28:51] [x] rcv from 1970/01/01-00:00:00 to 2020/10/01-08:28:51: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-08:28:51] [x] dlv from 1970/01/01-00:00:00 to 2020/10/01-08:28:51: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-08:28:51] [x] ctr from 1970/01/01-00:00:00 to 2020/10/01-08:28:51: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-08:28:51] [x] rfw from 1970/01/01-00:00:00 to 2020/10/01-08:28:51: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-08:28:51] [x] exp from 1970/01/01-00:00:00 to 2020/10/01-08:28:51: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-08:29:52] [i] bprecvfile is running.
+[2020/10/01-08:30:33] [i] Span to engine 2 (max BER 0.000100, max xmit segment size 1400, max recv segment size 131): xmit segment loss rate 0.673799, recv segment loss rate 0.099516, max timeouts 35.
+[2020/10/01-08:30:33] [i] bprecvfile is creating 'testfile1', size 92.
+[2020/10/01-08:30:33] [i] bprecvfile has created 'testfile1', size 92.
+[2020/10/01-08:32:16] [i] Span to engine 2 (max BER 0.000100, max xmit segment size 1400, max recv segment size 1391): xmit segment loss rate 0.673799, recv segment loss rate 0.671441, max timeouts 35.
+[2020/10/01-08:32:16] [i] bprecvfile is creating 'testfile2', size 51215.
+[2020/10/01-08:32:16] [i] bprecvfile has created 'testfile2', size 51215.
+[2020/10/01-08:34:36] [i] bprecvfile is creating 'testfile3', size 102415.
+[2020/10/01-08:34:36] [i] bprecvfile has created 'testfile3', size 102415.
+[2020/10/01-08:51:09] [i] bprecvfile is creating 'testfile4', size 92.
+[2020/10/01-08:51:09] [i] bprecvfile has created 'testfile4', size 92.
+[2020/10/01-09:28:46] [i] Congestion collapse forecast: 2020/11/28-06:22:07.
+[2020/10/01-09:28:46] [i] ionwarn finished.
+[2020/10/01-09:28:46] [x] src from 1970/01/01-00:00:00 to 2020/10/01-09:28:46: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-09:28:46] [x] fwd from 1970/01/01-00:00:00 to 2020/10/01-09:28:46: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-09:28:46] [x] xmt from 1970/01/01-00:00:00 to 2020/10/01-09:28:46: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-09:28:46] [x] rcv from 1970/01/01-00:00:00 to 2020/10/01-09:28:46: (0) 0 0 (1) 4 153814 (2) 0 0 (+) 4 153814
+[2020/10/01-09:28:46] [x] dlv from 1970/01/01-00:00:00 to 2020/10/01-09:28:46: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-09:28:46] [x] ctr from 1970/01/01-00:00:00 to 2020/10/01-09:28:46: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-09:28:46] [x] rfw from 1970/01/01-00:00:00 to 2020/10/01-09:28:46: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-09:28:46] [x] exp from 1970/01/01-00:00:00 to 2020/10/01-09:28:46: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-09:28:49] [i] No congestion collapse predicted.
+[2020/10/01-09:28:49] [i] ionwarn finished.
+[2020/10/01-09:28:49] [x] src from 1970/01/01-00:00:00 to 2020/10/01-09:28:49: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-09:28:49] [x] fwd from 1970/01/01-00:00:00 to 2020/10/01-09:28:49: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-09:28:49] [x] xmt from 1970/01/01-00:00:00 to 2020/10/01-09:28:49: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-09:28:49] [x] rcv from 1970/01/01-00:00:00 to 2020/10/01-09:28:49: (0) 0 0 (1) 4 153814 (2) 0 0 (+) 4 153814
+[2020/10/01-09:28:49] [x] dlv from 1970/01/01-00:00:00 to 2020/10/01-09:28:49: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-09:28:49] [x] ctr from 1970/01/01-00:00:00 to 2020/10/01-09:28:49: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-09:28:49] [x] rfw from 1970/01/01-00:00:00 to 2020/10/01-09:28:49: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-09:28:49] [x] exp from 1970/01/01-00:00:00 to 2020/10/01-09:28:49: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-10:13:58] [i] bprecvfile interrupted.
+[2020/10/01-10:13:58] [i] Stopping bprecvfile.
+[2020/10/01-10:14:03] [i] ipnfw forwarder has ended.
+[2020/10/01-10:14:03] [i] Endpoint has been stopped.
+[2020/10/01-10:14:03] [i] Administrative endpoint terminated.
+[2020/10/01-10:14:03] [i] ipnadminep has ended.
+[2020/10/01-10:14:03] [i] Plan has been stopped: ipn:1.0
+[2020/10/01-10:14:03] [i] bpclm has ended: ipn:1.0
+[2020/10/01-10:14:03] [i] Plan has been stopped: ipn:2.0
+[2020/10/01-10:14:03] [i] bpclm has ended: ipn:2.0
+[2020/10/01-10:14:03] [i] Outduct has been stopped: 1
+[2020/10/01-10:14:03] [i] ltpclo outduct closed.
+[2020/10/01-10:14:03] [i] ltpclo duct has ended.
+[2020/10/01-10:14:03] [i] Outduct has been stopped: 2
+[2020/10/01-10:14:03] [i] ltpclo outduct closed.
+[2020/10/01-10:14:03] [i] ltpclo duct has ended.
+[2020/10/01-10:14:03] [i] bptransit has ended.
+[2020/10/01-10:14:03] [i] bpclock has ended.
+[2020/10/01-10:14:03] [i] ltpcli receiver thread has ended.
+[2020/10/01-10:14:03] [i] ltpcli duct has ended.
+[2020/10/01-10:14:04] at line 745 of cfdp/library/libcfdpP.c, Can't find CFDP database.
+[2020/10/01-10:14:05] [i] LSO to engine 2 is stopped.
+[2020/10/01-10:14:05] [i] LTP meter to engine 1 is stopped.
+[2020/10/01-10:14:05] [i] ltpmeter has ended.
+[2020/10/01-10:14:05] [i] LSO to engine 1 is stopped.
+[2020/10/01-10:14:05] [i] LTP meter to engine 2 is stopped.
+[2020/10/01-10:14:05] [i] ltpmeter has ended.
+[2020/10/01-10:14:05] [i] udplso receiver thread has ended.
+[2020/10/01-10:14:05] [i] udplsi receiver thread has ended.
+[2020/10/01-10:14:05] [i] udplso receiver thread has ended.
+[2020/10/01-10:14:05] [i] ltpclock has ended.
+[2020/10/01-10:14:05] [i] udplsi has ended.
+[2020/10/01-10:14:05] [i] udplso has ended.
+[2020/10/01-10:14:05] [i] udplso has ended.
+[2020/10/01-10:14:05] [i] ltpdeliv has ended.
+[2020/10/01-10:14:06] [i] rfxclock has ended.
+[2020/10/01-20:25:32] [i] rfxclock is running.
+[2020/10/01-20:25:32] [i] No congestion forecast; horizon reached.
+[2020/10/01-20:25:32] [i] ionwarn finished.
+[2020/10/01-20:25:33] [i] No congestion forecast; horizon reached.
+[2020/10/01-20:25:33] [i] ionwarn finished.
+[2020/10/01-20:25:34] [i] Span to engine 1 (max BER 0.000100, max xmit segment size 1400, max recv segment size 1): xmit segment loss rate 0.673799, recv segment loss rate 0.000800, max timeouts 35.
+[2020/10/01-20:25:34] [i] Span to engine 2 (max BER 0.000100, max xmit segment size 1400, max recv segment size 1): xmit segment loss rate 0.673799, recv segment loss rate 0.000800, max timeouts 35.
+[2020/10/01-20:25:34] [?] Total max export sessions exceeds estimate.  Session lookup speed may be degraded: -32
+[2020/10/01-20:25:34] [i] ltpmeter is running.
+[2020/10/01-20:25:34] [i] ltpmeter is running.
+[2020/10/01-20:25:34] [i] ltpdeliv is running.
+[2020/10/01-20:25:34] [i] ltpclock is running.
+[2020/10/01-20:25:34] [i] udplso is running, spec=[172.31.37.132:4556], rengine=1.
+[2020/10/01-20:25:34] [i] udplso is running, spec=[107.22.251.253:4556], rengine=2.
+[2020/10/01-20:25:34] [i] udplsi is running, spec=[172.31.37.132:4556].
+[2020/10/01-20:25:35] [i] This node deploys bundle protocol version 6.
+[2020/10/01-20:25:35] [i] Bundle security is enabled.
+[2020/10/01-20:25:35] [i] ltpclo is running.
+[2020/10/01-20:25:35] [i] ltpcli is running.
+[2020/10/01-20:25:35] [i] ipnadminep is running.
+[2020/10/01-20:25:35] [i] ipnfw is running.
+[2020/10/01-20:25:35] [i] bptransit is running.
+[2020/10/01-20:25:35] [i] ltpclo is running.
+[2020/10/01-20:25:35] [i] bpclock is running.
+[2020/10/01-20:25:36] [i] bpclm is running: ipn:1.0
+[2020/10/01-20:25:36] [i] bpclm is running: ipn:2.0
+[2020/10/01-20:25:36] [x] src from 1970/01/01-00:00:00 to 2020/10/01-20:25:36: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-20:25:36] [x] fwd from 1970/01/01-00:00:00 to 2020/10/01-20:25:36: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-20:25:36] [x] xmt from 1970/01/01-00:00:00 to 2020/10/01-20:25:36: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-20:25:36] [x] rcv from 1970/01/01-00:00:00 to 2020/10/01-20:25:36: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-20:25:36] [x] dlv from 1970/01/01-00:00:00 to 2020/10/01-20:25:36: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-20:25:36] [x] ctr from 1970/01/01-00:00:00 to 2020/10/01-20:25:36: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-20:25:36] [x] rfw from 1970/01/01-00:00:00 to 2020/10/01-20:25:36: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-20:25:36] [x] exp from 1970/01/01-00:00:00 to 2020/10/01-20:25:36: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-20:26:08] Syntax error at line 388 of cfdpadmin.c
+[2020/10/01-20:26:08] Stopping cfdpadmin.
+[2020/10/01-20:26:08] [i] cfdpclock is running.
+[2020/10/01-20:26:08] [i] bputa is running.
+[2020/10/01-20:26:08] [i] bputa input has started.
+[2020/10/01-20:26:53] [i] Span to engine 2 (max BER 0.000100, max xmit segment size 1400, max recv segment size 277): xmit segment loss rate 0.673799, recv segment loss rate 0.198803, max timeouts 35.
+[2020/10/01-20:26:53] [?] File already exists.: /home/ec2-user/Spatiam/IonDTN-3.7.1-AWS-CIMS/spatiam-configs/EarthNode/receivedFile
+[2020/10/01-20:44:17] [i] Span to engine 2 (max BER 0.000100, max xmit segment size 1400, max recv segment size 281): xmit segment loss rate 0.673799, recv segment loss rate 0.201363, max timeouts 35.
+[2020/10/01-20:44:17] [?] File already exists.: /home/ec2-user/Spatiam/IonDTN-3.7.1-AWS-CIMS/spatiam-configs/EarthNode/receivedFile
+[2020/10/01-20:51:16] [?] File already exists.: /home/ec2-user/Spatiam/IonDTN-3.7.1-AWS-CIMS/spatiam-configs/EarthNode/receivedFile
+[2020/10/01-20:56:34] [i] Span to engine 2 (max BER 0.000100, max xmit segment size 1400, max recv segment size 421): xmit segment loss rate 0.673799, recv segment loss rate 0.286000, max timeouts 35.
+[2020/10/01-20:56:34] [?] File already exists.: /home/ec2-user/Spatiam/IonDTN-3.7.1-AWS-CIMS/spatiam-configs/EarthNode/receivedFile
+[2020/10/01-21:10:39] [i] UTO has been stopped.
+[2020/10/01-21:10:39] [?] bputa can't dequeue outbound CFDP PDU; terminating.
+[2020/10/01-21:10:39] [i] cfdpclock has ended.
+[2020/10/01-21:10:39] [i] bputa input has stopped.
+[2020/10/01-21:10:39] [i] Stopping bputa.
+[2020/10/01-21:12:15] [?] CFDP entity already exists: 2
+[2020/10/01-21:12:15] Syntax error at line 388 of cfdpadmin.c
+[2020/10/01-21:12:15] Stopping cfdpadmin.
+[2020/10/01-21:12:15] [i] bputa is running.
+[2020/10/01-21:12:15] [i] cfdpclock is running.
+[2020/10/01-21:12:15] [i] bputa input has started.
+[2020/10/01-21:18:03] [i] Span to engine 2 (max BER 0.000100, max xmit segment size 1400, max recv segment size 1392): xmit segment loss rate 0.673799, recv segment loss rate 0.671704, max timeouts 35.
+[2020/10/01-21:25:30] [i] No congestion forecast; horizon reached.
+[2020/10/01-21:25:30] [i] ionwarn finished.
+[2020/10/01-21:25:31] [x] src from 1970/01/01-00:00:00 to 2020/10/01-21:25:31: (0) 0 0 (1) 27 1059 (2) 0 0 (+) 27 1059
+[2020/10/01-21:25:31] [x] fwd from 1970/01/01-00:00:00 to 2020/10/01-21:25:31: (0) 0 0 (1) 0 0 (2) 0 0 (+) 27 1059
+[2020/10/01-21:25:31] [x] xmt from 1970/01/01-00:00:00 to 2020/10/01-21:25:31: (0) 0 0 (1) 27 1059 (2) 0 0 (+) 27 1059
+[2020/10/01-21:25:31] [x] rcv from 1970/01/01-00:00:00 to 2020/10/01-21:25:31: (0) 0 0 (1) 366 313815 (2) 0 0 (+) 366 313815
+[2020/10/01-21:25:31] [x] dlv from 1970/01/01-00:00:00 to 2020/10/01-21:25:31: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-21:25:31] [x] ctr from 1970/01/01-00:00:00 to 2020/10/01-21:25:31: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-21:25:31] [x] rfw from 1970/01/01-00:00:00 to 2020/10/01-21:25:31: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-21:25:31] [x] exp from 1970/01/01-00:00:00 to 2020/10/01-21:25:31: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-21:25:33] [i] No congestion forecast; horizon reached.
+[2020/10/01-21:25:33] [i] ionwarn finished.
+[2020/10/01-21:25:34] [x] src from 1970/01/01-00:00:00 to 2020/10/01-21:25:34: (0) 0 0 (1) 27 1059 (2) 0 0 (+) 27 1059
+[2020/10/01-21:25:34] [x] fwd from 1970/01/01-00:00:00 to 2020/10/01-21:25:34: (0) 0 0 (1) 0 0 (2) 0 0 (+) 27 1059
+[2020/10/01-21:25:34] [x] xmt from 1970/01/01-00:00:00 to 2020/10/01-21:25:34: (0) 0 0 (1) 27 1059 (2) 0 0 (+) 27 1059
+[2020/10/01-21:25:34] [x] rcv from 1970/01/01-00:00:00 to 2020/10/01-21:25:34: (0) 0 0 (1) 366 313815 (2) 0 0 (+) 366 313815
+[2020/10/01-21:25:34] [x] dlv from 1970/01/01-00:00:00 to 2020/10/01-21:25:34: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-21:25:34] [x] ctr from 1970/01/01-00:00:00 to 2020/10/01-21:25:34: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-21:25:34] [x] rfw from 1970/01/01-00:00:00 to 2020/10/01-21:25:34: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-21:25:34] [x] exp from 1970/01/01-00:00:00 to 2020/10/01-21:25:34: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-21:28:06] [i] UTO has been stopped.
+[2020/10/01-21:28:06] [?] bputa can't dequeue outbound CFDP PDU; terminating.
+[2020/10/01-21:28:06] [i] cfdpclock has ended.
+[2020/10/01-21:28:06] [i] bputa input has stopped.
+[2020/10/01-21:28:06] [i] Stopping bputa.
+[2020/10/01-21:28:22] [?] CFDP entity already exists: 2
+[2020/10/01-21:28:22] Syntax error at line 388 of cfdpadmin.c
+[2020/10/01-21:28:22] Stopping cfdpadmin.
+[2020/10/01-21:28:22] [i] bputa is running.
+[2020/10/01-21:28:22] [i] cfdpclock is running.
+[2020/10/01-21:28:22] [i] bputa input has started.
+[2020/10/01-21:32:34] [i] UTO has been stopped.
+[2020/10/01-21:32:34] [?] bputa can't dequeue outbound CFDP PDU; terminating.
+[2020/10/01-21:32:34] [i] cfdpclock has ended.
+[2020/10/01-21:32:34] [i] bputa input has stopped.
+[2020/10/01-21:32:34] [i] Stopping bputa.
+[2020/10/01-21:32:40] [i] ipnfw forwarder has ended.
+[2020/10/01-21:32:40] [i] Endpoint has been stopped.
+[2020/10/01-21:32:40] [i] Administrative endpoint terminated.
+[2020/10/01-21:32:40] [i] ipnadminep has ended.
+[2020/10/01-21:32:40] [i] Plan has been stopped: ipn:1.0
+[2020/10/01-21:32:40] [i] bpclm has ended: ipn:1.0
+[2020/10/01-21:32:40] [i] Plan has been stopped: ipn:2.0
+[2020/10/01-21:32:40] [i] bpclm has ended: ipn:2.0
+[2020/10/01-21:32:40] [i] Outduct has been stopped: 1
+[2020/10/01-21:32:40] [i] ltpclo outduct closed.
+[2020/10/01-21:32:40] [i] ltpclo duct has ended.
+[2020/10/01-21:32:40] [i] Outduct has been stopped: 2
+[2020/10/01-21:32:40] [i] ltpclo outduct closed.
+[2020/10/01-21:32:40] [i] ltpclo duct has ended.
+[2020/10/01-21:32:40] [i] bptransit has ended.
+[2020/10/01-21:32:40] [i] bpclock has ended.
+[2020/10/01-21:32:40] [i] ltpcli receiver thread has ended.
+[2020/10/01-21:32:40] [i] ltpcli duct has ended.
+[2020/10/01-21:32:43] [i] udplsi receiver thread has ended.
+[2020/10/01-21:32:43] [i] udplsi has ended.
+[2020/10/01-21:32:43] [i] LTP meter to engine 1 is stopped.
+[2020/10/01-21:32:43] [i] ltpmeter has ended.
+[2020/10/01-21:32:43] [i] LSO to engine 1 is stopped.
+[2020/10/01-21:32:43] [i] udplso receiver thread has ended.
+[2020/10/01-21:32:43] [i] udplso has ended.
+[2020/10/01-21:32:43] [i] LTP meter to engine 2 is stopped.
+[2020/10/01-21:32:43] [i] ltpmeter has ended.
+[2020/10/01-21:32:43] [i] LSO to engine 2 is stopped.
+[2020/10/01-21:32:43] [i] udplso receiver thread has ended.
+[2020/10/01-21:32:43] [i] udplso has ended.
+[2020/10/01-21:32:43] [i] ltpclock has ended.
+[2020/10/01-21:32:43] [i] ltpdeliv has ended.
+[2020/10/01-21:32:44] [i] rfxclock has ended.
+[2020/10/01-21:33:44] [i] rfxclock is running.
+[2020/10/01-21:33:44] [i] No congestion forecast; horizon reached.
+[2020/10/01-21:33:44] [i] ionwarn finished.
+[2020/10/01-21:33:46] [i] No congestion forecast; horizon reached.
+[2020/10/01-21:33:46] [i] ionwarn finished.
+[2020/10/01-21:33:46] [i] Span to engine 1 (max BER 0.000100, max xmit segment size 1400, max recv segment size 1): xmit segment loss rate 0.673799, recv segment loss rate 0.000800, max timeouts 35.
+[2020/10/01-21:33:46] [i] Span to engine 2 (max BER 0.000100, max xmit segment size 1400, max recv segment size 1): xmit segment loss rate 0.673799, recv segment loss rate 0.000800, max timeouts 35.
+[2020/10/01-21:33:46] [?] Total max export sessions exceeds estimate.  Session lookup speed may be degraded: -32
+[2020/10/01-21:33:46] [i] udplso is running, spec=[172.31.37.132:4556], rengine=1.
+[2020/10/01-21:33:46] [i] ltpmeter is running.
+[2020/10/01-21:33:46] [i] ltpdeliv is running.
+[2020/10/01-21:33:46] [i] ltpclock is running.
+[2020/10/01-21:33:46] [i] udplso is running, spec=[107.22.251.253:4556], rengine=2.
+[2020/10/01-21:33:46] [i] ltpmeter is running.
+[2020/10/01-21:33:46] [i] udplsi is running, spec=[172.31.37.132:4556].
+[2020/10/01-21:33:47] [i] This node deploys bundle protocol version 6.
+[2020/10/01-21:33:47] [i] Bundle security is enabled.
+[2020/10/01-21:33:47] [i] ltpclo is running.
+[2020/10/01-21:33:47] [i] ltpcli is running.
+[2020/10/01-21:33:47] [i] ipnadminep is running.
+[2020/10/01-21:33:47] [i] ipnfw is running.
+[2020/10/01-21:33:47] [i] bptransit is running.
+[2020/10/01-21:33:47] [i] ltpclo is running.
+[2020/10/01-21:33:47] [i] bpclock is running.
+[2020/10/01-21:33:48] [i] bpclm is running: ipn:1.0
+[2020/10/01-21:33:48] [i] bpclm is running: ipn:2.0
+[2020/10/01-21:33:48] [x] src from 1970/01/01-00:00:00 to 2020/10/01-21:33:48: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-21:33:48] [x] fwd from 1970/01/01-00:00:00 to 2020/10/01-21:33:48: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-21:33:48] [x] xmt from 1970/01/01-00:00:00 to 2020/10/01-21:33:48: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-21:33:48] [x] rcv from 1970/01/01-00:00:00 to 2020/10/01-21:33:48: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-21:33:48] [x] dlv from 1970/01/01-00:00:00 to 2020/10/01-21:33:48: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-21:33:48] [x] ctr from 1970/01/01-00:00:00 to 2020/10/01-21:33:48: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-21:33:48] [x] rfw from 1970/01/01-00:00:00 to 2020/10/01-21:33:48: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-21:33:48] [x] exp from 1970/01/01-00:00:00 to 2020/10/01-21:33:48: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-21:35:40] Syntax error at line 388 of cfdpadmin.c
+[2020/10/01-21:35:40] Stopping cfdpadmin.
+[2020/10/01-21:35:40] [i] bputa is running.
+[2020/10/01-21:35:40] [i] cfdpclock is running.
+[2020/10/01-21:35:40] [i] bputa input has started.
+[2020/10/01-21:36:40] [i] Span to engine 2 (max BER 0.000100, max xmit segment size 1400, max recv segment size 49): xmit segment loss rate 0.673799, recv segment loss rate 0.038450, max timeouts 35.
+[2020/10/01-21:37:25] [i] Span to engine 2 (max BER 0.000100, max xmit segment size 1400, max recv segment size 281): xmit segment loss rate 0.673799, recv segment loss rate 0.201363, max timeouts 35.
+[2020/10/01-21:38:39] [i] Span to engine 2 (max BER 0.000100, max xmit segment size 1400, max recv segment size 757): xmit segment loss rate 0.673799, recv segment loss rate 0.454324, max timeouts 35.
+[2020/10/01-21:38:39] [?] File already exists.: /home/ec2-user/Spatiam/IonDTN-3.7.1-AWS-CIMS/spatiam-configs/EarthNode/receivedFile
+[2020/10/01-21:39:05] [?] File already exists.: /home/ec2-user/Spatiam/IonDTN-3.7.1-AWS-CIMS/spatiam-configs/EarthNode/received
+[2020/10/01-21:40:25] [i] UTO has been stopped.
+[2020/10/01-21:40:25] [?] bputa can't dequeue outbound CFDP PDU; terminating.
+[2020/10/01-21:40:25] [i] cfdpclock has ended.
+[2020/10/01-21:40:25] [i] bputa input has stopped.
+[2020/10/01-21:40:25] [i] Stopping bputa.
+[2020/10/01-21:40:43] [i] ipnfw forwarder has ended.
+[2020/10/01-21:40:43] [i] Endpoint has been stopped.
+[2020/10/01-21:40:43] [i] Administrative endpoint terminated.
+[2020/10/01-21:40:43] [i] ipnadminep has ended.
+[2020/10/01-21:40:43] [i] Plan has been stopped: ipn:1.0
+[2020/10/01-21:40:43] [i] bpclm has ended: ipn:1.0
+[2020/10/01-21:40:43] [i] Plan has been stopped: ipn:2.0
+[2020/10/01-21:40:43] [i] bpclm has ended: ipn:2.0
+[2020/10/01-21:40:43] [i] Outduct has been stopped: 1
+[2020/10/01-21:40:43] [i] ltpclo outduct closed.
+[2020/10/01-21:40:43] [i] ltpclo duct has ended.
+[2020/10/01-21:40:43] [i] Outduct has been stopped: 2
+[2020/10/01-21:40:43] [i] ltpclo outduct closed.
+[2020/10/01-21:40:43] [i] ltpclo duct has ended.
+[2020/10/01-21:40:43] [i] bptransit has ended.
+[2020/10/01-21:40:43] [i] bpclock has ended.
+[2020/10/01-21:40:43] [i] ltpcli receiver thread has ended.
+[2020/10/01-21:40:43] [i] ltpcli duct has ended.
+[2020/10/01-21:40:46] [i] ltpclock has ended.
+[2020/10/01-21:40:46] [i] LTP meter to engine 1 is stopped.
+[2020/10/01-21:40:46] [i] ltpmeter has ended.
+[2020/10/01-21:40:46] [i] LSO to engine 1 is stopped.
+[2020/10/01-21:40:46] [i] LTP meter to engine 2 is stopped.
+[2020/10/01-21:40:46] [i] ltpmeter has ended.
+[2020/10/01-21:40:46] [i] LSO to engine 2 is stopped.
+[2020/10/01-21:40:46] [i] udplsi receiver thread has ended.
+[2020/10/01-21:40:46] [i] udplso receiver thread has ended.
+[2020/10/01-21:40:46] [i] udplso receiver thread has ended.
+[2020/10/01-21:40:46] [i] udplso has ended.
+[2020/10/01-21:40:46] [i] udplsi has ended.
+[2020/10/01-21:40:46] [i] udplso has ended.
+[2020/10/01-21:40:46] [i] ltpdeliv has ended.
+[2020/10/01-21:40:47] [i] rfxclock has ended.
+[2020/10/01-21:44:25] [i] rfxclock is running.
+[2020/10/01-21:44:25] [i] No congestion forecast; horizon reached.
+[2020/10/01-21:44:25] [i] ionwarn finished.
+[2020/10/01-21:44:27] [i] No congestion forecast; horizon reached.
+[2020/10/01-21:44:27] [i] ionwarn finished.
+[2020/10/01-21:44:27] [i] Span to engine 1 (max BER 0.000100, max xmit segment size 1400, max recv segment size 1): xmit segment loss rate 0.673799, recv segment loss rate 0.000800, max timeouts 35.
+[2020/10/01-21:44:27] [i] Span to engine 2 (max BER 0.000100, max xmit segment size 1400, max recv segment size 1): xmit segment loss rate 0.673799, recv segment loss rate 0.000800, max timeouts 35.
+[2020/10/01-21:44:27] [?] Total max export sessions exceeds estimate.  Session lookup speed may be degraded: -32
+[2020/10/01-21:44:27] [i] udplso is running, spec=[107.22.251.253:4556], rengine=2.
+[2020/10/01-21:44:27] [i] ltpmeter is running.
+[2020/10/01-21:44:27] [i] ltpmeter is running.
+[2020/10/01-21:44:27] [i] ltpclock is running.
+[2020/10/01-21:44:27] [i] ltpdeliv is running.
+[2020/10/01-21:44:27] [i] udplso is running, spec=[172.31.37.132:4556], rengine=1.
+[2020/10/01-21:44:27] [i] udplsi is running, spec=[172.31.37.132:4556].
+[2020/10/01-21:44:28] [i] This node deploys bundle protocol version 6.
+[2020/10/01-21:44:28] [i] Bundle security is enabled.
+[2020/10/01-21:44:29] [i] ltpcli is running.
+[2020/10/01-21:44:29] [i] ltpclo is running.
+[2020/10/01-21:44:29] [i] ltpclo is running.
+[2020/10/01-21:44:29] [i] ipnfw is running.
+[2020/10/01-21:44:29] [i] bptransit is running.
+[2020/10/01-21:44:29] [i] bpclock is running.
+[2020/10/01-21:44:29] [i] ipnadminep is running.
+[2020/10/01-21:44:30] [i] bpclm is running: ipn:2.0
+[2020/10/01-21:44:30] [i] bpclm is running: ipn:1.0
+[2020/10/01-21:44:30] [x] src from 1970/01/01-00:00:00 to 2020/10/01-21:44:30: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-21:44:30] [x] fwd from 1970/01/01-00:00:00 to 2020/10/01-21:44:30: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-21:44:30] [x] xmt from 1970/01/01-00:00:00 to 2020/10/01-21:44:30: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-21:44:30] [x] rcv from 1970/01/01-00:00:00 to 2020/10/01-21:44:30: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-21:44:30] [x] dlv from 1970/01/01-00:00:00 to 2020/10/01-21:44:30: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-21:44:30] [x] ctr from 1970/01/01-00:00:00 to 2020/10/01-21:44:30: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-21:44:30] [x] rfw from 1970/01/01-00:00:00 to 2020/10/01-21:44:30: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-21:44:30] [x] exp from 1970/01/01-00:00:00 to 2020/10/01-21:44:30: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/01-21:46:52] Syntax error at line 388 of cfdpadmin.c
+[2020/10/01-21:46:52] Stopping cfdpadmin.
+[2020/10/01-21:46:52] [i] bputa is running.
+[2020/10/01-21:46:52] [i] cfdpclock is running.
+[2020/10/01-21:46:52] [i] bputa input has started.
+[2020/10/01-21:47:12] [i] Span to engine 2 (max BER 0.000100, max xmit segment size 1400, max recv segment size 288): xmit segment loss rate 0.673799, recv segment loss rate 0.205824, max timeouts 35.
+[2020/10/01-21:47:12] [?] File already exists.: /home/ec2-user/Spatiam/IonDTN-3.7.1-AWS-CIMS/spatiam-configs/EarthNode/receivedFile
+[2020/10/01-21:48:46] [i] Span to engine 2 (max BER 0.000100, max xmit segment size 1400, max recv segment size 428): xmit segment loss rate 0.673799, recv segment loss rate 0.289988, max timeouts 35.
+[2020/10/01-21:48:46] [?] File already exists.: /home/ec2-user/Spatiam/IonDTN-3.7.1-AWS-CIMS/spatiam-configs/EarthNode/receivedFile
+[2020/10/01-21:54:34] [i] Span to engine 2 (max BER 0.000100, max xmit segment size 1400, max recv segment size 528): xmit segment loss rate 0.673799, recv segment loss rate 0.344588, max timeouts 35.
+[2020/10/01-21:54:34] at line 1577 of ici/sdr/sdrxn.c, SDR profile not found. (acs)
+[2020/10/01-21:54:34] [i] This task is unable to exercise ACS because the ACS SDR is not initialized, as noted in message above: 13685
+[2020/10/01-21:54:34] at line 1577 of ici/sdr/sdrxn.c, SDR profile not found. (acs)
+[2020/10/01-21:54:34] [i] This task is unable to exercise ACS because the ACS SDR is not initialized, as noted in message above: 13848
+[2020/10/01-21:55:51] [?] File already exists.: /home/ec2-user/Spatiam/IonDTN-3.7.1-AWS-CIMS/spatiam-configs/EarthNode/source
+[2020/10/01-22:08:18] [?] CFDP can't find source file.: /home/ec2-user/Spatiam/IonDTN-3.7.1-AWS-CIMS/spatiam-configs/EarthNode/sourceFile
+[2020/10/01-22:08:30] [?] File already exists.: /home/ec2-user/Spatiam/IonDTN-3.7.1-AWS-CIMS/spatiam-configs/EarthNode/receivedFile
+[2020/10/01-22:09:17] [?] CFDP can't find source file.: /home/ec2-user/Spatiam/IonDTN-3.7.1-AWS-CIMS/spatiam-configs/EarthNode/sourceFile
+[2020/10/01-22:12:46] [?] CFDP can't find source file.: /home/ec2-user/Spatiam/IonDTN-3.7.1-AWS-CIMS/spatiam-configs/EarthNode/sourceFile
+[2020/10/01-22:18:44] [?] File already exists.: /home/ec2-user/Spatiam/IonDTN-3.7.1-AWS-CIMS/spatiam-configs/EarthNode/receivedFile
+[2020/10/01-22:28:38] [?] CFDP can't find source file.: /home/ec2-user/Spatiam/IonDTN-3.7.1-AWS-CIMS/spatiam-configs/EarthNode/sourceFile
+[2020/10/01-22:29:19] [?] File already exists.: /home/ec2-user/Spatiam/IonDTN-3.7.1-AWS-CIMS/spatiam-configs/EarthNode/receivedFile
+[2020/10/01-22:31:05] [i] UTO has been stopped.
+[2020/10/01-22:31:05] [?] bputa can't dequeue outbound CFDP PDU; terminating.
+[2020/10/01-22:31:05] [i] cfdpclock has ended.
+[2020/10/01-22:31:05] [i] bputa input has stopped.
+[2020/10/01-22:31:05] [i] Stopping bputa.
+[2020/10/01-22:31:14] [i] ipnfw forwarder has ended.
+[2020/10/01-22:31:14] [i] Endpoint has been stopped.
+[2020/10/01-22:31:14] [i] Administrative endpoint terminated.
+[2020/10/01-22:31:14] [i] ipnadminep has ended.
+[2020/10/01-22:31:14] [i] Plan has been stopped: ipn:1.0
+[2020/10/01-22:31:14] [i] bpclm has ended: ipn:1.0
+[2020/10/01-22:31:14] [i] Plan has been stopped: ipn:2.0
+[2020/10/01-22:31:14] [i] bpclm has ended: ipn:2.0
+[2020/10/01-22:31:14] [i] Outduct has been stopped: 1
+[2020/10/01-22:31:14] [i] ltpclo outduct closed.
+[2020/10/01-22:31:14] [i] ltpclo duct has ended.
+[2020/10/01-22:31:14] [i] Outduct has been stopped: 2
+[2020/10/01-22:31:14] [i] ltpclo outduct closed.
+[2020/10/01-22:31:14] [i] ltpclo duct has ended.
+[2020/10/01-22:31:14] [i] bptransit has ended.
+[2020/10/01-22:31:14] [i] bpclock has ended.
+[2020/10/01-22:31:14] [i] ltpcli receiver thread has ended.
+[2020/10/01-22:31:14] [i] ltpcli duct has ended.
+[2020/10/01-22:31:16] [i] ltpclock has ended.
+[2020/10/01-22:31:16] [i] LTP meter to engine 1 is stopped.
+[2020/10/01-22:31:16] [i] ltpmeter has ended.
+[2020/10/01-22:31:16] [i] LSO to engine 1 is stopped.
+[2020/10/01-22:31:16] [i] LTP meter to engine 2 is stopped.
+[2020/10/01-22:31:16] [i] ltpmeter has ended.
+[2020/10/01-22:31:16] [i] LSO to engine 2 is stopped.
+[2020/10/01-22:31:16] [i] udplsi receiver thread has ended.
+[2020/10/01-22:31:16] [i] udplso receiver thread has ended.
+[2020/10/01-22:31:16] [i] udplso receiver thread has ended.
+[2020/10/01-22:31:16] [i] udplsi has ended.
+[2020/10/01-22:31:16] [i] udplso has ended.
+[2020/10/01-22:31:16] [i] udplso has ended.
+[2020/10/01-22:31:16] [i] ltpdeliv has ended.
+[2020/10/01-22:31:17] [i] rfxclock has ended.
+[2020/10/02-18:14:36] [i] rfxclock is running.
+[2020/10/02-18:14:36] [i] No congestion forecast; horizon reached.
+[2020/10/02-18:14:36] [i] ionwarn finished.
+[2020/10/02-18:14:38] [i] No congestion forecast; horizon reached.
+[2020/10/02-18:14:38] [i] ionwarn finished.
+[2020/10/02-18:14:38] [i] Span to engine 1 (max BER 0.000100, max xmit segment size 1400, max recv segment size 1): xmit segment loss rate 0.673799, recv segment loss rate 0.000800, max timeouts 35.
+[2020/10/02-18:14:38] [i] Span to engine 2 (max BER 0.000100, max xmit segment size 1400, max recv segment size 1): xmit segment loss rate 0.673799, recv segment loss rate 0.000800, max timeouts 35.
+[2020/10/02-18:14:38] [?] Total max export sessions exceeds estimate.  Session lookup speed may be degraded: -32
+[2020/10/02-18:14:38] [i] ltpmeter is running.
+[2020/10/02-18:14:38] [i] ltpmeter is running.
+[2020/10/02-18:14:38] [i] udplso is running, spec=[172.31.37.132:4556], rengine=1.
+[2020/10/02-18:14:38] [i] ltpdeliv is running.
+[2020/10/02-18:14:38] [i] udplso is running, spec=[107.22.251.253:4556], rengine=2.
+[2020/10/02-18:14:38] [i] udplsi is running, spec=[172.31.37.132:4556].
+[2020/10/02-18:14:38] [i] ltpclock is running.
+[2020/10/02-18:14:39] [i] This node deploys bundle protocol version 6.
+[2020/10/02-18:14:39] [i] Bundle security is enabled.
+[2020/10/02-18:14:39] [i] ltpclo is running.
+[2020/10/02-18:14:39] [i] ltpclo is running.
+[2020/10/02-18:14:39] [i] bptransit is running.
+[2020/10/02-18:14:39] [i] ltpcli is running.
+[2020/10/02-18:14:39] [i] ipnfw is running.
+[2020/10/02-18:14:39] [i] ipnadminep is running.
+[2020/10/02-18:14:39] [i] bpclock is running.
+[2020/10/02-18:14:40] [i] bpclm is running: ipn:1.0
+[2020/10/02-18:14:40] [i] bpclm is running: ipn:2.0
+[2020/10/02-18:14:40] [x] src from 1970/01/01-00:00:00 to 2020/10/02-18:14:40: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/02-18:14:40] [x] fwd from 1970/01/01-00:00:00 to 2020/10/02-18:14:40: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/02-18:14:40] [x] xmt from 1970/01/01-00:00:00 to 2020/10/02-18:14:40: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/02-18:14:40] [x] rcv from 1970/01/01-00:00:00 to 2020/10/02-18:14:40: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/02-18:14:40] [x] dlv from 1970/01/01-00:00:00 to 2020/10/02-18:14:40: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/02-18:14:40] [x] ctr from 1970/01/01-00:00:00 to 2020/10/02-18:14:40: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/02-18:14:40] [x] rfw from 1970/01/01-00:00:00 to 2020/10/02-18:14:40: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/02-18:14:40] [x] exp from 1970/01/01-00:00:00 to 2020/10/02-18:14:40: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/02-18:15:35] Syntax error at line 388 of cfdpadmin.c
+[2020/10/02-18:15:35] Stopping cfdpadmin.
+[2020/10/02-18:15:35] [i] bputa is running.
+[2020/10/02-18:15:35] [i] bputa input has started.
+[2020/10/02-18:15:35] [i] cfdpclock is running.
+[2020/10/02-18:16:54] [i] Span to engine 2 (max BER 0.000100, max xmit segment size 1400, max recv segment size 390): xmit segment loss rate 0.673799, recv segment loss rate 0.268068, max timeouts 35.
+[2020/10/02-18:16:54] at line 1577 of ici/sdr/sdrxn.c, SDR profile not found. (acs)
+[2020/10/02-18:16:54] [i] This task is unable to exercise ACS because the ACS SDR is not initialized, as noted in message above: 20940
+[2020/10/02-18:16:54] at line 1577 of ici/sdr/sdrxn.c, SDR profile not found. (acs)
+[2020/10/02-18:16:54] [i] This task is unable to exercise ACS because the ACS SDR is not initialized, as noted in message above: 21109
+[2020/10/02-18:45:58] [i] Span to engine 2 (max BER 0.000100, max xmit segment size 1400, max recv segment size 1392): xmit segment loss rate 0.673799, recv segment loss rate 0.671704, max timeouts 35.
+[2020/10/02-19:14:35] [i] No congestion forecast; horizon reached.
+[2020/10/02-19:14:35] [i] ionwarn finished.
+[2020/10/02-19:14:35] [x] src from 1970/01/01-00:00:00 to 2020/10/02-19:14:35: (0) 0 0 (1) 2 13 (2) 114 2622 (+) 116 2635
+[2020/10/02-19:14:35] [x] fwd from 1970/01/01-00:00:00 to 2020/10/02-19:14:35: (0) 0 0 (1) 0 0 (2) 0 0 (+) 116 2635
+[2020/10/02-19:14:35] [x] xmt from 1970/01/01-00:00:00 to 2020/10/02-19:14:35: (0) 0 0 (1) 2 13 (2) 114 2622 (+) 116 2635
+[2020/10/02-19:14:35] [x] rcv from 1970/01/01-00:00:00 to 2020/10/02-19:14:35: (0) 0 0 (1) 116 104590 (2) 0 0 (+) 116 104590
+[2020/10/02-19:14:35] [x] dlv from 1970/01/01-00:00:00 to 2020/10/02-19:14:35: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/02-19:14:35] [x] ctr from 1970/01/01-00:00:00 to 2020/10/02-19:14:35: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/02-19:14:35] [x] rfw from 1970/01/01-00:00:00 to 2020/10/02-19:14:35: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/02-19:14:35] [x] exp from 1970/01/01-00:00:00 to 2020/10/02-19:14:35: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/02-19:14:38] [i] No congestion forecast; horizon reached.
+[2020/10/02-19:14:38] [i] ionwarn finished.
+[2020/10/02-19:14:38] [x] src from 1970/01/01-00:00:00 to 2020/10/02-19:14:38: (0) 0 0 (1) 2 13 (2) 114 2622 (+) 116 2635
+[2020/10/02-19:14:38] [x] fwd from 1970/01/01-00:00:00 to 2020/10/02-19:14:38: (0) 0 0 (1) 0 0 (2) 0 0 (+) 116 2635
+[2020/10/02-19:14:38] [x] xmt from 1970/01/01-00:00:00 to 2020/10/02-19:14:38: (0) 0 0 (1) 2 13 (2) 114 2622 (+) 116 2635
+[2020/10/02-19:14:38] [x] rcv from 1970/01/01-00:00:00 to 2020/10/02-19:14:38: (0) 0 0 (1) 116 104590 (2) 0 0 (+) 116 104590
+[2020/10/02-19:14:38] [x] dlv from 1970/01/01-00:00:00 to 2020/10/02-19:14:38: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/02-19:14:38] [x] ctr from 1970/01/01-00:00:00 to 2020/10/02-19:14:38: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/02-19:14:38] [x] rfw from 1970/01/01-00:00:00 to 2020/10/02-19:14:38: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/02-19:14:38] [x] exp from 1970/01/01-00:00:00 to 2020/10/02-19:14:38: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/02-19:54:12] [?] CFDP entity already exists: 2
+[2020/10/02-19:54:12] Syntax error at line 388 of cfdpadmin.c
+[2020/10/02-19:54:12] Stopping cfdpadmin.
+[2020/10/02-19:55:12] at line 1577 of ici/sdr/sdrxn.c, SDR profile not found. (acs)
+[2020/10/02-19:55:12] [i] This task is unable to exercise ACS because the ACS SDR is not initialized, as noted in message above: 20938
+[2020/10/02-19:55:33] [i] ipnfw forwarder has ended.
+[2020/10/02-19:55:33] [i] Endpoint has been stopped.
+[2020/10/02-19:55:33] [i] Administrative endpoint terminated.
+[2020/10/02-19:55:33] [i] ipnadminep has ended.
+[2020/10/02-19:55:33] [i] Endpoint has been stopped.
+[2020/10/02-19:55:33] [i] Plan has been stopped: ipn:1.0
+[2020/10/02-19:55:33] [i] bpclm has ended: ipn:1.0
+[2020/10/02-19:55:33] [i] Plan has been stopped: ipn:2.0
+[2020/10/02-19:55:33] [i] bpclm has ended: ipn:2.0
+[2020/10/02-19:55:33] [i] Outduct has been stopped: 1
+[2020/10/02-19:55:33] [i] ltpclo outduct closed.
+[2020/10/02-19:55:33] [i] ltpclo duct has ended.
+[2020/10/02-19:55:33] [i] Outduct has been stopped: 2
+[2020/10/02-19:55:33] [i] ltpclo outduct closed.
+[2020/10/02-19:55:33] [i] ltpclo duct has ended.
+[2020/10/02-19:55:33] [i] bpclock has ended.
+[2020/10/02-19:55:33] [i] bputa input has stopped.
+[2020/10/02-19:55:33] [i] ltpcli receiver thread has ended.
+[2020/10/02-19:55:33] [i] ltpcli duct has ended.
+[2020/10/02-19:55:34] [i] bptransit has ended.
+[2020/10/02-19:55:35] [i] UTO has been stopped.
+[2020/10/02-19:55:35] [?] bputa can't dequeue outbound CFDP PDU; terminating.
+[2020/10/02-19:55:35] [i] Stopping bputa.
+[2020/10/02-19:55:35] [i] cfdpclock has ended.
+[2020/10/02-19:55:36] [i] ltpclock has ended.
+[2020/10/02-19:55:36] [i] LTP meter to engine 1 is stopped.
+[2020/10/02-19:55:36] [i] ltpmeter has ended.
+[2020/10/02-19:55:36] [i] LSO to engine 1 is stopped.
+[2020/10/02-19:55:36] [i] LTP meter to engine 2 is stopped.
+[2020/10/02-19:55:36] [i] ltpmeter has ended.
+[2020/10/02-19:55:36] [i] LSO to engine 2 is stopped.
+[2020/10/02-19:55:36] [i] udplsi receiver thread has ended.
+[2020/10/02-19:55:36] [i] udplso receiver thread has ended.
+[2020/10/02-19:55:36] [i] udplso receiver thread has ended.
+[2020/10/02-19:55:36] [i] udplso has ended.
+[2020/10/02-19:55:36] [i] udplsi has ended.
+[2020/10/02-19:55:36] [i] udplso has ended.
+[2020/10/02-19:55:36] [i] ltpdeliv has ended.
+[2020/10/02-19:55:37] [i] rfxclock has ended.
+[2020/10/02-19:56:37] [i] rfxclock is running.
+[2020/10/02-19:56:37] [i] No congestion forecast; horizon reached.
+[2020/10/02-19:56:37] [i] ionwarn finished.
+[2020/10/02-19:56:39] [i] No congestion forecast; horizon reached.
+[2020/10/02-19:56:39] [i] ionwarn finished.
+[2020/10/02-19:56:39] [i] Span to engine 1 (max BER 0.000100, max xmit segment size 1400, max recv segment size 1): xmit segment loss rate 0.673799, recv segment loss rate 0.000800, max timeouts 35.
+[2020/10/02-19:56:39] [i] Span to engine 2 (max BER 0.000100, max xmit segment size 1400, max recv segment size 1): xmit segment loss rate 0.673799, recv segment loss rate 0.000800, max timeouts 35.
+[2020/10/02-19:56:39] [?] Total max export sessions exceeds estimate.  Session lookup speed may be degraded: -32
+[2020/10/02-19:56:39] [i] udplso is running, spec=[107.22.251.253:4556], rengine=2.
+[2020/10/02-19:56:39] [i] ltpmeter is running.
+[2020/10/02-19:56:39] [i] udplso is running, spec=[172.31.37.132:4556], rengine=1.
+[2020/10/02-19:56:39] [i] ltpclock is running.
+[2020/10/02-19:56:39] [i] ltpdeliv is running.
+[2020/10/02-19:56:39] [i] ltpmeter is running.
+[2020/10/02-19:56:39] [i] udplsi is running, spec=[172.31.37.132:4556].
+[2020/10/02-19:56:40] [i] This node deploys bundle protocol version 6.
+[2020/10/02-19:56:40] [i] Bundle security is enabled.
+[2020/10/02-19:56:40] [i] ltpcli is running.
+[2020/10/02-19:56:40] [i] ipnadminep is running.
+[2020/10/02-19:56:40] [i] ltpclo is running.
+[2020/10/02-19:56:40] [i] ipnfw is running.
+[2020/10/02-19:56:40] [i] ltpclo is running.
+[2020/10/02-19:56:40] [i] bptransit is running.
+[2020/10/02-19:56:40] [i] bpclock is running.
+[2020/10/02-19:56:41] [i] bpclm is running: ipn:1.0
+[2020/10/02-19:56:41] [i] bpclm is running: ipn:2.0
+[2020/10/02-19:56:41] [x] src from 1970/01/01-00:00:00 to 2020/10/02-19:56:41: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/02-19:56:41] [x] fwd from 1970/01/01-00:00:00 to 2020/10/02-19:56:41: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/02-19:56:41] [x] xmt from 1970/01/01-00:00:00 to 2020/10/02-19:56:41: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/02-19:56:41] [x] rcv from 1970/01/01-00:00:00 to 2020/10/02-19:56:41: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/02-19:56:41] [x] dlv from 1970/01/01-00:00:00 to 2020/10/02-19:56:41: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/02-19:56:41] [x] ctr from 1970/01/01-00:00:00 to 2020/10/02-19:56:41: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/02-19:56:41] [x] rfw from 1970/01/01-00:00:00 to 2020/10/02-19:56:41: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/02-19:56:41] [x] exp from 1970/01/01-00:00:00 to 2020/10/02-19:56:41: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/02-19:57:57] Syntax error at line 388 of cfdpadmin.c
+[2020/10/02-19:57:57] Stopping cfdpadmin.
+[2020/10/02-19:57:57] [i] bputa is running.
+[2020/10/02-19:57:57] [i] cfdpclock is running.
+[2020/10/02-19:57:57] [i] bputa input has started.
+[2020/10/02-19:58:04] [i] Span to engine 2 (max BER 0.000100, max xmit segment size 1400, max recv segment size 388): xmit segment loss rate 0.673799, recv segment loss rate 0.266896, max timeouts 35.
+[2020/10/02-19:58:04] at line 1577 of ici/sdr/sdrxn.c, SDR profile not found. (acs)
+[2020/10/02-19:58:04] [i] This task is unable to exercise ACS because the ACS SDR is not initialized, as noted in message above: 23648
+[2020/10/02-19:58:04] at line 1577 of ici/sdr/sdrxn.c, SDR profile not found. (acs)
+[2020/10/02-19:58:04] [i] This task is unable to exercise ACS because the ACS SDR is not initialized, as noted in message above: 23820
+[2020/10/02-19:58:27] [i] Span to engine 2 (max BER 0.000100, max xmit segment size 1400, max recv segment size 1392): xmit segment loss rate 0.673799, recv segment loss rate 0.671704, max timeouts 35.
+[2020/10/02-20:30:53] [i] ipnfw forwarder has ended.
+[2020/10/02-20:30:53] [i] Endpoint has been stopped.
+[2020/10/02-20:30:53] [i] Administrative endpoint terminated.
+[2020/10/02-20:30:53] [i] ipnadminep has ended.
+[2020/10/02-20:30:53] [i] Endpoint has been stopped.
+[2020/10/02-20:30:53] [i] bputa input has stopped.
+[2020/10/02-20:30:53] [i] Plan has been stopped: ipn:1.0
+[2020/10/02-20:30:53] [i] bpclm has ended: ipn:1.0
+[2020/10/02-20:30:53] [i] Plan has been stopped: ipn:2.0
+[2020/10/02-20:30:53] [i] bpclm has ended: ipn:2.0
+[2020/10/02-20:30:53] [i] Outduct has been stopped: 1
+[2020/10/02-20:30:53] [i] ltpclo outduct closed.
+[2020/10/02-20:30:53] [i] ltpclo duct has ended.
+[2020/10/02-20:30:53] [i] Outduct has been stopped: 2
+[2020/10/02-20:30:53] [i] ltpclo outduct closed.
+[2020/10/02-20:30:53] [i] ltpclo duct has ended.
+[2020/10/02-20:30:53] [i] bptransit has ended.
+[2020/10/02-20:30:53] [i] bpclock has ended.
+[2020/10/02-20:30:53] [i] ltpcli receiver thread has ended.
+[2020/10/02-20:30:53] [i] ltpcli duct has ended.
+[2020/10/02-20:30:55] [i] UTO has been stopped.
+[2020/10/02-20:30:55] [?] bputa can't dequeue outbound CFDP PDU; terminating.
+[2020/10/02-20:30:55] [i] Stopping bputa.
+[2020/10/02-20:30:55] [i] cfdpclock has ended.
+[2020/10/02-20:30:56] [i] ltpclock has ended.
+[2020/10/02-20:30:56] [i] LTP meter to engine 1 is stopped.
+[2020/10/02-20:30:56] [i] ltpmeter has ended.
+[2020/10/02-20:30:56] [i] LSO to engine 1 is stopped.
+[2020/10/02-20:30:56] [i] LTP meter to engine 2 is stopped.
+[2020/10/02-20:30:56] [i] ltpmeter has ended.
+[2020/10/02-20:30:56] [i] LSO to engine 2 is stopped.
+[2020/10/02-20:30:56] [i] udplsi receiver thread has ended.
+[2020/10/02-20:30:56] [i] udplso receiver thread has ended.
+[2020/10/02-20:30:56] [i] udplso receiver thread has ended.
+[2020/10/02-20:30:56] [i] udplso has ended.
+[2020/10/02-20:30:56] [i] udplsi has ended.
+[2020/10/02-20:30:56] [i] udplso has ended.
+[2020/10/02-20:30:56] [i] ltpdeliv has ended.
+[2020/10/02-20:30:57] [i] rfxclock has ended.
+[2020/10/03-10:53:20] [i] rfxclock is running.
+[2020/10/03-10:53:20] [i] No congestion forecast; horizon reached.
+[2020/10/03-10:53:20] [i] ionwarn finished.
+[2020/10/03-10:53:22] [i] No congestion forecast; horizon reached.
+[2020/10/03-10:53:22] [i] ionwarn finished.
+[2020/10/03-10:53:22] [i] Span to engine 1 (max BER 0.000100, max xmit segment size 1400, max recv segment size 1): xmit segment loss rate 0.673799, recv segment loss rate 0.000800, max timeouts 35.
+[2020/10/03-10:53:22] [i] Span to engine 2 (max BER 0.000100, max xmit segment size 1400, max recv segment size 1): xmit segment loss rate 0.673799, recv segment loss rate 0.000800, max timeouts 35.
+[2020/10/03-10:53:22] [?] Total max export sessions exceeds estimate.  Session lookup speed may be degraded: -32
+[2020/10/03-10:53:22] [i] ltpmeter is running.
+[2020/10/03-10:53:22] [i] udplso is running, spec=[172.31.37.132:4556], rengine=1.
+[2020/10/03-10:53:22] [i] ltpmeter is running.
+[2020/10/03-10:53:22] [i] udplso is running, spec=[107.22.251.253:4556], rengine=2.
+[2020/10/03-10:53:22] [i] ltpclock is running.
+[2020/10/03-10:53:22] [i] ltpdeliv is running.
+[2020/10/03-10:53:22] [i] udplsi is running, spec=[172.31.37.132:4556].
+[2020/10/03-10:53:23] [i] This node deploys bundle protocol version 6.
+[2020/10/03-10:53:23] [i] Bundle security is enabled.
+[2020/10/03-10:53:23] [i] ltpclo is running.
+[2020/10/03-10:53:23] [i] ipnadminep is running.
+[2020/10/03-10:53:23] [i] bptransit is running.
+[2020/10/03-10:53:23] [i] ipnfw is running.
+[2020/10/03-10:53:23] [i] ltpcli is running.
+[2020/10/03-10:53:23] [i] ltpclo is running.
+[2020/10/03-10:53:23] [i] bpclock is running.
+[2020/10/03-10:53:24] [i] bpclm is running: ipn:1.0
+[2020/10/03-10:53:24] [i] bpclm is running: ipn:2.0
+[2020/10/03-10:53:24] [x] src from 1970/01/01-00:00:00 to 2020/10/03-10:53:24: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-10:53:24] [x] fwd from 1970/01/01-00:00:00 to 2020/10/03-10:53:24: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-10:53:24] [x] xmt from 1970/01/01-00:00:00 to 2020/10/03-10:53:24: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-10:53:24] [x] rcv from 1970/01/01-00:00:00 to 2020/10/03-10:53:24: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-10:53:24] [x] dlv from 1970/01/01-00:00:00 to 2020/10/03-10:53:24: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-10:53:24] [x] ctr from 1970/01/01-00:00:00 to 2020/10/03-10:53:24: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-10:53:24] [x] rfw from 1970/01/01-00:00:00 to 2020/10/03-10:53:24: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-10:53:24] [x] exp from 1970/01/01-00:00:00 to 2020/10/03-10:53:24: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-10:54:43] Syntax error at line 388 of cfdpadmin.c
+[2020/10/03-10:54:43] Stopping cfdpadmin.
+[2020/10/03-10:54:43] [i] bputa is running.
+[2020/10/03-10:54:43] [i] cfdpclock is running.
+[2020/10/03-10:54:43] [i] bputa input has started.
+[2020/10/03-10:55:13] [i] Span to engine 2 (max BER 0.000100, max xmit segment size 1400, max recv segment size 388): xmit segment loss rate 0.673799, recv segment loss rate 0.266896, max timeouts 35.
+[2020/10/03-10:55:13] at line 1577 of ici/sdr/sdrxn.c, SDR profile not found. (acs)
+[2020/10/03-10:55:13] [i] This task is unable to exercise ACS because the ACS SDR is not initialized, as noted in message above: 31029
+[2020/10/03-10:55:13] at line 1577 of ici/sdr/sdrxn.c, SDR profile not found. (acs)
+[2020/10/03-10:55:13] [i] This task is unable to exercise ACS because the ACS SDR is not initialized, as noted in message above: 31242
+[2020/10/03-10:57:14] [i] Span to engine 2 (max BER 0.000100, max xmit segment size 1400, max recv segment size 393): xmit segment loss rate 0.673799, recv segment loss rate 0.269823, max timeouts 35.
+[2020/10/03-11:01:33] [i] Span to engine 2 (max BER 0.000100, max xmit segment size 1400, max recv segment size 409): xmit segment loss rate 0.673799, recv segment loss rate 0.279111, max timeouts 35.
+[2020/10/03-11:04:02] [?] File already exists.: /home/ec2-user/Spatiam/IonDTN-3.7.1-AWS-CIMS/spatiam-configs/EarthNode/received_files/concurrent2
+[2020/10/03-11:53:19] [i] No congestion forecast; horizon reached.
+[2020/10/03-11:53:19] [i] ionwarn finished.
+[2020/10/03-11:53:19] [x] src from 1970/01/01-00:00:00 to 2020/10/03-11:53:19: (0) 0 0 (1) 0 0 (2) 12 276 (+) 12 276
+[2020/10/03-11:53:19] [x] fwd from 1970/01/01-00:00:00 to 2020/10/03-11:53:19: (0) 0 0 (1) 0 0 (2) 0 0 (+) 12 276
+[2020/10/03-11:53:19] [x] xmt from 1970/01/01-00:00:00 to 2020/10/03-11:53:19: (0) 0 0 (1) 0 0 (2) 12 276 (+) 12 276
+[2020/10/03-11:53:19] [x] rcv from 1970/01/01-00:00:00 to 2020/10/03-11:53:19: (0) 0 0 (1) 13 1117 (2) 0 0 (+) 13 1117
+[2020/10/03-11:53:19] [x] dlv from 1970/01/01-00:00:00 to 2020/10/03-11:53:19: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-11:53:19] [x] ctr from 1970/01/01-00:00:00 to 2020/10/03-11:53:19: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-11:53:19] [x] rfw from 1970/01/01-00:00:00 to 2020/10/03-11:53:19: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-11:53:19] [x] exp from 1970/01/01-00:00:00 to 2020/10/03-11:53:19: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-11:53:22] [i] No congestion forecast; horizon reached.
+[2020/10/03-11:53:22] [i] ionwarn finished.
+[2020/10/03-11:53:22] [x] src from 1970/01/01-00:00:00 to 2020/10/03-11:53:22: (0) 0 0 (1) 0 0 (2) 12 276 (+) 12 276
+[2020/10/03-11:53:22] [x] fwd from 1970/01/01-00:00:00 to 2020/10/03-11:53:22: (0) 0 0 (1) 0 0 (2) 0 0 (+) 12 276
+[2020/10/03-11:53:22] [x] xmt from 1970/01/01-00:00:00 to 2020/10/03-11:53:22: (0) 0 0 (1) 0 0 (2) 12 276 (+) 12 276
+[2020/10/03-11:53:22] [x] rcv from 1970/01/01-00:00:00 to 2020/10/03-11:53:22: (0) 0 0 (1) 13 1117 (2) 0 0 (+) 13 1117
+[2020/10/03-11:53:22] [x] dlv from 1970/01/01-00:00:00 to 2020/10/03-11:53:22: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-11:53:22] [x] ctr from 1970/01/01-00:00:00 to 2020/10/03-11:53:22: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-11:53:22] [x] rfw from 1970/01/01-00:00:00 to 2020/10/03-11:53:22: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-11:53:22] [x] exp from 1970/01/01-00:00:00 to 2020/10/03-11:53:22: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-15:48:42] [i] Endpoint has been stopped.
+[2020/10/03-15:48:42] [i] Administrative endpoint terminated.
+[2020/10/03-15:48:42] [i] ipnadminep has ended.
+[2020/10/03-15:48:42] [i] ipnfw forwarder has ended.
+[2020/10/03-15:48:42] [i] Endpoint has been stopped.
+[2020/10/03-15:48:42] [i] Plan has been stopped: ipn:1.0
+[2020/10/03-15:48:42] [i] bpclm has ended: ipn:1.0
+[2020/10/03-15:48:42] [i] bputa input has stopped.
+[2020/10/03-15:48:42] [i] Plan has been stopped: ipn:2.0
+[2020/10/03-15:48:42] [i] bpclm has ended: ipn:2.0
+[2020/10/03-15:48:42] [i] Outduct has been stopped: 1
+[2020/10/03-15:48:42] [i] ltpclo outduct closed.
+[2020/10/03-15:48:42] [i] ltpclo duct has ended.
+[2020/10/03-15:48:42] [i] Outduct has been stopped: 2
+[2020/10/03-15:48:42] [i] ltpclo outduct closed.
+[2020/10/03-15:48:42] [i] ltpclo duct has ended.
+[2020/10/03-15:48:42] [i] bptransit has ended.
+[2020/10/03-15:48:42] [i] bpclock has ended.
+[2020/10/03-15:48:42] [i] ltpcli receiver thread has ended.
+[2020/10/03-15:48:42] [i] ltpcli duct has ended.
+[2020/10/03-15:48:43] [i] UTO has been stopped.
+[2020/10/03-15:48:43] [?] bputa can't dequeue outbound CFDP PDU; terminating.
+[2020/10/03-15:48:43] [i] Stopping bputa.
+[2020/10/03-15:48:43] [i] cfdpclock has ended.
+[2020/10/03-15:48:44] [i] udplsi receiver thread has ended.
+[2020/10/03-15:48:44] [i] udplsi has ended.
+[2020/10/03-15:48:44] [i] LTP meter to engine 1 is stopped.
+[2020/10/03-15:48:44] [i] ltpmeter has ended.
+[2020/10/03-15:48:44] [i] LSO to engine 1 is stopped.
+[2020/10/03-15:48:44] [i] udplso receiver thread has ended.
+[2020/10/03-15:48:44] [i] udplso has ended.
+[2020/10/03-15:48:44] [i] LTP meter to engine 2 is stopped.
+[2020/10/03-15:48:44] [i] ltpmeter has ended.
+[2020/10/03-15:48:44] [i] LSO to engine 2 is stopped.
+[2020/10/03-15:48:44] [i] udplso receiver thread has ended.
+[2020/10/03-15:48:44] [i] udplso has ended.
+[2020/10/03-15:48:44] [i] ltpclock has ended.
+[2020/10/03-15:48:44] [i] ltpdeliv has ended.
+[2020/10/03-15:48:45] [i] rfxclock has ended.
+[2020/10/03-15:49:00] [i] rfxclock is running.
+[2020/10/03-15:49:00] [i] No congestion forecast; horizon reached.
+[2020/10/03-15:49:00] [i] ionwarn finished.
+[2020/10/03-15:49:02] [i] No congestion forecast; horizon reached.
+[2020/10/03-15:49:02] [i] ionwarn finished.
+[2020/10/03-15:49:02] [i] Span to engine 1 (max BER 0.000100, max xmit segment size 1400, max recv segment size 1): xmit segment loss rate 0.673799, recv segment loss rate 0.000800, max timeouts 35.
+[2020/10/03-15:49:02] [i] Span to engine 2 (max BER 0.000100, max xmit segment size 1400, max recv segment size 1): xmit segment loss rate 0.673799, recv segment loss rate 0.000800, max timeouts 35.
+[2020/10/03-15:49:02] [?] Total max export sessions exceeds estimate.  Session lookup speed may be degraded: -32
+[2020/10/03-15:49:02] [i] udplso is running, spec=[172.31.37.132:4556], rengine=1.
+[2020/10/03-15:49:02] [i] ltpmeter is running.
+[2020/10/03-15:49:02] [i] ltpclock is running.
+[2020/10/03-15:49:02] [i] ltpmeter is running.
+[2020/10/03-15:49:02] [i] udplso is running, spec=[107.22.251.253:4556], rengine=2.
+[2020/10/03-15:49:02] [i] ltpdeliv is running.
+[2020/10/03-15:49:02] [i] udplsi is running, spec=[172.31.37.132:4556].
+[2020/10/03-15:49:03] [i] This node deploys bundle protocol version 6.
+[2020/10/03-15:49:03] [i] Bundle security is enabled.
+[2020/10/03-15:49:04] [i] ltpclo is running.
+[2020/10/03-15:49:04] [i] ltpcli is running.
+[2020/10/03-15:49:04] [i] ipnadminep is running.
+[2020/10/03-15:49:04] [i] ipnfw is running.
+[2020/10/03-15:49:04] [i] ltpclo is running.
+[2020/10/03-15:49:04] [i] bptransit is running.
+[2020/10/03-15:49:04] [i] bpclock is running.
+[2020/10/03-15:49:05] [i] bpclm is running: ipn:1.0
+[2020/10/03-15:49:05] [i] bpclm is running: ipn:2.0
+[2020/10/03-15:49:05] [x] src from 1970/01/01-00:00:00 to 2020/10/03-15:49:05: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-15:49:05] [x] fwd from 1970/01/01-00:00:00 to 2020/10/03-15:49:05: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-15:49:05] [x] xmt from 1970/01/01-00:00:00 to 2020/10/03-15:49:05: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-15:49:05] [x] rcv from 1970/01/01-00:00:00 to 2020/10/03-15:49:05: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-15:49:05] [x] dlv from 1970/01/01-00:00:00 to 2020/10/03-15:49:05: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-15:49:05] [x] ctr from 1970/01/01-00:00:00 to 2020/10/03-15:49:05: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-15:49:05] [x] rfw from 1970/01/01-00:00:00 to 2020/10/03-15:49:05: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-15:49:05] [x] exp from 1970/01/01-00:00:00 to 2020/10/03-15:49:05: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-15:49:31] [i] Span to engine 2 (max BER 0.000100, max xmit segment size 1400, max recv segment size 43): xmit segment loss rate 0.673799, recv segment loss rate 0.033822, max timeouts 35.
+[2020/10/03-16:48:59] [i] No congestion forecast; horizon reached.
+[2020/10/03-16:48:59] [i] ionwarn finished.
+[2020/10/03-16:49:00] [x] src from 1970/01/01-00:00:00 to 2020/10/03-16:49:00: (0) 0 0 (1) 1 3 (2) 0 0 (+) 1 3
+[2020/10/03-16:49:00] [x] fwd from 1970/01/01-00:00:00 to 2020/10/03-16:49:00: (0) 0 0 (1) 0 0 (2) 0 0 (+) 1 3
+[2020/10/03-16:49:00] [x] xmt from 1970/01/01-00:00:00 to 2020/10/03-16:49:00: (0) 0 0 (1) 1 3 (2) 0 0 (+) 1 3
+[2020/10/03-16:49:00] [x] rcv from 1970/01/01-00:00:00 to 2020/10/03-16:49:00: (0) 0 0 (1) 1 3 (2) 0 0 (+) 1 3
+[2020/10/03-16:49:00] [x] dlv from 1970/01/01-00:00:00 to 2020/10/03-16:49:00: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-16:49:00] [x] ctr from 1970/01/01-00:00:00 to 2020/10/03-16:49:00: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-16:49:00] [x] rfw from 1970/01/01-00:00:00 to 2020/10/03-16:49:00: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-16:49:00] [x] exp from 1970/01/01-00:00:00 to 2020/10/03-16:49:00: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-16:49:02] [i] No congestion forecast; horizon reached.
+[2020/10/03-16:49:02] [i] ionwarn finished.
+[2020/10/03-16:49:03] [x] src from 1970/01/01-00:00:00 to 2020/10/03-16:49:03: (0) 0 0 (1) 1 3 (2) 0 0 (+) 1 3
+[2020/10/03-16:49:03] [x] fwd from 1970/01/01-00:00:00 to 2020/10/03-16:49:03: (0) 0 0 (1) 0 0 (2) 0 0 (+) 1 3
+[2020/10/03-16:49:03] [x] xmt from 1970/01/01-00:00:00 to 2020/10/03-16:49:03: (0) 0 0 (1) 1 3 (2) 0 0 (+) 1 3
+[2020/10/03-16:49:03] [x] rcv from 1970/01/01-00:00:00 to 2020/10/03-16:49:03: (0) 0 0 (1) 1 3 (2) 0 0 (+) 1 3
+[2020/10/03-16:49:03] [x] dlv from 1970/01/01-00:00:00 to 2020/10/03-16:49:03: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-16:49:03] [x] ctr from 1970/01/01-00:00:00 to 2020/10/03-16:49:03: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-16:49:03] [x] rfw from 1970/01/01-00:00:00 to 2020/10/03-16:49:03: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-16:49:03] [x] exp from 1970/01/01-00:00:00 to 2020/10/03-16:49:03: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-17:41:07] [i] ipnfw forwarder has ended.
+[2020/10/03-17:41:07] [i] Endpoint has been stopped.
+[2020/10/03-17:41:07] [i] Administrative endpoint terminated.
+[2020/10/03-17:41:07] [i] ipnadminep has ended.
+[2020/10/03-17:41:07] [i] Plan has been stopped: ipn:1.0
+[2020/10/03-17:41:07] [i] bpclm has ended: ipn:1.0
+[2020/10/03-17:41:07] [i] Plan has been stopped: ipn:2.0
+[2020/10/03-17:41:07] [i] bpclm has ended: ipn:2.0
+[2020/10/03-17:41:07] [i] Outduct has been stopped: 1
+[2020/10/03-17:41:07] [i] ltpclo outduct closed.
+[2020/10/03-17:41:07] [i] ltpclo duct has ended.
+[2020/10/03-17:41:07] [i] Outduct has been stopped: 2
+[2020/10/03-17:41:07] [i] ltpclo outduct closed.
+[2020/10/03-17:41:07] [i] ltpclo duct has ended.
+[2020/10/03-17:41:07] [i] bptransit has ended.
+[2020/10/03-17:41:07] [i] bpclock has ended.
+[2020/10/03-17:41:07] [i] ltpcli receiver thread has ended.
+[2020/10/03-17:41:07] [i] ltpcli duct has ended.
+[2020/10/03-17:41:08] at line 745 of cfdp/library/libcfdpP.c, Can't find CFDP database.
+[2020/10/03-17:41:09] [i] ltpclock has ended.
+[2020/10/03-17:41:09] [i] LTP meter to engine 1 is stopped.
+[2020/10/03-17:41:09] [i] ltpmeter has ended.
+[2020/10/03-17:41:09] [i] LSO to engine 1 is stopped.
+[2020/10/03-17:41:09] [i] LTP meter to engine 2 is stopped.
+[2020/10/03-17:41:09] [i] ltpmeter has ended.
+[2020/10/03-17:41:09] [i] LSO to engine 2 is stopped.
+[2020/10/03-17:41:09] [i] udplsi receiver thread has ended.
+[2020/10/03-17:41:09] [i] udplso receiver thread has ended.
+[2020/10/03-17:41:09] [i] udplso receiver thread has ended.
+[2020/10/03-17:41:09] [i] udplso has ended.
+[2020/10/03-17:41:09] [i] udplsi has ended.
+[2020/10/03-17:41:09] [i] udplso has ended.
+[2020/10/03-17:41:09] [i] ltpdeliv has ended.
+[2020/10/03-17:41:10] [i] rfxclock has ended.
+[2020/10/03-17:41:28] [i] rfxclock is running.
+[2020/10/03-17:41:28] [i] No congestion forecast; horizon reached.
+[2020/10/03-17:41:28] [i] ionwarn finished.
+[2020/10/03-17:41:29] [i] No congestion forecast; horizon reached.
+[2020/10/03-17:41:29] [i] ionwarn finished.
+[2020/10/03-17:41:30] [i] Span to engine 1 (max BER 0.000100, max xmit segment size 1400, max recv segment size 1): xmit segment loss rate 0.673799, recv segment loss rate 0.000800, max timeouts 35.
+[2020/10/03-17:41:30] [i] Span to engine 2 (max BER 0.000100, max xmit segment size 1400, max recv segment size 1): xmit segment loss rate 0.673799, recv segment loss rate 0.000800, max timeouts 35.
+[2020/10/03-17:41:30] [?] Total max export sessions exceeds estimate.  Session lookup speed may be degraded: -32
+[2020/10/03-17:41:30] [i] udplso is running, spec=[107.22.251.253:4556], rengine=2.
+[2020/10/03-17:41:30] [i] udplso is running, spec=[172.31.37.132:4556], rengine=1.
+[2020/10/03-17:41:30] [i] ltpmeter is running.
+[2020/10/03-17:41:30] [i] ltpmeter is running.
+[2020/10/03-17:41:30] [i] ltpclock is running.
+[2020/10/03-17:41:30] [i] ltpdeliv is running.
+[2020/10/03-17:41:30] [i] udplsi is running, spec=[172.31.37.132:4556].
+[2020/10/03-17:41:31] [i] This node deploys bundle protocol version 6.
+[2020/10/03-17:41:31] [i] Bundle security is enabled.
+[2020/10/03-17:41:31] [i] ltpclo is running.
+[2020/10/03-17:41:31] [i] ltpcli is running.
+[2020/10/03-17:41:31] [i] ipnadminep is running.
+[2020/10/03-17:41:31] [i] ipnfw is running.
+[2020/10/03-17:41:31] [i] ltpclo is running.
+[2020/10/03-17:41:31] [i] bptransit is running.
+[2020/10/03-17:41:31] [i] bpclock is running.
+[2020/10/03-17:41:32] [i] bpclm is running: ipn:1.0
+[2020/10/03-17:41:32] [i] bpclm is running: ipn:2.0
+[2020/10/03-17:41:32] [x] src from 1970/01/01-00:00:00 to 2020/10/03-17:41:32: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-17:41:32] [x] fwd from 1970/01/01-00:00:00 to 2020/10/03-17:41:32: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-17:41:32] [x] xmt from 1970/01/01-00:00:00 to 2020/10/03-17:41:32: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-17:41:32] [x] rcv from 1970/01/01-00:00:00 to 2020/10/03-17:41:32: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-17:41:32] [x] dlv from 1970/01/01-00:00:00 to 2020/10/03-17:41:32: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-17:41:32] [x] ctr from 1970/01/01-00:00:00 to 2020/10/03-17:41:32: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-17:41:32] [x] rfw from 1970/01/01-00:00:00 to 2020/10/03-17:41:32: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-17:41:32] [x] exp from 1970/01/01-00:00:00 to 2020/10/03-17:41:32: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-17:42:27] [i] Span to engine 2 (max BER 0.000100, max xmit segment size 1400, max recv segment size 45): xmit segment loss rate 0.673799, recv segment loss rate 0.035367, max timeouts 35.
+[2020/10/03-17:42:34] [i] ipnfw forwarder has ended.
+[2020/10/03-17:42:34] [i] Endpoint has been stopped.
+[2020/10/03-17:42:34] [i] Administrative endpoint terminated.
+[2020/10/03-17:42:34] [i] ipnadminep has ended.
+[2020/10/03-17:42:34] [i] Plan has been stopped: ipn:1.0
+[2020/10/03-17:42:34] [i] bpclm has ended: ipn:1.0
+[2020/10/03-17:42:34] [i] Plan has been stopped: ipn:2.0
+[2020/10/03-17:42:34] [i] bpclm has ended: ipn:2.0
+[2020/10/03-17:42:34] [i] Outduct has been stopped: 1
+[2020/10/03-17:42:34] [i] ltpclo outduct closed.
+[2020/10/03-17:42:34] [i] ltpclo duct has ended.
+[2020/10/03-17:42:34] [i] Outduct has been stopped: 2
+[2020/10/03-17:42:34] [i] ltpclo outduct closed.
+[2020/10/03-17:42:34] [i] ltpclo duct has ended.
+[2020/10/03-17:42:34] [i] bptransit has ended.
+[2020/10/03-17:42:34] [i] bpclock has ended.
+[2020/10/03-17:42:34] [i] ltpcli receiver thread has ended.
+[2020/10/03-17:42:34] [i] ltpcli duct has ended.
+[2020/10/03-17:42:36] at line 745 of cfdp/library/libcfdpP.c, Can't find CFDP database.
+[2020/10/03-17:42:37] [i] ltpclock has ended.
+[2020/10/03-17:42:37] [i] LTP meter to engine 1 is stopped.
+[2020/10/03-17:42:37] [i] ltpmeter has ended.
+[2020/10/03-17:42:37] [i] LSO to engine 1 is stopped.
+[2020/10/03-17:42:37] [i] LTP meter to engine 2 is stopped.
+[2020/10/03-17:42:37] [i] ltpmeter has ended.
+[2020/10/03-17:42:37] [i] LSO to engine 2 is stopped.
+[2020/10/03-17:42:37] [i] udplsi receiver thread has ended.
+[2020/10/03-17:42:37] [i] udplso receiver thread has ended.
+[2020/10/03-17:42:37] [i] udplso receiver thread has ended.
+[2020/10/03-17:42:37] [i] udplso has ended.
+[2020/10/03-17:42:37] [i] udplso has ended.
+[2020/10/03-17:42:37] [i] udplsi has ended.
+[2020/10/03-17:42:37] [i] ltpdeliv has ended.
+[2020/10/03-17:42:38] [i] rfxclock has ended.
