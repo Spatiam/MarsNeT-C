@@ -72,6 +72,8 @@ def on_modified(event):
             print("CAPTURE COMMAND RECEIVED - SENDING IMAGE")
             os.system('fswebcam -r 1920x1080 --no-banner -q latest.jpg')
             print("Picture taken")
+            sleep(2)
+            print("sleep happened")
             with open(msg_queue_path, "a") as ec:
               ec.write("@@file@#@"+ts+"@#@"+return_address+"@#@"+rov_addr+"@#@latest.jpg"+"@#@0")
           elif tt[1] == 'ledon':
