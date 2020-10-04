@@ -259,7 +259,7 @@ print(style.CYAN+"Configuring .cfdprc file..."+style.YELLOW)
 with open(cfdp_rc_path, "w") as f:
   f.write("1\n")
   f.write("e 1\n")
-  f.write("w 0\n")
+  f.write("w 1\n")
   f.write("a entity "+current_eid+" bp ipn:"+current_eid+".0 7 0 0\n")
   f.write("m discard\n")
   f.write("m segsize 100000\n")

@@ -70,7 +70,7 @@ def on_modified(event):
               ec.write("@@msg@#@"+ts+"@#@"+return_address+"@#@"+rov_addr+"@#@"+echo_msg+"@#@0")
           elif tt[1] == 'capture':
             print("CAPTURE COMMAND RECEIVED - SENDING IMAGE")
-            os.system('fswebcam -r 1920x1080 --no-banner -q '+incoming_message_directory_path+"/latest.jpg")
+            os.system('fswebcam -r 1920x1080 --no-banner -q latest.jpg')
             with open(msg_queue_path, "a") as ec:
               ec.write("@@file@#@"+ts+"@#@"+return_address+"@#@"+rov_addr+"@#@latest.jpg"+"@#@0")
           elif tt[1] == 'ledon':
@@ -249,7 +249,7 @@ print(style.CYAN+"Configuring .cfdprc file..."+style.YELLOW)
 with open(cfdp_rc_path, "w") as f:
   f.write("1\n")
   f.write("e 1\n")
-  f.write("w 0\n")
+  f.write("w 1\n")
   f.write("a entity "+current_eid+" bp ipn:"+current_eid+".0 7 0 0\n")
   f.write("m discard\n")
   f.write("m segsize 100000\n")
@@ -335,8 +335,8 @@ def send_message(message, ts, tgt, frm, entire):
         print("bpcp msg.txt "+sendTo+":"+incoming_message_directory_path+"/msg.txt")
         os.system("bpcp msg.txt "+sendTo+":"+incoming_message_directory_path+"/msg.txt")
         print("HERE")
-        if os.path.exists(incoming_message_directory_path+'/msg.txt'):
-          os.system('rm '+incoming_message_directory_path+'/msg.txt')#remove the msg.txt file
+        if os.path.exists('msg.txt'):
+          os.system('rm msg.txt')#remove the msg.txt file
   else:
     print(style.RESET+style.RED+"Path not found"+style.RESET)
 
