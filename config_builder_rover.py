@@ -324,8 +324,8 @@ def send_file(filename, ts, tgt, frm, entire):
         with open('msg.txt', "w") as fw:
           fw.write("@@file@#@"+ts+"@#@"+tgt+"@#@"+frm+"@#@"+filename+"@#@0\n")
         print("#1")
-        print("bpcp "+filename+" "+sendTo+":"+filename)
-        os.system("bpcp "+filename+" "+sendTo+":"+filename)
+        print("bpcp "+filename+" "+sendTo+":"+incoming_message_directory_path+"/"+filename)
+        os.system("bpcp "+filename+" "+sendTo+":"+incoming_message_directory_path+"/"+filename)
         os.system('rm '+filename)
         print("#2")
         print("bpcp msg.txt "+sendTo+":"+incoming_message_directory_path+"/msg.txt")
