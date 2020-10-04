@@ -120,7 +120,7 @@ def process_msg(in_msg):
 def print_g(str_msg):
   print(style.RESET + style.GREEN + str_msg + style.RESET)
 
-def print_g(str_msg):
+def print_c(str_msg):
   print(style.RESET + style.CYAN + str_msg + style.RESET)
 
 def print_rcv(str_msg):
