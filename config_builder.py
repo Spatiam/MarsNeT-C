@@ -22,7 +22,14 @@ DELAY_QUEUE = 'delay_queue.txt'
 USERS_DIR = 'Users/'
 UPLOAD_DIR = 'Uploads/'
 MSG_FILE_NAME = 'msg_log.txt'
-THIS_USER = 'Houston'
+if instance == 'earth':
+  THIS_USER = 'Houston'
+if instance == 'rover':
+  THIS_USER = 'Rover'
+if instance == 'delay':
+  THIS_USER = 'Delay'
+if instance == 'mars':
+  THIS_USER = 'Mars'
 FWD_DIR='ion-open-source-3.7.1/dtn/incoming/'
 FWD_QUEUE='ion-open-source-3.7.1/dtn/msg_queue.dat'
 user_dict={'Houston':'earth_user','Rover':'rover_user', 'Delay':'delay_user', 'Mars':'mars_user' }
