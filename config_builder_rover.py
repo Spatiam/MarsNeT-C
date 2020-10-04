@@ -70,12 +70,10 @@ def on_modified(event):
               ec.write("@@msg@#@"+ts+"@#@"+return_address+"@#@"+rov_addr+"@#@"+echo_msg+"@#@0")
           elif tt[1] == 'capture':
             print("CAPTURE COMMAND RECEIVED - SENDING IMAGE")
-            os.system('fswebcam -r 1920x1080 --no-banner -q latest.jpg')
+            os.system('fswebcam -r 1920x1080 --no-banner -q '+incoming_message_directory_path+"/latest.jpg')
             print("Picture taken")
-            sleep(2)
-            print("sleep happened")
             with open(msg_queue_path, "a") as ec:
-              ec.write("\n@@file@#@"+ts+"@#@"+return_address+"@#@"+rov_addr+"@#@latest.jpg"+"@#@0")
+              ec.write("\n@@file@#@"+ts+"@#@"+return_address+"@#@"+rov_addr+"@#@"+incoming_message_directory_path+"/latest.jpg"+"@#@0")
           elif tt[1] == 'ledon':
             print("LED ON COMMAND RECEIVED")
             GPIO.output(led_pin, GPIO.HIGH)
@@ -326,9 +324,9 @@ def send_file(filename, ts, tgt, frm, entire):
         with open('msg.txt', "w") as fw:
           fw.write("@@file@#@"+ts+"@#@"+tgt+"@#@"+frm+"@#@"+filename+"@#@0\n")
         print("#1")
-        print("bpcp "+incoming_message_directory_path+"/"+filename+" "+sendTo+":"+incoming_message_directory_path+"/"+filename)
-        os.system("bpcp "+incoming_message_directory_path+"/"+filename+" "+sendTo+":"+incoming_message_directory_path+"/"+filename)
-        os.system('rm '+incoming_message_directory_path+"/"+filename)
+        print("bpcp "+filename+" "+sendTo+":"+filename)
+        os.system("bpcp "+filename+" "+sendTo+":"+filename)
+        os.system('rm '+filename)
         print("#2")
         print("bpcp msg.txt "+sendTo+":"+incoming_message_directory_path+"/msg.txt")
         os.system("bpcp msg.txt "+sendTo+":"+incoming_message_directory_path+"/msg.txt")
