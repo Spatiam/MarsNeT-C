@@ -82,6 +82,7 @@ def on_modified(event):
             print("STATUS COMMAND RECEIVED")
             stts = str(marsweather()).replace("'","").replace("(","").replace(")","")
             with open(msg_queue_path, "a") as ec:
+              print(return_address)
               ec.write("@@msg@#@"+ts+"@#@"+return_address+"@#@"+rov_addr+"@#@"+stts+"@#@0")
 
 #watchdog
