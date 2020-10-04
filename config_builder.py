@@ -242,7 +242,7 @@ def message_queue_listener():
               f.write(content[i]+"\n")
 
 def process_msg(in_msg):
-    os.system('cd ../Ephemeris/;python3 ephemerisMars.py;cd ../MessageProcessing')
+    os.system('python3 ephemerisMars.py')
     split_msg = in_msg[2:].split('@#@')
     msg_type = split_msg[0]
     if msg_type == 'msg':
@@ -262,7 +262,7 @@ def process_msg(in_msg):
     now = datetime.now()
     send = now + timedelta(seconds=delay)
     send_str = send.strftime("%d-%b-%Y(%H:%M:%S.%f)")
-    queue = '#beg#' + msg_sender_ip + ' ' + msg_target_ip + ' ' + msg_type +'\n'
+    queue = '#beg#' + msg_sender_ip + ' ' + msg_target_ip + ' ' + msg_type + ' ' + msg_timestamp + '\n'
     queue += msg_content + '\n'
     queue += '#end#' + send_str + '\n'       
     f = open('queue.txt', 'a')
