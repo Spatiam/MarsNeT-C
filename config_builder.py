@@ -16,12 +16,6 @@ host_rc_path = 'ion-open-source-3.7.1/dtn/host.rc'
 cfdp_rc_path = 'ion-open-source-3.7.1/dtn/host.cfdprc'
 incoming_message_directory_path = 'ion-open-source-3.7.1/dtn/incoming'
 
-#watchdog
-my_event_handler.on_modified = on_modified
-my_observer = Observer()
-my_observer.schedule(my_event_handler,FILENAME,recursive=True)
-my_observer.start()
-
 def readlastline(f):
     try:
         f.seek(-2, 2)
@@ -47,6 +41,13 @@ def on_modified(event):
       else: #this message needs to be forwarded
         with open(msg_queue_path, "a") as app: #append the message to the message queue
           app.write(last)
+
+#watchdog
+my_event_handler.on_modified = on_modified
+my_observer = Observer()
+my_observer.schedule(my_event_handler,FILENAME,recursive=True)
+my_observer.start()
+
 
 class style():
   BLACK='\033[30m'
