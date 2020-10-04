@@ -17,17 +17,14 @@ cfdp_rc_path = 'ion-open-source-3.7.1/dtn/host.cfdprc'
 incoming_message_directory_path = 'ion-open-source-3.7.1/dtn/incoming'
 my_event_handler=PatternMatchingEventHandler("*","",False,True)
 FWD_QUEUE = 'ion-open-source-3.7.1/dtn/msg_queue.dat' 
+DELAY_QUEUE = 'delay_queue.txt'
 
 if os.path.exists(incoming_message_directory_path+'/msg.txt'):
   os.system('rm '+incoming_message_directory_path+'/msg.txt')#remove the msg.txt file
-#def readlastline(f):
-#    try:
-#        f.seek(-2, 2)
-#        while f.read(1) != b"\n":
-#            f.seek(-2, 1)
-#        return str(f.read().decode('utf-8'))
-#    except:
-#        return ' '
+
+if not os.path.exists(DELAY_QUEUE):
+  with open(DELAY_QUEUE, "w") as fl:
+    f.write()
 
 def process_msg(in_msg):
     os.system('python3 ephemerisMars.py')
@@ -254,7 +251,7 @@ print(style.CYAN+"Testing local server..."+style.YELLOW)
 os.system('ss -panu')
 os.system('ipcs')
 print(style.GREEN+"DONE"+style.RESET)
-print(style.CYAN+"Starting CFDPADMIN..."+style.YELLOW, end='', flush=True)
+print(style.CYAN+"Starting CFDPADMIN..."+style.YELLOW)
 os.system('cfdpadmin '+cfdp_rc_path)
 print(style.GREEN+"DONE"+style.RESET)
 
