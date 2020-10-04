@@ -312,9 +312,11 @@ def send_file(filename, ts, tgt, frm, entire):
         sendTo=nodes_eid[nodes.index(path_list[i+1])]
         with open('msg.txt', "w") as fw:
           fw.write("@@file@#@"+ts+"@#@"+tgt+"@#@"+frm+"@#@"+filename+"@#@0\n")
+        print("#1")
         print("bpcp "+incoming_message_directory_path+"/"+filename+" "+sendTo+":"+incoming_message_directory_path+"/"+filename)
         os.system("bpcp "+incoming_message_directory_path+"/"+filename+" "+sendTo+":"+incoming_message_directory_path+"/"+filename)
         os.system('rm '+incoming_message_directory_path+"/"+filename)
+        print("#2")
         print("bpcp msg.txt "+sendTo+":"+incoming_message_directory_path+"/msg.txt")
         os.system("bpcp msg.txt "+sendTo+":"+incoming_message_directory_path+"/msg.txt")
         if os.path.exists(incoming_message_directory_path+'/msg.txt'):
@@ -335,6 +337,7 @@ def send_message(message, ts, tgt, frm, entire):
         sendTo=nodes_eid[nodes.index(path_list[i+1])]
         with open('msg.txt', "w") as fw:
           fw.write("@@msg@#@"+ts+"@#@"+tgt+"@#@"+frm+"@#@"+message+"@#@0\n")
+        print("#3")
         print("bpcp msg.txt "+sendTo+":"+incoming_message_directory_path+"/msg.txt")
         os.system("bpcp msg.txt "+sendTo+":"+incoming_message_directory_path+"/msg.txt")
         print("HERE")
