@@ -74,10 +74,10 @@ def on_modified(event):
               ec.write("@@file@#@"+ts+"@#@"+return_address+"@#@"+rov_addr+"@#@"+incoming_message_directory_path+"/latest.jpg"+"@#@0")
           elif tt[1] == 'ledon':
             print("LED ON COMMAND RECEIVED")
-            GPIO.output(led_pin, HIGH)
+            GPIO.output(led_pin, GPIO.HIGH)
           elif tt[1] == 'ledoff':
             print("LED OFF COMMAND RECEIVED")
-            GPIO.output(led_pin, LOW)
+            GPIO.output(led_pin, GPIO.LOW)
           elif tt[1] == 'status':
             print("STATUS COMMAND RECEIVED")
             stts = str(marsweather()).replace("'","").replace("(","").replace(")","")
