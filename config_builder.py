@@ -40,10 +40,10 @@ def process_msg(in_msg):
         msg_sender_ip = split_msg[3]
         msg_content = split_msg[4]
     else:
-        msg_timestamp = split_msg[2]
-        msg_target_ip = split_msg[3]
-        msg_sender_ip = split_msg[4]
-        msg_content = split_msg[1]
+        msg_timestamp = split_msg[1]
+        msg_target_ip = split_msg[2]
+        msg_sender_ip = split_msg[3]
+        msg_content = split_msg[4]
     ephemeris_file = open('Ephemeris/mars-earth-delay.txt', 'r') 
     lines = ephemeris_file.readlines() 
     for line in lines: 
@@ -384,7 +384,7 @@ def pwf_processor():
                 elif msg_type == 'file':
                     if(path.exists('../FileQueue/'+content)):
                         # send 'content' to 'sender' from 'receiver'
-                        fwd_msg = '@@file@#@'+content+'@#@'+msg_timestamp+'@#@'+target+'@#@'+source+'@#@0'
+                        fwd_msg = '@@file@#@'+msg_timestamp+'@#@'+target+'@#@'+source+'@#@'+content+'@#@0'
                         print(fwd_msg)
                         fwd_queue = open(FWD_QUEUE, 'a')
                         fwd_queue.write(fwd_msg)
