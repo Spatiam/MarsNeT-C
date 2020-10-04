@@ -16,11 +16,11 @@ EARTH = '1'
 ephemeris = {1: {3: 0.0}, 3: {1: 0.0}}
 
 # Open and read file
-ephemeris_file = open('mars-earth-ephemeris.txt', 'r') 
+ephemeris_file = open('Ephemeris/mars-earth-ephemeris.txt', 'r') 
 lines = ephemeris_file.readlines() 
 
 today = datetime.today()
-today = datetime.strptime('2020-Oct-09-06:00', '%Y-%b-%d-%H:%M')
+#today = datetime.strptime('2020-Oct-09-06:00', '%Y-%b-%d-%H:%M')
 
 body_1 = 0
 body_2 = 0
@@ -59,6 +59,6 @@ for value in values:
             delay = value[2]
 
 
-f = open('mars-earth-delay.txt', 'w')
+f = open('Ephemeris/mars-earth-delay.txt', 'w')
 f.write(final_delay)
 f.close()

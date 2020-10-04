@@ -1006,3 +1006,67 @@
 [2020/10/03-17:42:37] [i] udplsi has ended.
 [2020/10/03-17:42:37] [i] ltpdeliv has ended.
 [2020/10/03-17:42:38] [i] rfxclock has ended.
+[2020/10/03-22:11:30] [i] rfxclock is running.
+[2020/10/03-22:11:30] [i] No congestion forecast; horizon reached.
+[2020/10/03-22:11:30] [i] ionwarn finished.
+[2020/10/03-22:11:32] [i] No congestion forecast; horizon reached.
+[2020/10/03-22:11:32] [i] ionwarn finished.
+[2020/10/03-22:11:33] [i] Span to engine 1 (max BER 0.000100, max xmit segment size 1400, max recv segment size 1): xmit segment loss rate 0.673799, recv segment loss rate 0.000800, max timeouts 35.
+[2020/10/03-22:11:33] [i] Span to engine 2 (max BER 0.000100, max xmit segment size 1400, max recv segment size 1): xmit segment loss rate 0.673799, recv segment loss rate 0.000800, max timeouts 35.
+[2020/10/03-22:11:33] [?] Total max export sessions exceeds estimate.  Session lookup speed may be degraded: -32
+[2020/10/03-22:11:33] [i] udplso is running, spec=[107.22.251.253:4556], rengine=2.
+[2020/10/03-22:11:33] [i] ltpmeter is running.
+[2020/10/03-22:11:33] [i] ltpmeter is running.
+[2020/10/03-22:11:33] [i] ltpdeliv is running.
+[2020/10/03-22:11:33] [i] ltpclock is running.
+[2020/10/03-22:11:33] [i] udplso is running, spec=[172.31.37.132:4556], rengine=1.
+[2020/10/03-22:11:33] [i] udplsi is running, spec=[172.31.37.132:4556].
+[2020/10/03-22:11:34] [i] This node deploys bundle protocol version 6.
+[2020/10/03-22:11:34] [i] Bundle security is enabled.
+[2020/10/03-22:11:34] [i] ltpclo is running.
+[2020/10/03-22:11:34] [i] ltpcli is running.
+[2020/10/03-22:11:34] [i] ltpclo is running.
+[2020/10/03-22:11:34] [i] ipnfw is running.
+[2020/10/03-22:11:34] [i] bptransit is running.
+[2020/10/03-22:11:34] [i] ipnadminep is running.
+[2020/10/03-22:11:34] [i] bpclock is running.
+[2020/10/03-22:11:35] [i] bpclm is running: ipn:1.0
+[2020/10/03-22:11:35] [i] bpclm is running: ipn:2.0
+[2020/10/03-22:11:35] [x] src from 1970/01/01-00:00:00 to 2020/10/03-22:11:35: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-22:11:35] [x] fwd from 1970/01/01-00:00:00 to 2020/10/03-22:11:35: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-22:11:35] [x] xmt from 1970/01/01-00:00:00 to 2020/10/03-22:11:35: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-22:11:35] [x] rcv from 1970/01/01-00:00:00 to 2020/10/03-22:11:35: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-22:11:35] [x] dlv from 1970/01/01-00:00:00 to 2020/10/03-22:11:35: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-22:11:35] [x] ctr from 1970/01/01-00:00:00 to 2020/10/03-22:11:35: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-22:11:35] [x] rfw from 1970/01/01-00:00:00 to 2020/10/03-22:11:35: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-22:11:35] [x] exp from 1970/01/01-00:00:00 to 2020/10/03-22:11:35: (0) 0 0 (1) 0 0 (2) 0 0 (+) 0 0
+[2020/10/03-22:12:08] [i] Span to engine 2 (max BER 0.000100, max xmit segment size 1400, max recv segment size 46): xmit segment loss rate 0.673799, recv segment loss rate 0.036139, max timeouts 35.
+[2020/10/03-23:05:13] [i] Plan has been stopped: ipn:1.0
+[2020/10/03-23:05:13] [i] bpclm has ended: ipn:1.0
+[2020/10/03-23:05:13] [i] Plan has been stopped: ipn:2.0
+[2020/10/03-23:05:13] [i] bpclm has ended: ipn:2.0
+[2020/10/03-23:05:13] [i] bpclock has ended.
+[2020/10/03-23:05:13] [i] bptransit has ended.
+[2020/10/03-23:05:13] [i] Endpoint has been stopped.
+[2020/10/03-23:05:13] [i] Administrative endpoint terminated.
+[2020/10/03-23:05:13] [i] ipnadminep has ended.
+[2020/10/03-23:05:13] [i] ipnfw forwarder has ended.
+[2020/10/03-23:05:13] [i] ltpcli receiver thread has ended.
+[2020/10/03-23:05:13] [i] ltpcli duct has ended.
+[2020/10/03-23:05:13] [i] Outduct has been stopped: 1
+[2020/10/03-23:05:13] [i] ltpclo outduct closed.
+[2020/10/03-23:05:13] [i] ltpclo duct has ended.
+[2020/10/03-23:05:13] [i] Outduct has been stopped: 2
+[2020/10/03-23:05:13] [i] ltpclo outduct closed.
+[2020/10/03-23:05:13] [i] ltpclo duct has ended.
+[2020/10/03-23:05:13] [i] ltpclock has ended.
+[2020/10/03-23:05:13] [i] rfxclock has ended.
+[2020/10/03-23:05:13] [i] ltpdeliv has ended.
+[2020/10/03-23:05:13] [i] udplsi receiver thread has ended.
+[2020/10/03-23:05:13] [i] udplsi has ended.
+[2020/10/03-23:05:13] [i] LSO to engine 1 is stopped.
+[2020/10/03-23:05:13] [i] udplso receiver thread has ended.
+[2020/10/03-23:05:13] [i] udplso has ended.
+[2020/10/03-23:05:13] [i] LSO to engine 2 is stopped.
+[2020/10/03-23:05:13] [i] udplso receiver thread has ended.
+[2020/10/03-23:05:13] [i] udplso has ended.
