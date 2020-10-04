@@ -8,11 +8,9 @@ import threading
 import subprocess
 from datetime import datetime
 import signal
-import readchar
 import pyion
-import pyinotify
 
-instance=input('instance [earth, mars, delay, rover]:')
+instance=input("instance (earth, delay, mars, rover):")
 network_map_path = 'ion-open-source-3.7.1/dtn/network.map'
 ip_map_path = 'ion-open-source-3.7.1/dtn/ip.map'
 msg_queue_path = 'ion-open-source-3.7.1/dtn/msg_queue.dat'
@@ -102,7 +100,7 @@ os.system('killm')
 print(style.GREEN+"DONE")
 print("")
 print(style.CYAN+"Configuring .rc file..."+style.YELLOW)
-f=open("ion-3.6.2/dtn/host.rc", "w")
+f=open("ion-open-source-3.7.1/dtn/host.rc", "w")
 f.write("## begin ionadmin\n")
 f.write("1 "+current_eid+" \'\'\n")
 f.write("s\n")
@@ -171,7 +169,7 @@ f.close()
 print(style.GREEN+"DONE")
 print("")
 print(style.CYAN+"Starting ION..."+style.YELLOW, end='', flush=True)
-os.system('ionstart -I ion-3.6.2/dtn/host.rc')
+os.system('ionstart -I ion-open-source-3.7.1/dtn/host.rc')
 print(style.GREEN+"DONE"+style.RESET)
 print("")
 print(style.CYAN+"Testing local server..."+style.YELLOW)
@@ -179,6 +177,31 @@ os.system('ss -panu')
 os.system('ipcs')
 print(style.GREEN+"DONE"+style.RESET)
       
+def message_listener():
+  global current_eid
+  global instance
+  # Create a proxy to node X and attach to it
+  proxy = pyion.get_bp_proxy(int(current_eid))
+  proxy.bp_attach()
+  # Listen to 'ipn:X.1' for incoming data
+  with proxy.bp_open('ipn:'+current_eid+'.1') as eid:
+    while eid.is_open:
+      try:
+        received = str(eid.bp_receive()).strip("\n")
+        #parse the message to see if we need to forward it
+        if "@#@msg" in received:
+          tgt = received.split("@#@")[2].split("_")[0]
+          if tgt == instance:
+            #this message belongs to us - keep it
+            print("RECEIVED MESSAGE:"+received)
+            pass
+          else:
+            #this message doesn't belong to us - add it to msg_queue.dat
+            print("RECEIVED MESSAGE FOR FORWARDING")
+            with open(msg_queue_path, "a") as g:
+              g.write(received+"\n")
+      except InterruptedError:
+        break
 
 def message_queue_listener():
   while True:
@@ -203,26 +226,61 @@ def message_queue_listener():
           message = content[i].split("@#@")[4]
           send_message(message, ts, tgt, frm)
           content[i] = "@@msg@#@"+ts+"@#@"+tgt+"@#@"+frm+"@#@"+message+"@#@"+"1"
-      #rewrite the file with a status update
-    with open(msg_queue_path, "w") as f:
-      for i in range(len(content)):
-        f.write(content[i]+"\n")
+          #rewrite the file with a status update
+          with open(msg_queue_path, "w") as f:
+            for i in range(len(content)):
+              f.write(content[i]+"\n")
+
+def process_msg(in_msg):
+    os.system('cd ../Ephemeris/;python3 ephemerisMars.py;cd ../MessageProcessing')
+    split_msg = in_msg[2:].split('@#@')
+    msg_type = split_msg[0]
+    if msg_type == 'msg':
+        msg_timestamp = split_msg[1]
+        msg_target_ip = split_msg[2]
+        msg_sender_ip = split_msg[3]
+        msg_content = split_msg[4]
+    else:
+        msg_timestamp = split_msg[2]
+        msg_target_ip = split_msg[3]
+        msg_sender_ip = split_msg[4]
+        msg_content = split_msg[1]
+    ephemeris_file = open('../Ephemeris/mars-earth-delay.txt', 'r') 
+    lines = ephemeris_file.readlines() 
+    for line in lines: 
+        delay = round(float(line) * 60)
+    now = datetime.now()
+    send = now + timedelta(seconds=delay)
+    send_str = send.strftime("%d-%b-%Y(%H:%M:%S.%f)")
+    queue = '#beg#' + msg_sender_ip + ' ' + msg_target_ip + ' ' + msg_type + ' ' + msg_timestamp + '\n'
+    queue += msg_content + '\n'
+    queue += '#end#' + send_str + '\n'       
+    f = open('queue.txt', 'a')
+    f.write(queue + '\n')
+    f.close()
 
 def send_message(message, ts, tgt, frm):
   global graph
   global instance
-  tgt_eid = tgt.split("_")[0]
-  path_list = BFS_SP(graph, instance, tgt_eid)
-  if len(path_list) != 0:
-    print(style.RESET+style.GREEN+"Path found -> "+str(path_list)+style.RESET+"\n\n")
-    for i in range(len(path_list)):
-      if path_list[i] == instance:
-        print("echo \"@@msg@#@"+ts+"@#@"+tgt+"@#@"+frm+"@#@"+message+"@#@0\" | bpsource ipn:"+path_list[i+1]+".1")
-        os.system("echo \"@@msg@#@"+ts+"@#@"+tgt+"@#@"+frm+"@#@"+message+"@#@0\" | bpsource ipn:"+path_list[i+1]+".1")
+  global nodes
+  global nodes_eid
+  if instance != 'delay':
+    tgt_eid = tgt.split("_")[0]
+    path_list = BFS_SP(graph, instance, tgt_eid)
+    if len(path_list) != 0:
+      print(style.RESET+style.GREEN+"Path found -> "+str(path_list)+style.RESET+"\n\n")
+      for i in range(len(path_list)):
+        if path_list[i] == instance:
+          sendTo=nodes_eid[nodes.index(path_list[i+1])]
+          print("echo \"@@msg@#@"+ts+"@#@"+tgt+"@#@"+frm+"@#@"+message+"@#@0\" | bpsource ipn:"+sendTo+".1")
+          os.system("echo \"@@msg@#@"+ts+"@#@"+tgt+"@#@"+frm+"@#@"+message+"@#@0\" | bpsource ipn:"+sendTo+".1")
+    else:
+      print(style.RESET+style.RED+"Path not found"+style.RESET)
   else:
-    print(style.RESET+style.RED+"Path not found"+style.RESET)
+    #delay instance to we forward to the delay message queue
+    process_msg(message)
 
 messageQueue=threading.Thread(target=message_queue_listener)
-#messageListener=threading.Thread(target=message_listener)
+messageListener=threading.Thread(target=message_listener)
 messageQueue.start()
-#messageListener.start()
+messageListener.start()
