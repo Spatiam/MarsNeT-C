@@ -471,7 +471,7 @@ def pwf_processor():
 
 def menu_thread():
   while 1:
-    time.sleep(2)
+    sleep(2)
     for user in users:
       after_files = dict ([(f, None) for f in os.listdir(USERS_DIR + user + '/' + UPLOAD_DIR)])
       added_files = [f for f in after_files if not f in filedict[user]]
