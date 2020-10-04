@@ -4,7 +4,7 @@ from time import sleep
 import os.path
 from os import path
 import threading
-from datetime import datetime
+from datetime import datetime,timedelta
 from watchdog.observers import Observer
 from watchdog.events import PatternMatchingEventHandler
 
@@ -16,6 +16,7 @@ host_rc_path = 'ion-open-source-3.7.1/dtn/host.rc'
 cfdp_rc_path = 'ion-open-source-3.7.1/dtn/host.cfdprc'
 incoming_message_directory_path = 'ion-open-source-3.7.1/dtn/incoming'
 my_event_handler=PatternMatchingEventHandler("*","",False,True)
+
 def readlastline(f):
     try:
         f.seek(-2, 2)
@@ -25,12 +26,40 @@ def readlastline(f):
     except:
         return ' '
 
+def process_msg(in_msg):
+    os.system('python3 ephemerisMars.py')
+    split_msg = in_msg[2:].split('@#@')
+    msg_type = split_msg[0]
+    if msg_type == 'msg':
+        msg_timestamp = split_msg[1]
+        msg_target_ip = split_msg[2]
+        msg_sender_ip = split_msg[3]
+        msg_content = split_msg[4]
+    else:
+        msg_timestamp = split_msg[2]
+        msg_target_ip = split_msg[3]
+        msg_sender_ip = split_msg[4]
+        msg_content = split_msg[1]
+    ephemeris_file = open('Ephemeris/mars-earth-delay.txt', 'r') 
+    lines = ephemeris_file.readlines() 
+    for line in lines: 
+        delay = round(float(line) * 60)
+    now = datetime.now()
+    send = now + timedelta(seconds=delay)
+    send_str = send.strftime("%d-%b-%Y(%H:%M:%S.%f)")
+    queue = '#beg#' + msg_sender_ip + ' ' + msg_target_ip + ' ' + msg_type + ' ' + msg_timestamp + '\n'
+    queue += msg_content + '\n'
+    queue += '#end#' + send_str + '\n'       
+    f = open('queue.txt', 'a')
+    f.write(queue + '\n')
+    f.close()
+
 #when change in directory is detected
 def on_modified(event):
   global duplicate_check
   global instance
   if os.path.exists(incoming_message_directory_path+'/msg.txt'): #see if the msg.txt file is there
-    with open(event.src_path+'/msg.txt', "rb") as f:
+    with open(incoming_message_directory_path+'/msg.txt', "rb") as f:
       last = readlastline(f)
     if "@@msg" in last:
       print("MESSAGE RECEIVED:"+last.strip("\n"))#this is the message we received
@@ -39,8 +68,7 @@ def on_modified(event):
       if tt == instance:#we keep this message
         print("Message is at it's final location")
       else: #this message needs to be forwarded
-        with open(msg_queue_path, "a") as app: #append the message to the message queue
-          app.write(last)
+        process_msg(last)
 
 #watchdog
 my_event_handler.on_modified = on_modified
@@ -227,11 +255,10 @@ print(style.GREEN+"DONE"+style.RESET)
 
 def message_queue_listener():
   while True:
-    #check file every 10 seconds
-    sleep(10)
+    #check file every 1 second
+    sleep(1)
     global graph
     #message queue updated
-    print("CHECKING")
     #read queue
     with open(msg_queue_path, "r") as f:
       content=f.readlines()
@@ -253,57 +280,26 @@ def message_queue_listener():
             for i in range(len(content)):
               f.write(content[i]+"\n")
 
-def process_msg(in_msg):
-    os.system('python3 ephemerisMars.py')
-    split_msg = in_msg[2:].split('@#@')
-    msg_type = split_msg[0]
-    if msg_type == 'msg':
-        msg_timestamp = split_msg[1]
-        msg_target_ip = split_msg[2]
-        msg_sender_ip = split_msg[3]
-        msg_content = split_msg[4]
-    else:
-        msg_timestamp = split_msg[2]
-        msg_target_ip = split_msg[3]
-        msg_sender_ip = split_msg[4]
-        msg_content = split_msg[1]
-    ephemeris_file = open('../Ephemeris/mars-earth-delay.txt', 'r') 
-    lines = ephemeris_file.readlines() 
-    for line in lines: 
-        delay = round(float(line) * 60)
-    now = datetime.now()
-    send = now + timedelta(seconds=delay)
-    send_str = send.strftime("%d-%b-%Y(%H:%M:%S.%f)")
-    queue = '#beg#' + msg_sender_ip + ' ' + msg_target_ip + ' ' + msg_type + ' ' + msg_timestamp + '\n'
-    queue += msg_content + '\n'
-    queue += '#end#' + send_str + '\n'       
-    f = open('queue.txt', 'a')
-    f.write(queue + '\n')
-    f.close()
-
 def send_message(message, ts, tgt, frm, entire):
   global graph
   global instance
   global nodes
   global nodes_eid
   global incoming_message_directory_path
-  if instance != 'delay':
-    tgt_eid = tgt.split("_")[0]
-    path_list = BFS_SP(graph, instance, tgt_eid)
-    if len(path_list) != 0:
-      print(style.RESET+style.GREEN+"Path found -> "+str(path_list)+style.RESET+"\n\n")
-      for i in range(len(path_list)):
-        if path_list[i] == instance:
-          sendTo=nodes_eid[nodes.index(path_list[i+1])]
-          with open('msg.txt', "w") as fw:
-            fw.write("@@msg@#@"+ts+"@#@"+tgt+"@#@"+frm+"@#@"+message+"@#@0\n")
-          print("bpcp msg.txt "+sendTo+":"+incoming_message_directory_path+"/msg.txt")
-          os.system("bpcp msg.txt "+sendTo+":"+incoming_message_directory_path+"/msg.txt")
-    else:
-      print(style.RESET+style.RED+"Path not found"+style.RESET)
+  tgt_eid = tgt.split("_")[0]
+  path_list = BFS_SP(graph, instance, tgt_eid)
+  if len(path_list) != 0:
+    print(style.RESET+style.GREEN+"Path found -> "+str(path_list)+style.RESET+"\n\n")
+    for i in range(len(path_list)):
+      if path_list[i] == instance:
+        sendTo=nodes_eid[nodes.index(path_list[i+1])]
+        with open('msg.txt', "w") as fw:
+          fw.write("@@msg@#@"+ts+"@#@"+tgt+"@#@"+frm+"@#@"+message+"@#@0\n")
+        print("bpcp msg.txt "+sendTo+":"+incoming_message_directory_path+"/msg.txt")
+        os.system("bpcp msg.txt "+sendTo+":"+incoming_message_directory_path+"/msg.txt")
   else:
-    #delay instance to we forward to the delay message queue
-    process_msg(entire)
+    print(style.RESET+style.RED+"Path not found"+style.RESET)
+
 
 messageQueue=threading.Thread(target=message_queue_listener)
 messageQueue.start()
