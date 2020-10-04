@@ -33,6 +33,7 @@ if instance == 'mars':
 FWD_DIR='ion-open-source-3.7.1/dtn/incoming/'
 FWD_QUEUE='ion-open-source-3.7.1/dtn/msg_queue.dat'
 user_dict={'Houston':'earth_user','Rover':'rover_user', 'Delay':'delay_user', 'Mars':'mars_user' }
+user_names={'earth_user':'Houston Control Center','rover_user':'Mars Rover', 'delay_user':'Relay Node', 'mars_user':'Mars User'}
 filedict = {}
 msg_dict = {}
 users = os.listdir('Users/')
@@ -116,39 +117,106 @@ def process_msg(in_msg):
     f.write(queue + '\n')
     f.close()
 
+def print_g(str_msg):
+  print(style.RESET + style.GREEN + str_msg + style.RESET)
+
+def print_g(str_msg):
+  print(style.RESET + style.CYAN + str_msg + style.RESET)
+
+def print_rcv(str_msg):
+
+  split_msg = in_msg[2:].split('@#@')
+
+  msg_type = split_msg[0]
+  msg_timestamp = split_msg[1]
+  target = user_names[split_msg[2]]
+  sender = user_names[split_msg[3]]
+  msg_content = split_msg[4]
+
+  now = datetime.now()
+  now_str = now.strftime("%d-%b-%Y(%H:%M)")
+
+  if msg_type == 'msg':
+    print_g('Message Received')
+
+    print('Message content: ' + msg_content + '\n')
+  
+  else:
+    print_g('File Received')
+    print('File name: ' + msg_content)
+
+  print('Time Received: ' + now_str + '\n')
+
+  print('Original sender: ' + senderi + '\n')
+  print('Time sent from origin: ' + msg_timestamp)
+
+  print('Final Destination: ' + target)
+
+def print_snd(str_msg):
+
+  split_msg = in_msg[2:].split('@#@')
+
+  msg_type = split_msg[0]
+  msg_timestamp = split_msg[1]
+  target = user_names[split_msg[2]]
+  sender = user_names[split_msg[3]]
+  msg_content = split_msg[4]
+
+  now = datetime.now()
+  now_str = now.strftime("%d-%b-%Y(%H:%M)")
+
+  if msg_type == 'msg':
+    print_g('Sending Message')
+
+    print('Message content: ' + msg_content + '\n')
+  
+  else:
+    print_g('File Received')
+    print('File name: ' + msg_content)
+
+  print('Time Sending: ' + now_str + '\n')
+
+  print('Original sender: ' + senderi + '\n')
+  print('Time sent from origin: ' + msg_timestamp)
+
+  print('Final Destination: ' + target)
+
 #when change in directory is detected
 def on_modified(event):
   global instance
   global duplicate_check
   global instance
   if os.path.exists(incoming_message_directory_path+'/msg.txt'): #see if the msg.txt file is there
-    print("File msg.txt exists")
     with open(incoming_message_directory_path+'/msg.txt', "r") as f:
       last = f.readline()
-      print("read last line")
     if "@@msg" in last:
-      print("MESSAGE RECEIVED:"+last.strip("\n"))#this is the message we received
+      #print("MESSAGE RECEIVED:"+last.strip("\n"))#this is the message we received
       os.system('rm '+incoming_message_directory_path+'/msg.txt')#remove the msg.txt file
+
+      print_rcv(last.strip('\n'))
+
       tt = last.strip("\n").split("@#@")[2].split("_")[0]
       if tt == instance:#we keep this message
-        print("Message is at its final location")
+        print_c("Message is at its final destination")
       else: #this message needs to be forwarded
         if instance == 'delay':
-          print("Sending to process_msg for forwarding")
+          #print("Sending to process_msg for forwarding")i
           process_msg(last)
         else:
           with open(msg_queue_path, "a") as ft:
             ft.write("\n"+last)
     if "@@file" in last:
-      print("FILE RECEIVED:"+last.strip("\n"))
+
+      print_rcv(last.strip('\n'))
+      #print("FILE RECEIVED:"+last.strip("\n"))
       if os.path.exists(incoming_message_directory_path+'/msg.txt'):
         os.system('rm '+incoming_message_directory_path+'/msg.txt')#remove the msg.txt file
       tt = last.strip("\n").split("@#@")[2].split("_")[0]
       if tt == instance:#we keep this file
-        print("File is at its final location")
+        printi_c("File is at its final destination")
       else: #this message needs to be forwarded
         if instance == 'delay':
-          print("Sending to process_msg for forwarding")
+          #print("Sending to process_msg for forwarding")
           process_msg(last)
         else:
           with open(msg_queue_path, "a") as ft:
@@ -177,7 +245,7 @@ def BFS_SP(graph, start, goal):
   explored = [] 
   queue = [[start]] 
   if start == goal: 
-    print("SAME NODE") 
+    #print("SAME NODE") 
     return
   while queue: 
     path = queue.pop(0) 
@@ -191,7 +259,7 @@ def BFS_SP(graph, start, goal):
         if neighbour == goal: 
           return new_path
       explored.append(node) 
-  print("CONNECTING PATH DOES NOT EXIST")
+  #print("CONNECTING PATH DOES NOT EXIST")
   return []
 
 #parse network.map
@@ -317,7 +385,7 @@ print(style.CYAN+"Configuring .cfdprc file..."+style.YELLOW)
 with open(cfdp_rc_path, "w") as f:
   f.write("1\n")
   f.write("e 1\n")
-  f.write("w 1\n")
+  f.write("w 0\n")
   f.write("a entity "+current_eid+" bp ipn:"+current_eid+".0 7 0 0\n")
   f.write("m discard\n")
   f.write("m segsize 100000\n")
@@ -335,6 +403,8 @@ print(style.GREEN+"DONE"+style.RESET)
 print(style.CYAN+"Starting CFDPADMIN..."+style.YELLOW)
 os.system('cfdpadmin '+cfdp_rc_path)
 print(style.GREEN+"DONE"+style.RESET)
+sleep(2)
+os.system('clear')
 
 def message_queue_listener():
   while True:
@@ -384,19 +454,21 @@ def send_file(filename, ts, tgt, frm, entire):
   tgt_eid = tgt.split("_")[0]
   path_list = BFS_SP(graph, instance, tgt_eid)
   if len(path_list) != 0:
-    print(style.RESET+style.GREEN+"Path found -> "+str(path_list)+style.RESET+"\n\n")
     for i in range(len(path_list)):
       if path_list[i] == instance:
         sendTo=nodes_eid[nodes.index(path_list[i+1])]
         with open('msg.txt', "w") as fw:
           fw.write("@@file@#@"+ts+"@#@"+tgt+"@#@"+frm+"@#@"+filename+"@#@0\n")
-        print("bpcp "+incoming_message_directory_path+"/"+filename+" "+sendTo+":"+incoming_message_directory_path+"/"+filename)
+        #print("bpcp "+incoming_message_directory_path+"/"+filename+" "+sendTo+":"+incoming_message_directory_path+"/"+filename)
+        
+        print_snd("@@file@#@"+ts+"@#@"+tgt+"@#@"+frm+"@#@"+filename+"@#@")
         os.system("bpcp "+incoming_message_directory_path+"/"+filename+" "+sendTo+":"+incoming_message_directory_path+"/"+filename)
         os.system('rm '+incoming_message_directory_path+"/"+filename)
-        print("bpcp msg.txt "+sendTo+":"+incoming_message_directory_path+"/msg.txt")
+        #print("bpcp msg.txt "+sendTo+":"+incoming_message_directory_path+"/msg.txt")
         os.system("bpcp msg.txt "+sendTo+":"+incoming_message_directory_path+"/msg.txt")
         if os.path.exists(incoming_message_directory_path+'/msg.txt'):
           os.system('rm '+incoming_message_directory_path+'/msg.txt')#remove the msg.txt file
+    print(style.RESET+style.CYAN+"Forwarding Path -> "+str(path_list)+style.RESET+"\n\n")
         
 def send_message(message, ts, tgt, frm, entire):
   global graph
@@ -407,14 +479,16 @@ def send_message(message, ts, tgt, frm, entire):
   tgt_eid = tgt.split("_")[0]
   path_list = BFS_SP(graph, instance, tgt_eid)
   if len(path_list) != 0:
-    print(style.RESET+style.GREEN+"Path found -> "+str(path_list)+style.RESET+"\n\n")
     for i in range(len(path_list)):
       if path_list[i] == instance:
         sendTo=nodes_eid[nodes.index(path_list[i+1])]
         with open('msg.txt', "w") as fw:
           fw.write("@@msg@#@"+ts+"@#@"+tgt+"@#@"+frm+"@#@"+message+"@#@0\n")
-        print("bpcp msg.txt "+sendTo+":"+incoming_message_directory_path+"/msg.txt")
+        #print("bpcp msg.txt "+sendTo+":"+incoming_message_directory_path+"/msg.txt")
+        print_snd("@@msg@#@"+ts+"@#@"+tgt+"@#@"+frm+"@#@"+message+"@#@")
         os.system("bpcp msg.txt "+sendTo+":"+incoming_message_directory_path+"/msg.txt")
+    print(style.RESET+style.GREEN+"Forwarding Path -> "+str(path_list)+style.RESET+"\n\n")
+
   else:
     print(style.RESET+style.RED+"Path not found"+style.RESET)
 
@@ -447,7 +521,8 @@ def pwf_processor():
                 if msg_type == 'msg':
                     # send 'content' to 'sender' from 'receiver'
                     fwd_msg = '@@msg@#@'+msg_timestamp+'@#@'+target+'@#@'+source+'@#@'+content+'@#@0'
-                    print(fwd_msg)
+                    #TODO
+                    #print(fwd_msg)
                     fwd_queue = open(FWD_QUEUE, 'a')
                     fwd_queue.write(fwd_msg)
                     fwd_queue.close()
@@ -455,7 +530,8 @@ def pwf_processor():
                     if(path.exists(incoming_message_directory_path+"/"+content)):
                         # send 'content' to 'sender' from 'receiver'
                         fwd_msg = '@@file@#@'+msg_timestamp+'@#@'+target+'@#@'+source+'@#@'+content+'@#@0'
-                        print(fwd_msg)
+                        #TODO
+                        #print(fwd_msg)
                         fwd_queue = open(FWD_QUEUE, 'a')
                         fwd_queue.write(fwd_msg)
                         fwd_queue.close()
