@@ -60,8 +60,10 @@ def on_modified(event):
   global duplicate_check
   global instance
   if os.path.exists(incoming_message_directory_path+'/msg.txt'): #see if the msg.txt file is there
+    print("File msg.txtt exists")
     with open(incoming_message_directory_path+'/msg.txt', "rb") as f:
       last = readlastline(f)
+      print("read last line")
     if "@@msg" in last:
       print("MESSAGE RECEIVED:"+last.strip("\n"))#this is the message we received
       os.system('rm '+incoming_message_directory_path+'/msg.txt')#remove the msg.txt file
