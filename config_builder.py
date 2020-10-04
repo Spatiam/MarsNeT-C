@@ -29,7 +29,7 @@ def readlastline(f):
 def on_modified(event):
   global duplicate_check
   global instance
-  if os.path_exists(incoming_message_directory_path+'/msg.txt'): #see if the msg.txt file is there
+  if os.path.exists(incoming_message_directory_path+'/msg.txt'): #see if the msg.txt file is there
     with open(event.src_path+'/msg.txt', "rb") as f:
       last = readlastline(f)
     if "@@msg" in last:
