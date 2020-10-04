@@ -246,7 +246,7 @@ def message_queue_listener():
           tgt = content[i].split("@#@")[2]
           frm = content[i].split("@#@")[3]
           message = content[i].split("@#@")[4]
-          send_message(message, ts, tgt, frm)
+          send_message(message, ts, tgt, frm, content[i])
           content[i] = "@@msg@#@"+ts+"@#@"+tgt+"@#@"+frm+"@#@"+message+"@#@"+"1"
           #rewrite the file with a status update
           with open(msg_queue_path, "w") as f:
@@ -281,7 +281,7 @@ def process_msg(in_msg):
     f.write(queue + '\n')
     f.close()
 
-def send_message(message, ts, tgt, frm):
+def send_message(message, ts, tgt, frm, entire):
   global graph
   global instance
   global nodes
@@ -303,7 +303,7 @@ def send_message(message, ts, tgt, frm):
       print(style.RESET+style.RED+"Path not found"+style.RESET)
   else:
     #delay instance to we forward to the delay message queue
-    process_msg(message)
+    process_msg(entire)
 
 messageQueue=threading.Thread(target=message_queue_listener)
 messageQueue.start()
