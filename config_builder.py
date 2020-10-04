@@ -322,9 +322,9 @@ def send_file(filename, ts, tgt, frm, entire):
         sendTo=nodes_eid[nodes.index(path_list[i+1])]
         with open('msg.txt', "w") as fw:
           fw.write("@@file@#@"+ts+"@#@"+tgt+"@#@"+frm+"@#@"+filename+"@#@0\n")
-        print("bpcp "+filename+" "+sendTo+":"+incoming_message_directory_path+"/"+filename)
-        os.system("bpcp "+filename+" "+sendTo+":"+incoming_message_directory_path+"/"+filename)
-        os.system('rm '+filename)
+        print("bpcp "+incoming_message_directory_path+"/"+filename+" "+sendTo+":"+incoming_message_directory_path+"/"+filename)
+        os.system("bpcp "+incoming_message_directory_path+"/"+filename+" "+sendTo+":"+incoming_message_directory_path+"/"+filename)
+        os.system('rm '+incoming_message_directory_path+"/"+filename)
         print("bpcp msg.txt "+sendTo+":"+incoming_message_directory_path+"/msg.txt")
         os.system("bpcp msg.txt "+sendTo+":"+incoming_message_directory_path+"/msg.txt")
         os.system('rm '+incoming_message_directory_path+"/msg.txt")
@@ -351,6 +351,7 @@ def send_message(message, ts, tgt, frm, entire):
 
 def pwf_processor():
     global FWD_QUEUE
+    global incoming_message_directory_path
     queue_file = open('queue_p.txt', 'w')
     ephemeris_file = open('delay_queue.txt', 'r') 
     lines = ephemeris_file.readlines() 
@@ -382,7 +383,7 @@ def pwf_processor():
                     fwd_queue.write(fwd_msg)
                     fwd_queue.close()
                 elif msg_type == 'file':
-                    if(path.exists('../FileQueue/'+content)):
+                    if(path.exists(incoming_message_directory_path+"/"+content)):
                         # send 'content' to 'sender' from 'receiver'
                         fwd_msg = '@@file@#@'+msg_timestamp+'@#@'+target+'@#@'+source+'@#@'+content+'@#@0'
                         print(fwd_msg)
