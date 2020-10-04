@@ -39,8 +39,8 @@ def on_modified(event):
     with open(event.src_path+'/msg.txt', "rb") as f:
       last = readlastline(f)
     if "@@msg" in last:
-      print("MESSAGE RECEIVED:"+last.strip("\n")#this is the message we received
-      os.system('rm incoming_message_directory_path+'/msg.txt'')#remove the msg.txt file
+      print("MESSAGE RECEIVED:"+last.strip("\n"))#this is the message we received
+      os.system('rm '+incoming_message_directory_path+'/msg.txt')#remove the msg.txt file
       tt = line.strip("\n").split("@#@")[2].split("_")[0]
       if tt == instance:#we keep this message
         print("Message is at it's final location")
@@ -285,7 +285,7 @@ def send_message(message, ts, tgt, frm):
   global instance
   global nodes
   global nodes_eid
-  global
+  global incoming_message_directory_path
   if instance != 'delay':
     tgt_eid = tgt.split("_")[0]
     path_list = BFS_SP(graph, instance, tgt_eid)
