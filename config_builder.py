@@ -27,7 +27,7 @@ if os.path.exists(incoming_message_directory_path+'/msg.txt'):
 
 if not os.path.exists(DELAY_QUEUE):
   with open(DELAY_QUEUE, "w") as fl:
-    fl.write()
+    fl.write(" ")
 
 
 def process_msg(in_msg):
@@ -253,7 +253,7 @@ with open(cfdp_rc_path, "w") as f:
   f.write("w 0\n")
   f.write("a entity "+current_eid+" bp ipn:"+current_eid+".0 7 0 0\n")
   f.write("m discard\n")
-  f.write("m segsize 1000\n")
+  f.write("m segsize 100000\n")
   f.write("s \'bputa\'\n")
 print(style.GREEN+"DONE")
 print("")
