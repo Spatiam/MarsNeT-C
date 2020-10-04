@@ -67,7 +67,7 @@ def on_modified(event):
     if "@@msg" in last:
       print("MESSAGE RECEIVED:"+last.strip("\n"))#this is the message we received
       os.system('rm '+incoming_message_directory_path+'/msg.txt')#remove the msg.txt file
-      tt = line.strip("\n").split("@#@")[2].split("_")[0]
+      tt = last.strip("\n").split("@#@")[2].split("_")[0]
       if tt == instance:#we keep this message
         print("Message is at it's final location")
       else: #this message needs to be forwarded
