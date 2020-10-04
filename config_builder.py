@@ -364,5 +364,6 @@ def fwd_processor():
     pwf_processor()
 
 messageQueue=threading.Thread(target=message_queue_listener)
-messageQueue.start()
 fwdProcessor=threading.Thread(target=fwd_processor)
+messageQueue.start()
+fwdProcessor.start()
