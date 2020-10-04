@@ -76,7 +76,15 @@ def on_modified(event):
       else: #this message needs to be forwarded
         print("Sending to process_msg for forwarding")
         process_msg(last)
-
+    if "@@file" in last:
+      print("FILE RECEIVED:"+last.strip("\n"))
+      os.system('rm '+incoming_message_directory_path+'/msg.txt')#remove the msg.txt file
+      tt = last.strip("\n").split("@#@")[2].split("_")[0]
+      if tt == instance:#we keep this file
+        print("File is at it's final location")
+      else: #this message needs to be forwarded
+        print("Sending to process_msg for forwarding")
+        process_msg(last)
 #watchdog
 my_event_handler.on_modified = on_modified
 my_observer = Observer()
@@ -272,10 +280,9 @@ def message_queue_listener():
     #send any messages that are in the queue
     for i in range(len(content)):
       content[i]=content[i].strip("\n")
-      if "@#@" in content[i]:
+      if "@@msg" in content[i]:
         status = content[i].split("@#@")[-1]
         if status == "0":
-          #send message at appropriate time
           ts = content[i].split("@#@")[1]
           tgt = content[i].split("@#@")[2]
           frm = content[i].split("@#@")[3]
@@ -286,7 +293,42 @@ def message_queue_listener():
           with open(msg_queue_path, "w") as f:
             for i in range(len(content)):
               f.write(content[i]+"\n")
+      if "@@file" in content[i]:
+        status = content[i].split("@#@")[-1]
+        if status == "0":
+          ts = content[i].split("@#@")[1]
+          tgt = content[i].split("@#@")[2]
+          frm = content[i].split("@#@")[3]
+          message = content[i].split("@#@")[4]
+          send_file(message, ts, tgt, frm, content[i])
+          content[i] = "@@msg@#@"+ts+"@#@"+tgt+"@#@"+frm+"@#@"+message+"@#@"+"1"
+          #rewrite the file with a status update
+          with open(msg_queue_path, "w") as f:
+            for i in range(len(content)):
+              f.write(content[i]+"\n")
 
+def send_file(filename, ts, tgt, frm, entire):
+  global graph
+  global instance
+  global nodes
+  global nodes_eid
+  global incoming_message_directory_path
+  tgt_eid = tgt.split("_")[0]
+  path_list = BFS_SP(graph, instance, tgt_eid)
+  if len(path_list) != 0:
+    print(style.RESET+style.GREEN+"Path found -> "+str(path_list)+style.RESET+"\n\n")
+    for i in range(len(path_list)):
+      if path_list[i] == instance:
+        sendTo=nodes_eid[nodes.index(path_list[i+1])]
+        with open('msg.txt', "w") as fw:
+          fw.write("@@file@#@"+ts+"@#@"+tgt+"@#@"+frm+"@#@"+filename+"@#@0\n")
+        print("bpcp "+incoming_message_directory_path+"/"+filename+" "+sendTo+":"+incoming_message_directory_path+"/"+filename)
+        os.system("bpcp "+incoming_message_directory_path+"/"+filename+" "+sendTo+":"+incoming_message_directory_path+"/"+filename)
+        os.system('rm '+incoming_message_directory_path+"/"+filename)
+        print("bpcp msg.txt "+sendTo+":"+incoming_message_directory_path+"/msg.txt")
+        os.system("bpcp msg.txt "+sendTo+":"+incoming_message_directory_path+"/msg.txt")
+        os.system('rm '+incoming_message_directory_path+"/msg.txt")
+        
 def send_message(message, ts, tgt, frm, entire):
   global graph
   global instance
