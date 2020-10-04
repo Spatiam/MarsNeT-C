@@ -15,7 +15,7 @@ msg_queue_path = 'ion-open-source-3.7.1/dtn/msg_queue.dat'
 host_rc_path = 'ion-open-source-3.7.1/dtn/host.rc'
 cfdp_rc_path = 'ion-open-source-3.7.1/dtn/host.cfdprc'
 incoming_message_directory_path = 'ion-open-source-3.7.1/dtn/incoming'
-
+my_event_handler=PatternMatchingEventHandler("*","",False,True)
 def readlastline(f):
     try:
         f.seek(-2, 2)
