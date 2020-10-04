@@ -125,7 +125,7 @@ def print_g(str_msg):
 
 def print_rcv(str_msg):
 
-  split_msg = in_msg[2:].split('@#@')
+  split_msg = str_msg[2:].split('@#@')
 
   msg_type = split_msg[0]
   msg_timestamp = split_msg[1]
@@ -154,7 +154,7 @@ def print_rcv(str_msg):
 
 def print_snd(str_msg):
 
-  split_msg = in_msg[2:].split('@#@')
+  split_msg = str_msg[2:].split('@#@')
 
   msg_type = split_msg[0]
   msg_timestamp = split_msg[1]
