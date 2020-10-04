@@ -55,7 +55,8 @@ def on_modified(event):
       print("read last line")
     if "@@msg" in last:
       print("MESSAGE RECEIVED:"+last.strip("\n"))#this is the message we received
-      os.system('rm '+incoming_message_directory_path+'/msg.txt')#remove the msg.txt file
+      if os.path.exists(incoming_message_directory_path+'/msg.txt'):
+        os.system('rm '+incoming_message_directory_path+'/msg.txt')#remove the msg.txt file
       if 'command' in last:
         tt = last.strip("\n").split("@#@")[4].split(":")
         return_address = last.strip("\n").split("@#@")[3]
@@ -69,9 +70,12 @@ def on_modified(event):
               ec.write("@@msg@#@"+ts+"@#@"+return_address+"@#@"+rov_addr+"@#@"+echo_msg+"@#@0")
           elif tt[1] == 'capture':
             print("CAPTURE COMMAND RECEIVED - SENDING IMAGE")
-            os.system('fswebcam -r 1920x1080 --no-banner -q '+incoming_message_directory_path+"/latest.jpg")
+            os.system('fswebcam -r 1920x1080 --no-banner -q latest.jpg')
+            print("Picture taken")
+            sleep(2)
+            print("sleep happened")
             with open(msg_queue_path, "a") as ec:
-              ec.write("@@file@#@"+ts+"@#@"+return_address+"@#@"+rov_addr+"@#@latest.jpg"+"@#@0")
+              ec.write("\n@@file@#@"+ts+"@#@"+return_address+"@#@"+rov_addr+"@#@latest.jpg"+"@#@0")
           elif tt[1] == 'ledon':
             print("LED ON COMMAND RECEIVED")
             GPIO.output(led_pin, GPIO.HIGH)
@@ -82,6 +86,7 @@ def on_modified(event):
             print("STATUS COMMAND RECEIVED")
             stts = str(marsweather()).replace("'","").replace("(","").replace(")","")
             with open(msg_queue_path, "a") as ec:
+              print(return_address)
               ec.write("@@msg@#@"+ts+"@#@"+return_address+"@#@"+rov_addr+"@#@"+stts+"@#@0")
 
 #watchdog
@@ -247,10 +252,10 @@ print(style.CYAN+"Configuring .cfdprc file..."+style.YELLOW)
 with open(cfdp_rc_path, "w") as f:
   f.write("1\n")
   f.write("e 1\n")
-  f.write("w 0\n")
+  f.write("w 1\n")
   f.write("a entity "+current_eid+" bp ipn:"+current_eid+".0 7 0 0\n")
   f.write("m discard\n")
-  f.write("m segsize 100000\n")
+  f.write("m segsize 65000\n")
   f.write("s \'bputa\'\n")
 print(style.GREEN+"DONE")
 print("")
@@ -291,6 +296,19 @@ def message_queue_listener():
           with open(msg_queue_path, "w") as f:
             for i in range(len(content)):
               f.write(content[i]+"\n")
+      if "@@file" in content[i]:
+        status = content[i].split("@#@")[-1]
+        if status == "0":
+          ts = content[i].split("@#@")[1]
+          tgt = content[i].split("@#@")[2]
+          frm = content[i].split("@#@")[3]
+          message = content[i].split("@#@")[4]
+          send_file(message, ts, tgt, frm, content[i])
+          content[i] = "@@file@#@"+ts+"@#@"+tgt+"@#@"+frm+"@#@"+message+"@#@"+"1"
+          #rewrite the file with a status update
+          with open(msg_queue_path, "w") as f:
+            for i in range(len(content)):
+              f.write(content[i]+"\n")
 
 def send_file(filename, ts, tgt, frm, entire):
   global graph
@@ -307,9 +325,11 @@ def send_file(filename, ts, tgt, frm, entire):
         sendTo=nodes_eid[nodes.index(path_list[i+1])]
         with open('msg.txt', "w") as fw:
           fw.write("@@file@#@"+ts+"@#@"+tgt+"@#@"+frm+"@#@"+filename+"@#@0\n")
+        print("#1")
         print("bpcp "+incoming_message_directory_path+"/"+filename+" "+sendTo+":"+incoming_message_directory_path+"/"+filename)
         os.system("bpcp "+incoming_message_directory_path+"/"+filename+" "+sendTo+":"+incoming_message_directory_path+"/"+filename)
         os.system('rm '+incoming_message_directory_path+"/"+filename)
+        print("#2")
         print("bpcp msg.txt "+sendTo+":"+incoming_message_directory_path+"/msg.txt")
         os.system("bpcp msg.txt "+sendTo+":"+incoming_message_directory_path+"/msg.txt")
         if os.path.exists(incoming_message_directory_path+'/msg.txt'):
@@ -330,8 +350,12 @@ def send_message(message, ts, tgt, frm, entire):
         sendTo=nodes_eid[nodes.index(path_list[i+1])]
         with open('msg.txt', "w") as fw:
           fw.write("@@msg@#@"+ts+"@#@"+tgt+"@#@"+frm+"@#@"+message+"@#@0\n")
+        print("#3")
         print("bpcp msg.txt "+sendTo+":"+incoming_message_directory_path+"/msg.txt")
         os.system("bpcp msg.txt "+sendTo+":"+incoming_message_directory_path+"/msg.txt")
+        print("HERE")
+        if os.path.exists('msg.txt'):
+          os.system('rm msg.txt')#remove the msg.txt file
   else:
     print(style.RESET+style.RED+"Path not found"+style.RESET)
 
