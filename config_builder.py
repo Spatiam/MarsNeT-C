@@ -377,7 +377,7 @@ def pwf_processor():
             if now > send_date:
                 if msg_type == 'msg':
                     # send 'content' to 'sender' from 'receiver'
-                    fwd_msg = '@@msg@#@'+msg_timesatmp+'@#@'+target+'@#@'+source+'@#@'+content+'@#@0'
+                    fwd_msg = '@@msg@#@'+msg_timestamp+'@#@'+target+'@#@'+source+'@#@'+content+'@#@0'
                     print(fwd_msg)
                     fwd_queue = open(FWD_QUEUE, 'a')
                     fwd_queue.write(fwd_msg)
