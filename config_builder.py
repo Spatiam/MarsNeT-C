@@ -18,6 +18,8 @@ incoming_message_directory_path = 'ion-open-source-3.7.1/dtn/incoming'
 my_event_handler=PatternMatchingEventHandler("*","",False,True)
 FWD_QUEUE = 'ion-open-source-3.7.1/dtn/msg_queue.dat' 
 
+if os.path.exists(incoming_message_directory_path+'/msg.txt'):
+  os.system('rm '+incoming_message_directory_path+'/msg.txt')#remove the msg.txt file
 #def readlastline(f):
 #    try:
 #        f.seek(-2, 2)
