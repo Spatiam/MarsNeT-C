@@ -56,32 +56,33 @@ def on_modified(event):
     if "@@msg" in last:
       print("MESSAGE RECEIVED:"+last.strip("\n"))#this is the message we received
       os.system('rm '+incoming_message_directory_path+'/msg.txt')#remove the msg.txt file
-      tt = last.strip("\n").split("@#@")[-2].split[":"]
-      return_address = last.strip("\n").split("@#@")[3]
-      ts = last.strip("\n").split("@#@")[1]
-      echo_msg = last.strip("\n").split("@#@")[4]
-      rov_addr = instance+"_user"
-      if tt[0] == 'command':
-        if tt[1] == 'echo':
-          print("ECHO COMMAND RECEIVED - RETURNING TO SENDER")
-          with open(msg_queue_path, "a") as ec:
-            ec.write("@@msg@#@"+ts+"@#@"+return_address+"@#@"+rov_addr+"@#@"+echo_msg+"@#@0")
-        elif tt[1] == 'capture':
-          print("CAPTURE COMMAND RECEIVED - SENDING IMAGE")
-          os.system('fswebcam -r 1920x1080 --no-banner -q '+incoming_message_directory_path+"/latest.jpg")
-          with open(msg_queue_path, "a") as ec:
-            ec.write("@@file@#@"+ts+"@#@"+return_address+"@#@"+rov_addr+"@#@"+incoming_message_directory_path+"/latest.jpg"+"@#@0")
-        elif tt[1] == 'ledon':
-          print("LED ON COMMAND RECEIVED")
-          GPIO.output(led_pin, HIGH)
-        elif tt[1] == 'ledoff':
-          print("LED OFF COMMAND RECEIVED")
-          GPIO.output(led_pin, LOW)
-        elif tt[1] == 'status':
-          print("STATUS COMMAND RECEIVED")
-          stts = str(marsweather()).replace("'","").replace("(","").replace(")","")
-          with open(msg_queue_path, "a") as ec:
-            ec.write("@@msg@#@"+ts+"@#@"+return_address+"@#@"+rov_addr+"@#@"+stts+"@#@0")
+      if 'command' in last:
+        tt = last.strip("\n").split("@#@")[4].split[":"]
+        return_address = last.strip("\n").split("@#@")[3]
+        ts = last.strip("\n").split("@#@")[1]
+        echo_msg = last.strip("\n").split("@#@")[4]
+        rov_addr = instance+"_user"
+        if tt[0] == 'command':
+          if tt[1] == 'echo':
+            print("ECHO COMMAND RECEIVED - RETURNING TO SENDER")
+            with open(msg_queue_path, "a") as ec:
+              ec.write("@@msg@#@"+ts+"@#@"+return_address+"@#@"+rov_addr+"@#@"+echo_msg+"@#@0")
+          elif tt[1] == 'capture':
+            print("CAPTURE COMMAND RECEIVED - SENDING IMAGE")
+            os.system('fswebcam -r 1920x1080 --no-banner -q '+incoming_message_directory_path+"/latest.jpg")
+            with open(msg_queue_path, "a") as ec:
+              ec.write("@@file@#@"+ts+"@#@"+return_address+"@#@"+rov_addr+"@#@"+incoming_message_directory_path+"/latest.jpg"+"@#@0")
+          elif tt[1] == 'ledon':
+            print("LED ON COMMAND RECEIVED")
+            GPIO.output(led_pin, HIGH)
+          elif tt[1] == 'ledoff':
+            print("LED OFF COMMAND RECEIVED")
+            GPIO.output(led_pin, LOW)
+          elif tt[1] == 'status':
+            print("STATUS COMMAND RECEIVED")
+            stts = str(marsweather()).replace("'","").replace("(","").replace(")","")
+            with open(msg_queue_path, "a") as ec:
+              ec.write("@@msg@#@"+ts+"@#@"+return_address+"@#@"+rov_addr+"@#@"+stts+"@#@0")
 
 #watchdog
 my_event_handler.on_modified = on_modified
