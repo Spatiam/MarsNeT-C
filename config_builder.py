@@ -333,7 +333,7 @@ def pwf_processor():
                     fwd_msg = '@@msg@#@'+msg_timesatmp+'@#@'+target+'@#@'+source+'@#@'+content+'@#@0'
                     print(fwd_msg)
                     fwd_queue = open(FWD_QUEUE, 'a')
-                    fwd_queue.write()
+                    fwd_queue.write(fwd_msg)
                     fwd_queue.close()
                 elif msg_type == 'file':
                     if(path.exists('../FileQueue/'+content)):
@@ -341,7 +341,7 @@ def pwf_processor():
                         fwd_msg = '@@file@#@'+content+'@#@'+msg_timestamp+'@#@'+target+'@#@'+source+'@#@0'
                         print(fwd_msg)
                         fwd_queue = open(FWD_QUEUE, 'a')
-                        fwd_queue.write()
+                        fwd_queue.write(fwd_msg)
                         fwd_queue.close()
                     else:
                         queueLines += processedLines
