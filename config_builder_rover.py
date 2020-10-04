@@ -55,8 +55,8 @@ def on_modified(event):
       print("read last line")
     if "@@msg" in last:
       print("MESSAGE RECEIVED:"+last.strip("\n"))#this is the message we received
-       if os.path.exists(incoming_message_directory_path+'/msg.txt'):
-          os.system('rm '+incoming_message_directory_path+'/msg.txt')#remove the msg.txt file
+      if os.path.exists(incoming_message_directory_path+'/msg.txt'):
+        os.system('rm '+incoming_message_directory_path+'/msg.txt')#remove the msg.txt file
       if 'command' in last:
         tt = last.strip("\n").split("@#@")[4].split(":")
         return_address = last.strip("\n").split("@#@")[3]
