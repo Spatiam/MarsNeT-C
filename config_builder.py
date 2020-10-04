@@ -45,7 +45,7 @@ def on_modified(event):
 #watchdog
 my_event_handler.on_modified = on_modified
 my_observer = Observer()
-my_observer.schedule(my_event_handler,FILENAME,recursive=True)
+my_observer.schedule(my_event_handler,incoming_message_directory_path,recursive=True)
 my_observer.start()
 
 
