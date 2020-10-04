@@ -365,7 +365,7 @@ def pwf_processor():
             source = info[0]
             target = info[1]
             msg_type = info[2]
-            msg_timesatmp = info[3]
+            msg_timestamp = info[3]
             line_num = 0
         elif line.startswith('#end#'):
             processedLines += line
