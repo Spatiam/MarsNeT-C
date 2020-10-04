@@ -55,7 +55,8 @@ def on_modified(event):
       print("read last line")
     if "@@msg" in last:
       print("MESSAGE RECEIVED:"+last.strip("\n"))#this is the message we received
-      os.system('rm '+incoming_message_directory_path+'/msg.txt')#remove the msg.txt file
+       if os.path.exists(incoming_message_directory_path+'/msg.txt'):
+          os.system('rm '+incoming_message_directory_path+'/msg.txt')#remove the msg.txt file
       if 'command' in last:
         tt = last.strip("\n").split("@#@")[4].split(":")
         return_address = last.strip("\n").split("@#@")[3]
@@ -333,6 +334,9 @@ def send_message(message, ts, tgt, frm, entire):
           fw.write("@@msg@#@"+ts+"@#@"+tgt+"@#@"+frm+"@#@"+message+"@#@0\n")
         print("bpcp msg.txt "+sendTo+":"+incoming_message_directory_path+"/msg.txt")
         os.system("bpcp msg.txt "+sendTo+":"+incoming_message_directory_path+"/msg.txt")
+        print("HERE")
+        if os.path.exists(incoming_message_directory_path+'/msg.txt'):
+          os.system('rm '+incoming_message_directory_path+'/msg.txt')#remove the msg.txt file
   else:
     print(style.RESET+style.RED+"Path not found"+style.RESET)
 
