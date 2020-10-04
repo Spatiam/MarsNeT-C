@@ -18,14 +18,14 @@ incoming_message_directory_path = 'ion-open-source-3.7.1/dtn/incoming'
 my_event_handler=PatternMatchingEventHandler("*","",False,True)
 FWD_QUEUE = 'ion-open-source-3.7.1/dtn/msg_queue.dat' 
 
-def readlastline(f):
-    try:
-        f.seek(-2, 2)
-        while f.read(1) != b"\n":
-            f.seek(-2, 1)
-        return str(f.read().decode('utf-8'))
-    except:
-        return ' '
+#def readlastline(f):
+#    try:
+#        f.seek(-2, 2)
+#        while f.read(1) != b"\n":
+#            f.seek(-2, 1)
+#        return str(f.read().decode('utf-8'))
+#    except:
+#        return ' '
 
 def process_msg(in_msg):
     os.system('python3 ephemerisMars.py')
@@ -60,9 +60,9 @@ def on_modified(event):
   global duplicate_check
   global instance
   if os.path.exists(incoming_message_directory_path+'/msg.txt'): #see if the msg.txt file is there
-    print("File msg.txtt exists")
+    print("File msg.txt exists")
     with open(incoming_message_directory_path+'/msg.txt', "rb") as f:
-      last = readlastline(f)
+      last = readline(f)
       print("read last line")
     if "@@msg" in last:
       print("MESSAGE RECEIVED:"+last.strip("\n"))#this is the message we received
