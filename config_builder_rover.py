@@ -70,7 +70,7 @@ def on_modified(event):
               ec.write("@@msg@#@"+ts+"@#@"+return_address+"@#@"+rov_addr+"@#@"+echo_msg+"@#@0")
           elif tt[1] == 'capture':
             print("CAPTURE COMMAND RECEIVED - SENDING IMAGE")
-            os.system('fswebcam -r 1920x1080 --no-banner -q '+incoming_message_directory_path+"/latest.jpg')
+            os.system('fswebcam -r 1920x1080 --no-banner -q '+incoming_message_directory_path+"/latest.jpg")
             print("Picture taken")
             with open(msg_queue_path, "a") as ec:
               ec.write("\n@@file@#@"+ts+"@#@"+return_address+"@#@"+rov_addr+"@#@"+incoming_message_directory_path+"/latest.jpg"+"@#@0")
