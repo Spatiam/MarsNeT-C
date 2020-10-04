@@ -74,6 +74,7 @@ def on_modified(event):
       if tt == instance:#we keep this message
         print("Message is at it's final location")
       else: #this message needs to be forwarded
+        print("Sending to process_msg for forwarding")
         process_msg(last)
 
 #watchdog
