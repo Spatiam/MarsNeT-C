@@ -73,7 +73,7 @@ def on_modified(event):
             os.system('fswebcam -r 1920x1080 --no-banner -q '+incoming_message_directory_path+"/latest.jpg")
             print("Picture taken")
             with open(msg_queue_path, "a") as ec:
-              ec.write("\n@@file@#@"+ts+"@#@"+return_address+"@#@"+rov_addr+"@#@"+incoming_message_directory_path+"/latest.jpg"+"@#@0")
+              ec.write("\n@@file@#@"+ts+"@#@"+return_address+"@#@"+rov_addr+"@#@latest.jpg@#@0")
           elif tt[1] == 'ledon':
             print("LED ON COMMAND RECEIVED")
             GPIO.output(led_pin, GPIO.HIGH)
