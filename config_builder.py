@@ -60,6 +60,7 @@ def process_msg(in_msg):
 
 #when change in directory is detected
 def on_modified(event):
+  global instance
   global duplicate_check
   global instance
   if os.path.exists(incoming_message_directory_path+'/msg.txt'): #see if the msg.txt file is there
@@ -74,8 +75,12 @@ def on_modified(event):
       if tt == instance:#we keep this message
         print("Message is at it's final location")
       else: #this message needs to be forwarded
-        print("Sending to process_msg for forwarding")
-        process_msg(last)
+        if instance == 'delay':
+          print("Sending to process_msg for forwarding")
+          process_msg(last)
+        else:
+          with open(msg_queue_path, "a") as ft:
+            ft.write(last)
     if "@@file" in last:
       print("FILE RECEIVED:"+last.strip("\n"))
       if os.path.exists(incoming_message_directory_path+'/msg.txt'):
@@ -84,8 +89,12 @@ def on_modified(event):
       if tt == instance:#we keep this file
         print("File is at it's final location")
       else: #this message needs to be forwarded
-        print("Sending to process_msg for forwarding")
-        process_msg(last)
+        if instance == 'delay':
+          print("Sending to process_msg for forwarding")
+          process_msg(last)
+        else:
+          with open(msg_queue_path, "a") as ft:
+            ft.write(last)
 #watchdog
 my_event_handler.on_modified = on_modified
 my_observer = Observer()
