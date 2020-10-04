@@ -75,7 +75,7 @@ def on_modified(event):
             sleep(2)
             print("sleep happened")
             with open(msg_queue_path, "a") as ec:
-              ec.write("@@file@#@"+ts+"@#@"+return_address+"@#@"+rov_addr+"@#@latest.jpg"+"@#@0")
+              ec.write("\n@@file@#@"+ts+"@#@"+return_address+"@#@"+rov_addr+"@#@latest.jpg"+"@#@0")
           elif tt[1] == 'ledon':
             print("LED ON COMMAND RECEIVED")
             GPIO.output(led_pin, GPIO.HIGH)
@@ -292,6 +292,19 @@ def message_queue_listener():
           message = content[i].split("@#@")[4]
           send_message(message, ts, tgt, frm, content[i])
           content[i] = "@@msg@#@"+ts+"@#@"+tgt+"@#@"+frm+"@#@"+message+"@#@"+"1"
+          #rewrite the file with a status update
+          with open(msg_queue_path, "w") as f:
+            for i in range(len(content)):
+              f.write(content[i]+"\n")
+      if "@@file" in content[i]:
+        status = content[i].split("@#@")[-1]
+        if status == "0":
+          ts = content[i].split("@#@")[1]
+          tgt = content[i].split("@#@")[2]
+          frm = content[i].split("@#@")[3]
+          message = content[i].split("@#@")[4]
+          send_file(message, ts, tgt, frm, content[i])
+          content[i] = "@@file@#@"+ts+"@#@"+tgt+"@#@"+frm+"@#@"+message+"@#@"+"1"
           #rewrite the file with a status update
           with open(msg_queue_path, "w") as f:
             for i in range(len(content)):

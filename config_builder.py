@@ -80,7 +80,7 @@ def on_modified(event):
           process_msg(last)
         else:
           with open(msg_queue_path, "a") as ft:
-            ft.write(last)
+            ft.write("\n"+last)
     if "@@file" in last:
       print("FILE RECEIVED:"+last.strip("\n"))
       if os.path.exists(incoming_message_directory_path+'/msg.txt'):
@@ -94,7 +94,7 @@ def on_modified(event):
           process_msg(last)
         else:
           with open(msg_queue_path, "a") as ft:
-            ft.write(last)
+            ft.write("\n"+last)
 #watchdog
 my_event_handler.on_modified = on_modified
 my_observer = Observer()
