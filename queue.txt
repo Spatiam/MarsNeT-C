@@ -1,0 +1,4 @@
+#beg#earth_user mars_user msg 00:00:00
+message2
+#end#04-Oct-2020(10:31:35.859864)
+

@@ -8,13 +8,16 @@ import threading
 import subprocess
 from datetime import datetime, timedelta
 
-msg = '@@msg@#@20:20@#@123.123.123.123@#@321.321.321.321@#@this is my message hello.'
+
+FWD_QUEUE = 'ion-open-source-3.7.1/dtn/msg_queue.dat' 
 
 def pwf_processor():
 
+    global FWD_QUEUE
+
     queue_file = open('queue_p.txt', 'w')
 
-    ephemeris_file = open('queue.txt', 'r') 
+    ephemeris_file = open('delay_queue.txt', 'r') 
     lines = ephemeris_file.readlines() 
 
     processing_msg = False
@@ -50,7 +53,7 @@ def pwf_processor():
                     # send 'content' to 'sender' from 'receiver'
                     fwd_msg = '@@msg@#@'+msg_timesatmp+'@#@'+target+'@#@'+source+'@#@'+content+'@#@0'
                     print(fwd_msg)
-                    fwd_queue = open('fwd_queue.txt', 'a')
+                    fwd_queue = open(FWD_QUEUE, 'a')
                     fwd_queue.write()
                     fwd_queue.close()
 
@@ -60,7 +63,7 @@ def pwf_processor():
                         # send 'content' to 'sender' from 'receiver'
                         fwd_msg = '@@file@#@'+content+'@#@'+msg_timestamp+'@#@'+target+'@#@'+source+'@#@0'
                         print(fwd_msg)
-                        fwd_queue = open('fwd_queue.txt', 'a')
+                        fwd_queue = open(FWD_QUEUE, 'a')
                         fwd_queue.write()
                         fwd_queue.close()
 
@@ -82,7 +85,9 @@ def pwf_processor():
     queue_file.close()
     ephemeris_file.close()
 
-    os.system('cp queue_p.txt queue.txt')
+    os.system('cp queue_p.txt delay_queue.txt')
     os.system('rm queue_p.txt')
 
-pwf_processor()
+while(True):
+    sleep(1)
+    pwf_processor()

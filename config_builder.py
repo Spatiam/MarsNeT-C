@@ -50,7 +50,7 @@ def process_msg(in_msg):
     queue = '#beg#' + msg_sender_ip + ' ' + msg_target_ip + ' ' + msg_type + ' ' + msg_timestamp + '\n'
     queue += msg_content + '\n'
     queue += '#end#' + send_str + '\n'       
-    f = open('queue.txt', 'a')
+    f = open('delay_queue.txt', 'a')
     f.write(queue + '\n')
     f.close()
 
