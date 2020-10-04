@@ -16,7 +16,7 @@ GPIO.setwarnings(False)
 led_pin=14
 GPIO.setup(led_pin,GPIO.OUT)
 GPIO.output(led_pin,GPIO.LOW)
-instance=input("instance (earth, delay, mars, rover):")
+instance='rover'
 network_map_path = 'ion-open-source-3.7.1/dtn/network.map'
 ip_map_path = 'ion-open-source-3.7.1/dtn/ip.map'
 msg_queue_path = 'ion-open-source-3.7.1/dtn/msg_queue.dat'
