@@ -71,6 +71,7 @@ def on_modified(event):
           elif tt[1] == 'capture':
             print("CAPTURE COMMAND RECEIVED - SENDING IMAGE")
             os.system('fswebcam -r 1920x1080 --no-banner -q latest.jpg')
+            print("Picture taken")
             with open(msg_queue_path, "a") as ec:
               ec.write("@@file@#@"+ts+"@#@"+return_address+"@#@"+rov_addr+"@#@latest.jpg"+"@#@0")
           elif tt[1] == 'ledon':
@@ -252,7 +253,7 @@ with open(cfdp_rc_path, "w") as f:
   f.write("w 1\n")
   f.write("a entity "+current_eid+" bp ipn:"+current_eid+".0 7 0 0\n")
   f.write("m discard\n")
-  f.write("m segsize 100000\n")
+  f.write("m segsize 65000\n")
   f.write("s \'bputa\'\n")
 print(style.GREEN+"DONE")
 print("")
