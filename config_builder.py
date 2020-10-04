@@ -147,7 +147,7 @@ def print_rcv(str_msg):
 
   print('Time Received: ' + now_str + '\n')
 
-  print('Original sender: ' + senderi + '\n')
+  print('Original sender: ' + sender + '\n')
   print('Time sent from origin: ' + msg_timestamp)
 
   print('Final Destination: ' + target)
@@ -176,7 +176,7 @@ def print_snd(str_msg):
 
   print('Time Sending: ' + now_str + '\n')
 
-  print('Original sender: ' + senderi + '\n')
+  print('Original sender: ' + sender + '\n')
   print('Time sent from origin: ' + msg_timestamp)
 
   print('Final Destination: ' + target)
