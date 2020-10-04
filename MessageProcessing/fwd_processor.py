@@ -8,6 +8,7 @@ import threading
 import subprocess
 from datetime import datetime, timedelta
 
+msg = '@@msg@#@20:20@#@123.123.123.123@#@321.321.321.321@#@this is my message hello.'
 
 def pwf_processor():
 
@@ -29,9 +30,10 @@ def pwf_processor():
             processing_msg = True
 
             info = line.rstrip('\n')[5:].split(' ')
-            sender = info[0]
-            receiver = info[1]
+            source = info[0]
+            target = info[1]
             msg_type = info[2]
+            msg_timesatmp = info[3]
             line_num = 0
 
         elif line.startswith('#end#'):
@@ -46,12 +48,21 @@ def pwf_processor():
             if now > send_date:
                 if msg_type == 'msg':
                     # send 'content' to 'sender' from 'receiver'
-                    print('sending ' + content + ' from ' + sender + ' to ' + receiver)
+                    fwd_msg = '@@msg@#@'+msg_timesatmp+'@#@'+target+'@#@'+source+'@#@'+content+'@#@0'
+                    print(fwd_msg)
+                    fwd_queue = open('fwd_queue.txt', 'a')
+                    fwd_queue.write()
+                    fwd_queue.close()
+
                 elif msg_type == 'file':
 
                     if(path.exists('../FileQueue/'+content)):
                         # send 'content' to 'sender' from 'receiver'
-                        print('sending ' + content + ' from ' + sender + ' to ' + receiver)
+                        fwd_msg = '@@file@#@'+content+'@#@'+msg_timestamp+'@#@'+target+'@#@'+source+'@#@0'
+                        print(fwd_msg)
+                        fwd_queue = open('fwd_queue.txt', 'a')
+                        fwd_queue.write()
+                        fwd_queue.close()
 
                     else:
                         queueLines += processedLines
