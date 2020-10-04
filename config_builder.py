@@ -61,7 +61,7 @@ def on_modified(event):
   global instance
   if os.path.exists(incoming_message_directory_path+'/msg.txt'): #see if the msg.txt file is there
     print("File msg.txt exists")
-    with open(incoming_message_directory_path+'/msg.txt', "rb") as f:
+    with open(incoming_message_directory_path+'/msg.txt', "r") as f:
       last = f.readline()
       print("read last line")
     if "@@msg" in last:
