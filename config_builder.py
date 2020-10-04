@@ -19,12 +19,16 @@ my_event_handler=PatternMatchingEventHandler("*","",False,True)
 FWD_QUEUE = 'ion-open-source-3.7.1/dtn/msg_queue.dat' 
 DELAY_QUEUE = 'delay_queue.txt'
 
+if not os.path.exists(incoming_message_directory_path):
+  os.system('mkdir '+incoming_message_directory_path)
+
 if os.path.exists(incoming_message_directory_path+'/msg.txt'):
   os.system('rm '+incoming_message_directory_path+'/msg.txt')#remove the msg.txt file
 
 if not os.path.exists(DELAY_QUEUE):
   with open(DELAY_QUEUE, "w") as fl:
     f.write()
+
 
 def process_msg(in_msg):
     os.system('python3 ephemerisMars.py')
