@@ -328,7 +328,8 @@ def send_file(filename, ts, tgt, frm, entire):
         os.system('rm '+incoming_message_directory_path+"/"+filename)
         print("bpcp msg.txt "+sendTo+":"+incoming_message_directory_path+"/msg.txt")
         os.system("bpcp msg.txt "+sendTo+":"+incoming_message_directory_path+"/msg.txt")
-        os.system('rm '+incoming_message_directory_path+"/msg.txt")
+        if os.path.exists(incoming_message_directory_path+'/msg.txt'):
+          os.system('rm '+incoming_message_directory_path+'/msg.txt')#remove the msg.txt file
         
 def send_message(message, ts, tgt, frm, entire):
   global graph
