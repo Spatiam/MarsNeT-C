@@ -27,7 +27,7 @@ if os.path.exists(incoming_message_directory_path+'/msg.txt'):
 
 if not os.path.exists(DELAY_QUEUE):
   with open(DELAY_QUEUE, "w") as fl:
-    f.write()
+    fl.write()
 
 
 def process_msg(in_msg):
