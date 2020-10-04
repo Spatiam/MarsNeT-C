@@ -78,7 +78,8 @@ def on_modified(event):
         process_msg(last)
     if "@@file" in last:
       print("FILE RECEIVED:"+last.strip("\n"))
-      os.system('rm '+incoming_message_directory_path+'/msg.txt')#remove the msg.txt file
+      if os.path.exists(incoming_message_directory_path+'/msg.txt'):
+        os.system('rm '+incoming_message_directory_path+'/msg.txt')#remove the msg.txt file
       tt = last.strip("\n").split("@#@")[2].split("_")[0]
       if tt == instance:#we keep this file
         print("File is at it's final location")
@@ -301,7 +302,7 @@ def message_queue_listener():
           frm = content[i].split("@#@")[3]
           message = content[i].split("@#@")[4]
           send_file(message, ts, tgt, frm, content[i])
-          content[i] = "@@msg@#@"+ts+"@#@"+tgt+"@#@"+frm+"@#@"+message+"@#@"+"1"
+          content[i] = "@@file@#@"+ts+"@#@"+tgt+"@#@"+frm+"@#@"+message+"@#@"+"1"
           #rewrite the file with a status update
           with open(msg_queue_path, "w") as f:
             for i in range(len(content)):
