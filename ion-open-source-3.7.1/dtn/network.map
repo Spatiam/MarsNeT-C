@@ -1,4 +1,4 @@
 earth->delay
 delay->earth,mars,rover
-mars->delay
-rover->delay
+mars->delay,rover
+rover->delay,mars
