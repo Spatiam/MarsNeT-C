@@ -222,7 +222,7 @@ def on_modified(event):
         os.system('rm '+incoming_message_directory_path+'/msg.txt')#remove the msg.txt file
       tt = last.strip("\n").split("@#@")[2].split("_")[0]
       if tt == instance:#we keep this file
-        printi_c("File is at its final destination")
+        print_c("File is at its final destination")
       else: #this message needs to be forwarded
         if instance == 'delay':
           #print("Sending to process_msg for forwarding")
