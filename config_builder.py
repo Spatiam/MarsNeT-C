@@ -134,7 +134,7 @@ def print_rcv(str_msg):
   msg_type = split_msg[0]
   msg_timestamp = split_msg[1]
   timestamp_date = datetime.strptime(msg_timestamp,'%d-%b-%Y(%H:%M:%S.%f)')
-  msh_timestamp = timestamp_date.strftime("%d/%b/%Y %H:%M:%S (UTC)"))
+  msg_timestamp = timestamp_date.strftime("%d/%b/%Y %H:%M:%S (UTC)"))
 
   target = user_names[split_msg[2]]
   sender = user_names[split_msg[3]]
@@ -166,7 +166,7 @@ def print_snd(str_msg):
   msg_type = split_msg[0]
   msg_timestamp = split_msg[1]
   timestamp_date = datetime.strptime(msg_timestamp,'%d-%b-%Y(%H:%M:%S.%f)')
-  msh_timestamp = timestamp_date.strftime("%d/%b/%Y %H:%M:%S (UTC)"))
+  msg_timestamp = timestamp_date.strftime("%d/%b/%Y %H:%M:%S (UTC)"))
   target = user_names[split_msg[2]]
   sender = user_names[split_msg[3]]
   msg_content = split_msg[4]
