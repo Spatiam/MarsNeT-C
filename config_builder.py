@@ -111,7 +111,7 @@ def process_msg(in_msg):
     send = now + timedelta(seconds=delay)
 
     send_str = send.strftime("%d/%b/%Y %H:%M:%S (UTC)")
-    print('\nMessaged Forwarding delayed until: ' + send_str )
+    print('Message Forwarding delayed until: ' + send_str )
 
     send_str = send.strftime("%d-%b-%Y(%H:%M:%S.%f)")
     queue = '#beg#' + msg_sender_ip + ' ' + msg_target_ip + ' ' + msg_type + ' ' + msg_timestamp + '\n'
@@ -144,12 +144,12 @@ def print_rcv(str_msg):
   now_str = now.strftime("%d/%b/%Y %H:%M:%S (UTC)")
 
   if msg_type == 'msg':
-    print_g('Message Received')
+    print_g('\nMessage Received')
 
     print('Message content: ' + msg_content + '\n')
   
   else:
-    print_g('File Received')
+    print_g('\nFile Received')
     print('File name: ' + msg_content)
 
   print('Time Received: ' + now_str + '\n')
@@ -157,7 +157,7 @@ def print_rcv(str_msg):
   print('Original sender: ' + sender + '\n')
   print('Time sent from origin: ' + msg_timestamp)
 
-  print('Final Destination: ' + target)
+  print('Final Destination: ' + target + '\n')
 
 def print_snd(str_msg):
 
@@ -180,15 +180,15 @@ def print_snd(str_msg):
     print('Message content: ' + msg_content + '\n')
   
   else:
-    print_g('Sending File')
-    print('File name: ' + msg_content)
+    print_g('\nSending File')
+    print('File name: ' + msg_content + '\n')
 
   print('Time Sending: ' + now_str + '\n')
 
   print('Original sender: ' + sender + '\n')
   print('Time sent from origin: ' + msg_timestamp)
 
-  print('Final Destination: ' + target)
+  print('Final Destination: ' + target + '\n')
 
 #when change in directory is detected
 def on_modified(event):
@@ -425,7 +425,7 @@ print("    /_/    \\_\\__,_|_|  |___/_/  \\/ \\___|\__|    \\____/\n")
 
 print("    Welcome to the MarsNet-C Platform - By Team Spatiam \n\n")
 
-print("Communications Begin Here \n\n")
+print("Communications Begin Here \n")
 
 
 
@@ -491,7 +491,7 @@ def send_file(filename, ts, tgt, frm, entire):
         os.system("bpcp msg.txt "+sendTo+":"+incoming_message_directory_path+"/msg.txt")
         if os.path.exists(incoming_message_directory_path+'/msg.txt'):
           os.system('rm '+incoming_message_directory_path+'/msg.txt')#remove the msg.txt file
-    print(style.RESET+style.CYAN+"Forwarding Path -> "+str(path_list)+style.RESET+"\n\n")
+    print(style.RESET+style.CYAN+"Forwarding Path -> "+str(path_list)+style.RESET)
         
 def send_message(message, ts, tgt, frm, entire):
   global graph
@@ -510,7 +510,7 @@ def send_message(message, ts, tgt, frm, entire):
         #print("bpcp msg.txt "+sendTo+":"+incoming_message_directory_path+"/msg.txt")
         print_snd("@@msg@#@"+ts+"@#@"+tgt+"@#@"+frm+"@#@"+message+"@#@")
         os.system("bpcp msg.txt "+sendTo+":"+incoming_message_directory_path+"/msg.txt")
-    print(style.RESET+style.GREEN+"Forwarding Path -> "+str(path_list)+style.RESET+"\n\n")
+    print(style.RESET+style.CYAN+"Forwarding Path -> "+str(path_list)+style.RESET+"\n\n")
 
   else:
     print(style.RESET+style.RED+"Path not found"+style.RESET)
