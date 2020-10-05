@@ -55,21 +55,21 @@ if not os.path.exists(DELAY_QUEUE):
     fl.write(" ")
 
 def lst_file(user, file):
-    print('Added: ' + str(file))
+    #print('Added: ' + str(file))
     file_path = USERS_DIR + user + '/' + UPLOAD_DIR + file
     os.system('mv ' + file_path + ' ' + FWD_DIR)
-    print('mv ' + file_path + ' ' + FWD_DIR)
+    #print('mv ' + file_path + ' ' + FWD_DIR)
     now = datetime.now()
     date_str = now.strftime("%d-%b-%Y(%H:%M:%S)")
     str_queue = '@@file@#@'+date_str+'@#@'+user_dict[user]+'@#@'+ user_dict[THIS_USER] +'@#@'+file+'@#@0'
     queue_file = open(FWD_QUEUE,'a')
     queue_file.write(str_queue)
-    print('queued:' + str_queue)
+    #print('queued:' + str_queue)
     queue_file.close()
     filedict[user] = os.path.getmtime(USERS_DIR + user + '/' + MSG_FILE_NAME)
 
 def lst_msg(user):
-    print('Modified: ' + user + '\'s message log')
+    #print('Modified: ' + user + '\'s message log')
     msg_file = open(USERS_DIR + user + '/' + MSG_FILE_NAME, 'r')
     lines = msg_file.readlines() 
     count = 0
@@ -85,7 +85,7 @@ def lst_msg(user):
     str_queue = '@@msg@#@'+date_str+'@#@'+user_dict[user]+'@#@'+ user_dict[THIS_USER] +'@#@'+content+'@#@0'
     queue_file = open(FWD_QUEUE,'a')
     queue_file.write(str_queue)
-    print('queued:' + str_queue)
+    #print('queued:' + str_queue)
     queue_file.close()
     filedict[user] = os.path.getmtime(USERS_DIR + user + '/' + MSG_FILE_NAME)
 
@@ -111,7 +111,7 @@ def process_msg(in_msg):
     send = now + timedelta(seconds=delay)
 
     send_str = send.strftime("%d/%b/%Y %H:%M:%S (UTC)")
-    print('Messaged Forwarding delayed until: ' + send_str )
+    print('\nMessaged Forwarding delayed until: ' + send_str )
 
     send_str = send.strftime("%d-%b-%Y(%H:%M:%S.%f)")
     queue = '#beg#' + msg_sender_ip + ' ' + msg_target_ip + ' ' + msg_type + ' ' + msg_timestamp + '\n'
@@ -133,12 +133,15 @@ def print_rcv(str_msg):
 
   msg_type = split_msg[0]
   msg_timestamp = split_msg[1]
+  timestamp_date = datetime.strptime(msg_timestamp,'%d-%b-%Y(%H:%M:%S.%f)')
+  msh_timestamp = timestamp_date.strftime("%d/%b/%Y %H:%M:%S (UTC)"))
+
   target = user_names[split_msg[2]]
   sender = user_names[split_msg[3]]
   msg_content = split_msg[4]
 
   now = datetime.now()
-  now_str = now.strftime("%d/%b/%Y  %H:%M:%S (UTC)")
+  now_str = now.strftime("%d/%b/%Y %H:%M:%S (UTC)")
 
   if msg_type == 'msg':
     print_g('Message Received')
@@ -162,15 +165,17 @@ def print_snd(str_msg):
 
   msg_type = split_msg[0]
   msg_timestamp = split_msg[1]
+  timestamp_date = datetime.strptime(msg_timestamp,'%d-%b-%Y(%H:%M:%S.%f)')
+  msh_timestamp = timestamp_date.strftime("%d/%b/%Y %H:%M:%S (UTC)"))
   target = user_names[split_msg[2]]
   sender = user_names[split_msg[3]]
   msg_content = split_msg[4]
 
   now = datetime.now()
-  now_str = now.strftime("%d/%b/%Y  %H:%M:%S (UTC)")
+  now_str = now.strftime("%d/%b/%Y %H:%M:%S (UTC)")
 
   if msg_type == 'msg':
-    print_g('Sending Message')
+    print_g('\nSending Message')
 
     print('Message content: ' + msg_content + '\n')
   
@@ -413,12 +418,12 @@ os.system('clear')
 
 
 print("                                       __    _         ___")
-print("           /\/\\   __ _ _ __ ___   /\\  / /___| |_      / __\\")
-print("          /    \\ / _` | '__/ __| /  \\/ / _ \\ __|____ / /")
-print("         / /\\/\\ \\ (_| | |  \\__ \\/ /\\  /  __/ ||_____/ /___")
-print("        /_/    \\_\\__,_|_|  |___/_/  \\/ \\___|\__|    \\____/\n")
+print("       /\/\\   __ _ _ __ ___   /\\  / /___| |_      / __\\")
+print("      /    \\ / _` | '__/ __| /  \\/ / _ \\ __|____ / /")
+print("     / /\\/\\ \\ (_| | |  \\__ \\/ /\\  /  __/ ||_____/ /___")
+print("    /_/    \\_\\__,_|_|  |___/_/  \\/ \\___|\__|    \\____/\n")
 
-print("        Welcome to the MarsNet-C Platform - By Team Spatiam \n\n")
+print("    Welcome to the MarsNet-C Platform - By Team Spatiam \n\n")
 
 print("Communications Begin Here \n\n")
 
