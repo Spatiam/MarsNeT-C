@@ -572,8 +572,10 @@ def pwf_processor():
     queue_file.write(queueLines)
     queue_file.close()
     ephemeris_file.close()
-    os.system('cp queue_p.txt delay_queue.txt')
-    os.system('rm queue_p.txt')
+
+    if os.path.exists('queue_p.txt'):
+      os.system('cp queue_p.txt delay_queue.txt')
+      os.system('rm queue_p.txt')
 
 def menu_thread():
   while 1:
