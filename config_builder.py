@@ -180,7 +180,7 @@ def print_snd(str_msg):
     print('Message content: ' + msg_content + '\n')
   
   else:
-    print_g('File Received')
+    print_g('Sending File')
     print('File name: ' + msg_content)
 
   print('Time Sending: ' + now_str + '\n')
